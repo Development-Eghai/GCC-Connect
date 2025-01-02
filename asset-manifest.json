@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GCC_Connect/static/css/main.d3e1132e.css",
+    "main.js": "/GCC_Connect/static/js/main.784147eb.js",
+    "static/media/error-1.png": "/GCC_Connect/static/media/error-1.6cefb0bf5c9f9120aa6d.png",
+    "static/media/company_logo.png": "/GCC_Connect/static/media/company_logo.eb6532543d09c0d33a54.png",
+    "index.html": "/GCC_Connect/index.html",
+    "main.d3e1132e.css.map": "/GCC_Connect/static/css/main.d3e1132e.css.map",
+    "main.784147eb.js.map": "/GCC_Connect/static/js/main.784147eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3e1132e.css",
+    "static/js/main.784147eb.js"
+  ]
+}
