@@ -12,6 +12,6 @@
         "Views/*": ["Views/*"]
       }
     },
-    "include": ["src"]
+    "include": ["src", "src/Views/Main/Pages/GlobalCapability/GlobalCapability.jsx"]
   }
   

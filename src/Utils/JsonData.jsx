@@ -353,9 +353,10 @@ const JsonData = () => {
                 type:"link"
             },
             {
-                link: "",
+                link: "/contact",
                 title: "Contact Us", 
-                type:"button"
+                type:"button",
+               
             }
         ],
         //                                                              blog                                                                  //

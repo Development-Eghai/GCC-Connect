@@ -1,136 +1,91 @@
-import React, { Fragment } from 'react';
-import ButtonComponent from 'Components/Button/Button';
-import Icons from 'Utils/Icons';
+import ButtonComponent from "Components/Button/Button";
+import React from "react";
+import Icons from "Utils/Icons";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
+import { useCustomNavigate } from "Components/CustomHooks";
 
-import { useSelector } from 'react-redux';
-import { useCustomNavigate } from '../CustomHooks';
-import HeaderCard from 'Components/Card/HeaderCard';
-import LinkComponent from 'Components/Router_components/LinkComponent';
-import JsonData from 'Utils/JsonData';
-
-const Header = ({
-  offcanvasOn,
-  offcanvasOnButton
-}) => {
-  const { currentMenuName } = useSelector((state) => state.commonState);
-  const navigate = useCustomNavigate();
-  const { headerTitleLink, headerMenuLink } = JsonData()?.jsxJson;
-
-  function headerTitleContentFunc() {
-    return <div className="w-100 d-flex flex-wrap align-items-center justify-content-between ">
-      <div className="col">
-        <p className='fs-13 mb-0 text-light'>
-          Impartial Consulting Services to Empower Your Growth!  Get Started
-          <span className='ps-3'>
-            {Icons.header_title_arrow_white}
-          </span>
-        </p>
-      </div>
-
-      <div className="col d-flex flex-wrap justify-content-end ">
-        <div className="w-50 d-flex flex-wrap align-items-center justify-content-evenly ">
-          {headerTitleLink?.map((data, index) => (
-            <div className="col text-center">
-              <LinkComponent
-                to={data?.link}
-                className="fs-14 text-light text-decoration-none"
-                title={
-                  <Fragment>
-                    {data?.icon}
-                    < span className='ps-2'>
-                      {data?.title}
-                    </span>
-                  </Fragment>
-                } />
-            </div>
-          ))}
-        </div>
-      </div>
-    </div >
-  }
-
-  function headerMenuFuction() {
-    return headerMenuLink?.map((data, index) => {
-      switch (data?.type) {
-        case "link":
-          return <div className="col text-center">
-            <LinkComponent
-              to={data?.link}
-              className="text-dark fs-18 fw-bold text-decoration-none"
-              title={
-                <Fragment>
-                  {data?.icon}
-                  < span className='ps-2'>
-                    {data?.title}
-                  </span>
-                </Fragment>
-              } />
-          </div>
-
-        case "button":
-          return <div className="col text-center">
-            <ButtonComponent
-              className="btn-dark fs-15 text-decoration-none"
-              buttonName={data?.title}
-            />
-          </div>
-
-        default:
-          break;
-      }
-    })
-  }
-
-  function headerContentFunc() {
-    return <div className="col-12 d-flex flex-wrap align-items-center justify-content-between ">
-      <div className="col">
-        <LinkComponent
-          to="/"
-          title="GCC CONNECT"
-          className="fs-18 text-decoration-none fw-bold text-dark"
-        />
-      </div>
-
-      <div className="col d-flex flex-wrap justify-content-end ">
-        <div className="w-75 d-flex flex-wrap align-items-center justify-content-around ">
-          {headerMenuFuction()}
-        </div>
-      </div>
-
-      {
-        offcanvasOn ?
-          <div className={`d-inline-block header-icon-tag-width ${offcanvasOn !== '' ? `d-${offcanvasOn}-none` : 'd-none'}`}>
-            <ButtonComponent
-              type="button"
-              className="btn-transparent"
-              clickFunction={offcanvasOnButton}
-              buttonName={Icons.menuIcon}
-            />
-          </div>
-          :
-          null
-      }
-    </div >
-  }
-
+const Header = () => {
+  const navigate=useCustomNavigate()
   return (
-    <Fragment>
-      <HeaderCard
-        cardClassName='w-100 border-0 shadow-none '
-        cardTitleClassName="row justify-content-end mb-0 px-5"
-        cardBodyClassName='py-3 header-title-body'
-        cardContent={headerTitleContentFunc()}
-      />
+    <div className="">
+      <div className="headerMediaContainer d-flex justify-content-center h-50  ">
+        <div className="col-11 py-2 ps-4 d-flex justify-content-between">
+          <div className="d-flex justify-content-center">
+            <p className="text-white me-3 mb-0">
+              Impartial Consulting Services to Empower Your Growth! Get Started{" "}
+            </p>
+            <span>{Icons.arrowIcon}</span>
+          </div>
+          <div className="d-flex col-3 justify-content-between pe-4">
+            <div className="d-flex justify-content-center">
+              <span>{Icons.facebookIcon}</span>
+              <p className="text-white mb-0 ms-2">Facebook</p>
+            </div>
+            <div className="d-flex justify-content-center">
+              <span>{Icons.twitterIcon}</span>
+              <p className="text-white mb-0 ms-2">Twitter</p>
+            </div>
+            <div className="d-flex justify-content-center">
+              <span>{Icons.linkedinIcon}</span>
+              <p className="text-white mb-0 ms-2">Linkedin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="headerMenuContainer py-3 ">
+        <div className="d-flex justify-content-between">
+          <div className="col-4 d-flex justify-content-center align-items-center">
+            <p className="mb-0 companyNametext">GCC CONNECT</p>
+          </div>
+          <div className="col-4 px-3 d-flex justify-content-between">
+            <div className="col3 d-flex align-items-center ">
+              <p className="mb-0 me-2 fw-bold">About</p>
+              <span>{Icons.header_title_arrow_black}</span>
+            </div>
+            <div className="col3 d-flex align-items-center">
+              <NavDropdown title="Models" id="nav-dropdown" className="fw-bold">
+                <NavDropdown.Item
+                  as={Link}
+                  to="/details"
+                  eventKey="4.1"
+                  className="dropdown-item-custom fw-bold"
+                >
+                  Global Capability Center
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/build-operator"
+                  eventKey="4.2"
+                  className="dropdown-item-custom fw-bold"
+                >
+                  Build Operate Transfer
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  to="/managed-teams"
+                  eventKey="4.3"
+                  className="dropdown-item-custom fw-bold"
+                >
+                  Managed Teams
+                </NavDropdown.Item>
+              </NavDropdown>
+            </div>
+            <div className="col3 d-flex align-items-center ">
+              <p className="mb-0 me-2 fw-bold">Blog</p>
+              <span>{Icons.header_title_arrow_black}</span>
+            </div>
+            <ButtonComponent
+              title="Contact Us"
+              className="headerBtn px-3 py-2"
+              buttonName="Contact Us"
+              clickFunction={()=>{navigate('/contact')}}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-      <HeaderCard
-        cardClassName='w-100 border-0 shadow-none'
-        cardTitleClassName="row justify-content-end mb-0 px-5"
-        cardBodyClassName='py-4 header-body'
-        cardContent={headerContentFunc()}
-      />
-    </Fragment>
-
-  )
-}
-
-export default Header
+export default Header;

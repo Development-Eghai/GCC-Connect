@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaBrain, FaBuilding, FaChartLine } from 'react-icons/fa';
 import Icons from 'Utils/Icons';
+import { useCustomNavigate } from './CustomHooks';
 
 const AboutComponent = () => {
+    const navigate = useCustomNavigate()
     return (
         <section className="about-section">
             <div className="about-header mt-5 mb-5">
@@ -95,8 +97,8 @@ const AboutComponent = () => {
                     We can help you work smarter and help you achieve your business <br></br> goals. Speak to one of our advisers and <span className='span-get-free'> get free advice!</span>
                 </p>
                 <div className="align-items-center">
-                    <button className="contact-btn">Contact Us <span>&rarr;</span></button>
-                </div>
+                    <button className="contact-btn" onClick={()=>{navigate('/contact')}}>Contact Us <span>&rarr;</span></button>
+                </div>/
             </div>
         </section>
     );

@@ -9,6 +9,7 @@ import store from 'StoreIndex';
 import JsonData from 'Utils/JsonData';
 import Images from 'Utils/Image';
 import { OverallModel } from 'Views/Common/OverallModal';
+import OffCanvas from 'Components/Offcanvas/OffCanvas';
 
 const Layout = () => {
     const state = store.getState()
@@ -18,13 +19,13 @@ const Layout = () => {
     const handleCanvasOpenOrClose = () => dispatch(handleUpdateCanvasShow)
     const menuOptions = JsonData()?.jsonOnly?.sidebarMenus;
 
-    // useEffect(() => {
-    //     if (state?.commonState?.innerWidth >= 1200 && state?.commonState?.canvasShow) {
-    //         dispatch(handleUpdateCanvasShow)
-    //     }
+    useEffect(() => {
+        if (state?.commonState?.innerWidth >= 1200 && state?.commonState?.canvasShow) {
+            dispatch(handleUpdateCanvasShow)
+        }
 
-    //     dispatch(handleCurrentMenuInd(menuOptions, location[location.length - 1]))
-    // }, [state?.commonState?.innerWidth])
+        dispatch(handleCurrentMenuInd(menuOptions, location[location.length - 1]))
+    }, [state?.commonState?.innerWidth])
 
     // useEffect(() => {
     //     if (!state?.commonState?.user_id) {
@@ -50,6 +51,7 @@ const Layout = () => {
                 </div>
             </main>
             <OverallModel />
+            
         </Fragment>
     )
 }

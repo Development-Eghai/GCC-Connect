@@ -1305,3 +1305,112 @@ color: #fff;
     line-height: 40px;
   }
 }
+
+/* Detailed Page CSS*/
+.detailImage{
+
+  background: rgb(80,75,75);
+  background: linear-gradient(180deg, rgba(80,75,75,1) 0%, rgba(205,201,201,1) 100%);
+
+  /* background:#1B1A1A;
+  background: linear-gradient(180deg, #1B1A1A 0%, rgba(44, 43, 43, 0) 100%); */
+  min-height: 400px;
+}
+
+
+.globalCapacity{
+  background-color:#F9F9F9 !important;
+  padding: 50px 50px 85px 50px !important;
+  max-height: 500px !important;
+}
+
+.featureButton{
+  background-color: #01A04C !important;
+}
+.featureButtonDark{
+  background-color: #222 !important;
+}
+
+.detailsForm{
+  background-color: #01A04C;
+  
+}
+.detailsForm-List{
+  list-style-type: none !important  ;
+}
+.getTouchBox {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #042126;
+  padding: 40px 20px; 
+  text-align: center; 
+  border-radius: 8px; 
+}
+
+.detailsForm-Container {
+  min-height: 500px;
+  position: relative;
+  padding-top: 100px; 
+}
+
+.FormBtn{
+  background-color: #01A04C;
+  color: white;
+  border: none;
+}
+
+.globalTitleBtn{
+  background-color: rgba(10, 118, 61, 0.75);
+}
+.detailImage{
+  position: relative;
+}
+.detailImageText{
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* header Css*/
+
+.headerMediaContainer{
+  background-color: #042126;
+  width: 100%;
+}
+.companyNametext{
+font-size: 28px;
+font-weight: 700;
+color:#1f2544;
+
+}
+.headerBtn{
+  background-color: #042126;
+  color: #fff;
+}
+.headerBtn:hover{
+  background-color: #07515e;
+  color: #fff;
+  
+  
+}
+.dropdown-item-custom {
+  background-color: transparent; 
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item-custom:hover {
+  background-color: #2ABC2A !important;
+  color: white !important; 
+}
+
+.dropdown-item-custom:active,
+.dropdown-item-custom.active {
+  background-color: #2ABC2A !important; 
+  color: white !important;
+}
+
