@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/GCC-Connect/static/css/main.6cd9be8b.css",
-    "main.js": "/GCC-Connect/static/js/main.8dfb33c6.js",
+    "main.js": "/GCC-Connect/static/js/main.9a350213.js",
     "static/media/ImageContainer.png": "/GCC-Connect/static/media/ImageContainer.766359242c5ad1d84ab7.png",
     "static/media/error-1.png": "/GCC-Connect/static/media/error-1.6cefb0bf5c9f9120aa6d.png",
     "static/media/company_logo.png": "/GCC-Connect/static/media/company_logo.eb6532543d09c0d33a54.png",
     "index.html": "/GCC-Connect/index.html",
     "main.6cd9be8b.css.map": "/GCC-Connect/static/css/main.6cd9be8b.css.map",
-    "main.8dfb33c6.js.map": "/GCC-Connect/static/js/main.8dfb33c6.js.map"
+    "main.9a350213.js.map": "/GCC-Connect/static/js/main.9a350213.js.map"
   },
   "entrypoints": [
     "static/css/main.6cd9be8b.css",
-    "static/js/main.8dfb33c6.js"
+    "static/js/main.9a350213.js"
   ]
 }
