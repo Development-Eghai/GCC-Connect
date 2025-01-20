@@ -36,7 +36,10 @@ const Header = () => {
       <div className="headerMenuContainer py-3 ">
         <div className="d-flex justify-content-between">
           <div className="col-4 d-flex justify-content-center align-items-center">
-            <p className="mb-0 companyNametext">GCC CONNECT</p>
+            {/* <p className="mb-0 companyNametext">GCC CONNECT</p>
+             */}
+             <a href="/GCC-Connect" className="mb-0  companyNametext">GCC CONNECT</a>
+
           </div>
           <div className="col-4 px-3 d-flex justify-content-between">
             <div className="col3 d-flex align-items-center ">
