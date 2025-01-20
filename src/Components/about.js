@@ -5,6 +5,20 @@ import { useCustomNavigate } from './CustomHooks';
 
 const AboutComponent = () => {
     const navigate = useCustomNavigate()
+
+    const handlecardoneClick = () => {
+        navigate("/details");
+    };
+
+    const handlecardtwoClick = () => {
+        navigate("/managed-teams");
+    };
+
+    const handlecardthirdClick = () => {
+        navigate("/build-operator");
+    };
+
+    
     return (
         <section className="about-section">
             <div className="about-header mt-5 mb-5">
@@ -13,7 +27,7 @@ const AboutComponent = () => {
             </div>
             <div className="about-container mb-5">
                 {/* Card 1 */}
-                <div className="about-card">
+                <div className="about-card" onClick={handlecardoneClick}>
                     <div className="icon green">
                         {/* <FaBrain size={40} /> */}
                         {Icons.captiveModelIcon}
@@ -25,12 +39,12 @@ const AboutComponent = () => {
                     <div className="bottom-links col-12">
                         <div className="row">
                             <div className="col-6 text-start">
-                                <a href="#" className="learn-more">
+                                <a href="/details" className="learn-more">
                                     Explore More <span>&rarr;</span>
                                 </a>
                             </div>
                             <div className="col-6 text-end">
-                                <a href="#" className="learn-more-icon">
+                                <a href="/details" className="learn-more-icon">
                                     <span>&rarr;</span>
                                 </a>
                             </div>
@@ -40,7 +54,7 @@ const AboutComponent = () => {
                 </div>
 
                 {/* Card 2 */}
-                <div className="about-card">
+                <div className="about-card" onClick={handlecardtwoClick}>
                     <div className="icon blue">
                         {/* <FaBuilding size={40} /> */}
                         {Icons.SharedserviceModelIcon}
@@ -52,12 +66,12 @@ const AboutComponent = () => {
                     <div className="bottom-links col-12">
                         <div className="row">
                             <div className="col-6 text-start">
-                                <a href="#" className="learn-more">
+                                <a href="/managed-teams" className="learn-more">
                                     Explore More <span>&rarr;</span>
                                 </a>
                             </div>
                             <div className="col-6 text-end">
-                                <a href="#" className="learn-more-icon">
+                                <a href="/managed-teams" className="learn-more-icon">
                                     <span>&rarr;</span>
                                 </a>
                             </div>
@@ -67,7 +81,7 @@ const AboutComponent = () => {
                 </div>
 
                 {/* Card 3 */}
-                <div className="about-card">
+                <div className="about-card" onClick={handlecardthirdClick}>
                     <div className="icon gray">
                         {/* <FaChartLine size={40} /> */}
                         {Icons.BuildoperateModelIcon}
@@ -79,12 +93,12 @@ const AboutComponent = () => {
                     <div className="bottom-links col-12">
                         <div className="row">
                             <div className="col-6 text-start">
-                                <a href="#" className="learn-more">
+                                <a href="/build-operator" className="learn-more">
                                     Explore More <span>&rarr;</span>
                                 </a>
                             </div>
                             <div className="col-6 text-end">
-                                <a href="#" className="learn-more-icon">
+                                <a href="/build-operator" className="learn-more-icon">
                                     <span>&rarr;</span>
                                 </a>
                             </div>
@@ -98,7 +112,7 @@ const AboutComponent = () => {
                 </p>
                 <div className="align-items-center">
                     <button className="contact-btn" onClick={()=>{navigate('/contact')}}>Contact Us <span>&rarr;</span></button>
-                </div>/
+                </div>
             </div>
         </section>
     );
