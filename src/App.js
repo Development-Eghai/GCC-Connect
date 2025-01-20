@@ -30,6 +30,12 @@ import BuildInitiation from "Views/Main/Pages/BuildOperator/BuildInitiation";
 import Build from "Views/Main/Pages/BuildOperator/Build";
 import BuildOperate from "Views/Main/Pages/BuildOperator/BuildOperate";
 import Buildtransfer from "Views/Main/Pages/BuildOperator/Buildtransfer";
+import ConsultingServices from "Views/Main/Pages/Solutions/ConsultingServices";
+import ManagedService from "Views/Main/Pages/Solutions/ManagedService";
+import WorkplaceSolution from "Views/Main/Pages/Solutions/WorkplaceSolution";
+import TalentManagedSolution from "Views/Main/Pages/Solutions/TalentManagedSolution";
+import SmartTalent from "Views/Main/Pages/Solutions/SmartTalent";
+import AILedService from "Views/Main/Pages/Solutions/AILedService";
 
 
 const App = () => {
@@ -71,6 +77,7 @@ const App = () => {
       <ToastContainer theme='light' />
       <Routes>
   <Route path="/" element={<Layout />}>
+
     <Route index element={<Home />} />
 
     <Route path="/details" element={<GlobalCapability />}>
@@ -79,23 +86,30 @@ const App = () => {
     <Route path="implementation" element={<GlobalImplementation />} />
     <Route path="ongoing-support" element={<GlobalOngoing />} />
     </Route>
+
     <Route path="/build-operator" element={<BuildOperator />}>
     <Route index element={<BuildFeature />} />
     <Route path="initiation" element={<BuildInitiation />} />
     <Route path="build" element={<Build/>} />
     <Route path="operate" element={<BuildOperate />} />
     <Route path="transfer" element={<Buildtransfer />} />
-   
-
     </Route>
+
     <Route path="/managed-teams" element={<Managedteams />}>
     <Route index element={<ManagedOverview/>} />
       <Route path="relationship" element={<ManagedRelationship />} />
       <Route path="record" element={<ManagedRecord />} />
       <Route path="services" element={<ManagedServices />} />
-
     </Route>
+
     <Route path="/contact" element={<Contact />} />
+    <Route path="/consulting-services" element={<ConsultingServices />} />
+    <Route path="/managed-services" element={<ManagedService/>} />
+    <Route path="/workspace-solution" element={<WorkplaceSolution/>} />
+    <Route path="/talent-solution" element={<TalentManagedSolution/>} />
+    <Route path="/smart-talent" element={<SmartTalent/>} />
+    <Route path="/ailed-service" element={<AILedService/>} />
+
   </Route>
 
   {/* page not found */}
