@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/GCC-Connect/static/css/main.6cd9be8b.css",
-    "main.js": "/GCC-Connect/static/js/main.9a350213.js",
+    "main.css": "/GCC-Connect/static/css/main.f3cb3e38.css",
+    "main.js": "/GCC-Connect/static/js/main.34020735.js",
+    "static/media/Flexiblegrowth-alignedpayment.jpg": "/GCC-Connect/static/media/Flexiblegrowth-alignedpayment.7aed4db8572ed533a6c8.jpg",
+    "static/media/SmartTalentAcquisitionwithAILedInnovation.jpg": "/GCC-Connect/static/media/SmartTalentAcquisitionwithAILedInnovation.34533e2aa89f78bab75f.jpg",
+    "static/media/bg-service.webp": "/GCC-Connect/static/media/bg-service.623ecedc6b8d0c38efc9.webp",
     "static/media/ImageContainer.png": "/GCC-Connect/static/media/ImageContainer.766359242c5ad1d84ab7.png",
     "static/media/error-1.png": "/GCC-Connect/static/media/error-1.6cefb0bf5c9f9120aa6d.png",
     "static/media/company_logo.png": "/GCC-Connect/static/media/company_logo.eb6532543d09c0d33a54.png",
     "index.html": "/GCC-Connect/index.html",
-    "main.6cd9be8b.css.map": "/GCC-Connect/static/css/main.6cd9be8b.css.map",
-    "main.9a350213.js.map": "/GCC-Connect/static/js/main.9a350213.js.map"
+    "main.f3cb3e38.css.map": "/GCC-Connect/static/css/main.f3cb3e38.css.map",
+    "main.34020735.js.map": "/GCC-Connect/static/js/main.34020735.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cd9be8b.css",
-    "static/js/main.9a350213.js"
+    "static/css/main.f3cb3e38.css",
+    "static/js/main.34020735.js"
   ]
 }
