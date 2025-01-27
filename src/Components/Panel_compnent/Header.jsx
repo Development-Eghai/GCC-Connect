@@ -58,6 +58,8 @@ const Header = () => {
               <span>{Icons.header_title_arrow_black}</span>
             </div>
 
+            
+
             <div className="col3 d-flex align-items-center nav_dropdown fw-500">
               Solutions
               <div className="nav_dropdown_absolute_one py-2">

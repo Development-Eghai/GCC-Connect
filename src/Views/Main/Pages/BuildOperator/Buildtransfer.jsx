@@ -26,30 +26,36 @@ const Buildtransfer = () => {
     <hr />
     <div className="BodyContainer col-12 d-flex">
         <div className="col-4 d-flex flex-column p-3">
-            <div style={{height:"100px"}}></div>
+        <div >
+                        <span>{Icons.manArrowIcon}</span>
+                    </div>
             <hr />
          
             <div>
-                <h5 className='fw-bold text-center' >Asset & Responsibility Transfer</h5>
-                <p className='text-secondary mb-0 text-center' >Seamlessly hand over all operational assets.</p>
+                <h5 className='globalHead' >Asset & Responsibility Transfer</h5>
+                <p className='text-secondary globaljustify mb-0 text-center' >Seamlessly hand over all operational assets.</p>
             </div>
         </div>
         <div className="col-4 d-flex flex-column p-3">
-            <div style={{height:"100px"}}></div>
+        <div >
+                        <span>{Icons.manArrowIcon}</span>
+                    </div>
             <hr />
          
             <div>
-                <h5 className='fw-bold text-center'>Knowledge Transfer</h5>
-                <p className='text-secondary mb-0 text-center'>Equip your team with insights and documentation.</p>
+                <h5 className='globalHead'>Knowledge Transfer</h5>
+                <p className='text-secondary globaljustify mb-0 text-center'>Equip your team with insights and documentation.</p>
             </div>
         </div>
         <div className="col-4 d-flex flex-column p-3">
-            <div style={{height:"100px"}}></div>
+        <div >
+                        <span>{Icons.manArrowIcon}</span>
+                    </div>
             <hr />
          
             <div className=''>
-                <h5 className='fw-bold text-center'>Post-Exit Support</h5>
-                <p className='text-secondary mb-0 text-center '>Provide guidance to ensure a smooth transition.</p>
+                <h5 className='globalHead'>Post-Exit Support</h5>
+                <p className='text-secondary globaljustify mb-0 text-center '>Provide guidance to ensure a smooth transition.</p>
             </div>
         </div>
         

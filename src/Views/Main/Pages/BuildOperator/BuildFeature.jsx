@@ -5,8 +5,8 @@ import Img from "Assets/Images/Image.jpg";
 const BuildFeature = () => {
   return (
     <div className="">
-      <h3 className="mb-5">Overview</h3>
-      <p className="mb-4 fw-bold">
+      <h3 className="mb-3">Overview</h3>
+      <p className="mb-4 ">
       The BOT model is ideal for businesses looking for an efficient, low-risk way to establish a Global Capability Center (GCC). Our BOT process includes four distinct phases:
       </p>
       <div className='col-lg-10'>
@@ -17,11 +17,14 @@ const BuildFeature = () => {
         <div className="col-4 px-2">
           <div>
             <div className="keyFeatureIcin d-flex justify-content-center mb-3 "></div>
+            <div >
+                        <span>{Icons.manArrowIcon}</span>
+                    </div>
             <hr className="" />
-            <p className="fw-bold fs-5 text-center">
+            <p className="globalHead">
             Cost Efficiency
             </p>
-            <p className="text-secondary text-center">
+            <p className="text-secondary globaljustify mb-0 text-center">
             Minimized upfront investments with a gradual scale-up
             </p>
           </div>
@@ -29,9 +32,12 @@ const BuildFeature = () => {
         <div className="col-4 px-2">
           <div>
             <div className="keyFeatureIcin d-flex justify-content-center mb-3 "></div>
+            <div >
+                        <span>{Icons.manArrowIcon}</span>
+                    </div>
             <hr className="" />
-            <p className="fw-bold fs-5 text-center">Risk Mitigation</p>
-            <p className="text-secondary text-center">
+            <p className="globalHead">Risk Mitigation</p>
+            <p className="text-secondary globaljustify mb-0 text-center">
             Expert-led setup and operations reduce potential challenges
             </p>
           </div>
@@ -39,9 +45,12 @@ const BuildFeature = () => {
         <div className="col-4 px-2">
           <div>
             <div className="keyFeatureIcin d-flex justify-content-center mb-3 "></div>
+            <div >
+                        <span>{Icons.manArrowIcon}</span>
+                    </div>
             <hr className="" />
-            <p className="fw-bold fs-5 text-center">Customization </p>
-            <p className="text-secondary text-center">
+            <p className="globalHead">Customization </p>
+            <p className="text-secondary globaljustify mb-0 text-center">
             Tailored solutions to match your business goals and culture
             </p>
           </div>
@@ -49,9 +58,12 @@ const BuildFeature = () => {
         <div className="col-4 px-2">
           <div>
             <div className="keyFeatureIcin d-flex justify-content-center mb-3 "></div>
+            <div >
+                        <span>{Icons.manArrowIcon}</span>
+                    </div>
             <hr className="" />
-            <p className="fw-bold fs-5 text-center">Compliance </p>
-            <p className="text-secondary text-center">
+            <p className="globalHead">Compliance </p>
+            <p className="text-secondary globaljustify mb-0 text-center">
             Adherence to local regulations and global standards
             </p>
           </div>
@@ -59,9 +71,12 @@ const BuildFeature = () => {
         <div className="col-4 px-2">
           <div>
             <div className="keyFeatureIcin d-flex justify-content-center mb-3 "></div>
+            <div >
+                        <span>{Icons.manArrowIcon}</span>
+                    </div>
             <hr className="" />
-            <p className="fw-bold fs-5 text-center">Seamless Transition </p>
-            <p className="text-secondary text-center">
+            <p className="globalHead">Seamless Transition </p>
+            <p className="text-secondary globaljustify mb-0 text-center">
             Ownership transfer with minimal disruptions
             </p>
           </div>

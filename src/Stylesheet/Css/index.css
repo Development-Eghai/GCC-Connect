@@ -1645,3 +1645,14 @@ border-radius: 6px;
 
   }
 
+.globaljustify{
+  text-align: justify !important;
+  font-size: 15px !important;
+  text-align-last: left !important;
+
+}
+
+.globalHead{
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}

@@ -44,13 +44,13 @@ const ConsultingServices = () => {
           Consulting and Advisory Services
         </p>
       </div>
-      <div className="mainContainer">
+      <div className="container">
         <div className="mainContent d-flex justify-content-center">
-          <div className="col-11">
+          <div className="col-12">
             <div className="overViewBox d-flex flex-column flex-lg-row p-4">
               <div className="col-12 col-lg-6 p-3">
-                <h3 className="mb-5 headTextGreen">Overview</h3>
-                <p className="mb-4 fw-bold">
+                <h3 className="mb-3 headTextGreen">Overview</h3>
+                <p className="mb-4 ">
                   Flexible growth-aligned payment model for building global
                   capabilities.Our GCC model helps you establish a fully
                   functional global capability center tailored to your business
@@ -60,7 +60,7 @@ const ConsultingServices = () => {
                 </p>
               </div>
               <div className="col-12 col-lg-6 p-3">
-                <img src={require('../../../../Assets/Images/SmartTalentAcquisitionwithAILedInnovation.jpg')}  alt="sample image" className="mb-4 w-100  rounded" />
+                <img src={require('../../../../Assets/Images/SmartTalentAcquisitionwithAILedInnovation.jpg')} alt="sample image" className="mb-4 w-100  rounded" />
               </div>
             </div>
             <div className="coreOfferingBox d-flex flex-wrap">
@@ -74,9 +74,9 @@ const ConsultingServices = () => {
             </div>
           </div>
         </div>
-        <div className="highlightForm">
-          <HighLightComp />
-        </div>
+      </div>
+      <div className="highlightForm">
+        <HighLightComp />
       </div>
       <div className="FooterContainer">
         <Footer />

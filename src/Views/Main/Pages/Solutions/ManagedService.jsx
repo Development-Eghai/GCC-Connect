@@ -34,11 +34,11 @@ const ManagedService = () => {
       </div>
       <div className="mainContainer">
         <div className="mainContent d-flex justify-content-center">
-          <div className="col-11">
+          <div className="col-10">
             <div className="overViewBox d-flex flex-column flex-lg-row p-4">
               <div className="col-12 col-lg-6 p-3">
-                <h3 className="mb-5 headTextGreen">Overview</h3>
-                <p className="mb-4 fw-bold">
+                <h3 className="mb-3 headTextGreen">Overview</h3>
+                <p className="mb-4 ">
                   At PixelAdvant, we specialize in facilitating managed services
                   that empower Global Capability Centers (GCCs) to optimize
                   operations, ensure compliance, and drive value creation across

@@ -43,11 +43,11 @@ const AILedService = () => {
       </div>
       <div className="mainContainer">
         <div className="mainContent d-flex justify-content-center">
-          <div className="col-11">
+          <div className="col-10">
             <div className="overViewBox d-flex flex-column flex-lg-row p-lg-4">
               <div className="col-12 col-lg-6 p-lg-3">
-                <h3 className="mb-5 mt-4 headTextGreen">Overview</h3>
-                <p className="mb-4 fw-bold">
+                <h3 className="mb-3 mt-4 headTextGreen">Overview</h3>
+                <p className="mb-4 ">
                 Our advanced AI solutions ensure efficient and targeted talent acquisition:
                 </p>
 
@@ -76,12 +76,12 @@ const AILedService = () => {
             <div className="coreOfferingBox d-flex flex-wrap">
               {cardData.map((data, i) => {
                 return (
-                  <div className="col-12 col-md-6 col-lg-3" key={i}>
+                  <div className="col-12 col-md-6 col-lg-4 p-lg-5" key={i}>
                     <CoreCard data={data} key={i} />
                   </div>
                 );
               })}
-              <div className="col-lg-9 p-4 d-flex flex-column justify-content-evenly rounded-4" style={{backgroundColor:"#042126"}}>
+              <div className="col-lg-8 p-4 d-flex flex-column justify-content-evenly rounded-4" style={{backgroundColor:"#042126"}}>
                 <div className="d-flex justify-content-center align-items-center "><span>{Icons.manArroowWhiteIcon}</span></div>
                 <div className="d-flex justify-content-center align-items-center"><p className="mb-0 text-white">PixelAdvant’s AI-led process ensures you secure top talent faster, saving time, resources, and effort while driving recruitment excellence.</p></div>
               </div>

@@ -100,12 +100,12 @@ const BuildOperator = () => {
               </NavLink>
             </div>
           </div>
-          <div className="col-12 col-lg-8 ps-4 ms-3">
+          <div className="col-12 col-lg-8 ps-4 pb-5 ms-3">
             <Outlet />
           </div>
         </div>
       </div>
-      <div className="detailsForm-Container  mt-3 d-flex justify-content-center mb-5 ">
+      <div className="detailsForm-Container  mt-4 d-flex justify-content-center mb-5 ">
         <div className="detailsForm col-11  h-100 d-flex flex-column flex-lg-row rounded-5 mt-4">
           <div className="col-12 col-lg-4 p-5">
             <div className="mt-5">

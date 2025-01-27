@@ -26,37 +26,38 @@ const GlobalInitiation = () => {
         </div>
         <hr />
         <div className="BodyContainer col-12 d-flex flex-column flex-lg-row ">
-            <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+            <div className="col-12 col-lg-4 d-flex flex-column align-items-start p-3">
                 <div >
                 <span>{Icons.manArrowIcon}</span>
                 </div>
                 <hr />
              
                 <div>
-                    <h5 className='fw-bold text-center' >Design & Strategy</h5>
-                    <p className='text-secondary mb-0 text-center' >Creating a customized blueprint that aligns with your business vision.</p>
+                    <h5 className='globalHead' >Design & Strategy</h5>
+                    <p className="text-secondary globaljustify mb-0 text-start">
+                        Creating a customized blueprint that aligns with your business vision.</p>
                 </div>
             </div>
-            <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+            <div className="col-12 col-lg-4 d-flex flex-column align-items-start p-3">
                 <div >
                 <span>{Icons.manArrowIcon}</span>
                 </div>
                 <hr />
              
                 <div>
-                    <h5 className='fw-bold text-center'>Scalable solutions to align with business growth</h5>
-                    <p className='text-secondary mb-0 text-center'>Offering insights from industry specialists to streamline your GCC setup.</p>
+                    <h5 className='globalHead'>Scalable solutions to align with business growth</h5>
+                    <p className="text-secondary globaljustify mb-0 text-center">Offering insights from industry specialists to streamline your GCC setup.</p>
                 </div>
             </div>
-            <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+            <div className="col-12 col-lg-4 d-flex flex-column align-items-start p-3">
                 <div >
                 <span>{Icons.manArrowIcon}</span>
                 </div>
                 <hr />
              
                 <div className=''>
-                    <h5 className='fw-bold text-center'>Roadmap & Project Plan</h5>
-                    <p className='text-secondary mb-0 text-center '>Developing actionable plans for a smooth transition to GCC operations.</p>
+                    <h5 className='globalHead'>Roadmap & Project Plan</h5>
+                    <p className="text-secondary globaljustify mb-0 text-center">Developing actionable plans for a smooth transition to GCC operations.</p>
                 </div>
             </div>
             
