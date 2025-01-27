@@ -15,22 +15,22 @@ const GlobalOverview = () => {
               business grows.
             </p>
             <div className='col-lg-10'>
-            <img src={Img} alt="sample image" className="mb-4 w-100 " />
+            <img src={require('../../../../Assets/Images/Flexiblegrowth-alignedpayment.jpg')} alt="sample image" className="mb-4 w-100 rounded " />
             </div>
             <h3 className="mb-5">Key Features</h3>
-            <div className="keyFeature col-12 d-flex">
-              <div className="col-4 px-2">
+            <div className="keyFeature col-12 d-flex flex-column flex-sm-row flex-wrap">
+              <div className="col-12 col-sm-4 col-lg-6 col-xl-4 px-2">
                 <div>
                   <div className="keyFeatureIcin d-flex justify-content-center mb-3 ">
                     <span>{Icons.manArrowIcon}</span>
                   </div>
                   <hr className="" />
-                  <p className="fw-bold fs-5">
+                  <p className="fw-bold fs-5 text-wrap">
                     Comprehensive setup and operational management
                   </p>
                 </div>
               </div>
-              <div className="col-4 px-2">
+              <div className="col-12 col-sm-4 col-lg-6 col-xl-4 px-2">
                 <div>
                   <div className="keyFeatureIcin d-flex justify-content-center mb-3 ">
                     <span>{Icons.manKeyIcon}</span>
@@ -41,7 +41,7 @@ const GlobalOverview = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-4 px-2">
+              <div className="col-12 col-sm-4 col-lg-6 col-xl-4 px-2">
                 <div>
                   <div className="keyFeatureIcin d-flex justify-content-center mb-3 ">
                     <span>{Icons.graphIcon}</span>

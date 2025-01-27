@@ -11,9 +11,13 @@ const CarouselComponent = () => {
                         <p>Putting the right solutions and methods in place!</p>
                         <h1 className='col-4 fw-bold'>Welcome to GCC Connect</h1>
                         <p className='col-7'>GCC View360 product provides end to end solutions that are required by companies for setting up successful innovation centers in India. We will partner with companies at every stage of this process</p>
-                    <div className='d-flex col-4 justify-content-start gap-4 	'>
-                    <button className="contact-btn">Our Services <span>&rarr;</span></button>
-                    <button className="contact-btn-border">About Us</button>
+                    <div className='d-flex col-12 justify-content-start'>
+                    <div className="p-2 col-6 col-lg-3">
+                    <button className="contact-btn w-100 ">Our Services</button>
+                    </div>
+                    <div className="p-2 col-6 col-lg-3">
+                    <button className="contact-btn-border w-100 ">About Us</button>
+                    </div>
                     </div>
 
 

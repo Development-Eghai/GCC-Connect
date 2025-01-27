@@ -44,18 +44,24 @@ const SmartTalent = () => {
       <div className="mainContainer">
         <div className="mainContent d-flex justify-content-center">
           <div className="col-11">
-            <div className="overViewBox d-flex flex-column flex-lg-row p-4">
-              <div className="col-12 col-lg-6 p-3">
-                <h3 className="mb-5 headTextGreen">Overview</h3>
+            <div className="overViewBox d-flex flex-column flex-lg-row p-lg-4">
+              <div className="col-12 col-lg-6 p-lg-3">
+                <h3 className="mb-5 mt-4 headTextGreen">Overview</h3>
                 <p className="mb-4 fw-bold">
                 PixelAdvant’s AI-driven Smart Talent Acquisition platform transforms the way organizations plan and execute recruitment strategies. Our solutions empower businesses with:
                 </p>
-                <div className="d-flex">
+
+                <div className="col-12 p-lg-3 d-lg-none d-block">
+                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+              </div>
+                <div className="d-flex flex-wrap">
                   {
                     data1.map((data,i)=>{
                       return(
-                        <div className="col-4" key={i}>
+                        <div className="col-12 col-md-6 col-xl-4  " key={i}>
+                        
                 <CoreCard data={data} />
+                
                 </div>
 
                       )
@@ -63,7 +69,7 @@ const SmartTalent = () => {
                   }
                 </div>
               </div>
-              <div className="col-12 col-lg-6 p-3">
+              <div className="col-12 col-lg-6 p-3 d-none d-lg-block">
                 <img src={Img} alt="sample image" className="mb-4 w-100 " />
               </div>
             </div>
@@ -75,7 +81,7 @@ const SmartTalent = () => {
                   </div>
                 );
               })}
-              <div className="col-9 p-4 d-flex flex-column justify-content-evenly rounded-4" style={{backgroundColor:"#042126"}}>
+              <div className="col-lg-9 p-4 d-flex flex-column justify-content-evenly rounded-4" style={{backgroundColor:"#042126"}}>
                 <div className="d-flex justify-content-center align-items-center "><span>{Icons.manArroowWhiteIcon}</span></div>
                 <div className="d-flex justify-content-center align-items-center"><p className="mb-0 text-white">With real-time AI-based reporting, organizations can make informed decisions, streamline recruiting efforts, and optimize budgets.</p></div>
               </div>

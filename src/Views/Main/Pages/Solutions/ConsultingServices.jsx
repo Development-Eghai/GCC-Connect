@@ -60,7 +60,7 @@ const ConsultingServices = () => {
                 </p>
               </div>
               <div className="col-12 col-lg-6 p-3">
-                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+                <img src={require('../../../../Assets/Images/SmartTalentAcquisitionwithAILedInnovation.jpg')}  alt="sample image" className="mb-4 w-100  rounded" />
               </div>
             </div>
             <div className="coreOfferingBox d-flex flex-wrap">

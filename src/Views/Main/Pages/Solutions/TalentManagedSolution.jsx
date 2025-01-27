@@ -52,20 +52,28 @@ const TalentManagedSolution = () => {
                 <p className="mb-4 fw-bold">
                 GCC Vue360 provides comprehensive talent management solutions that align with your organizational goals and workforce needs. Our offerings include:
                 </p>
-                <div className="d-flex">
+
+                <div className="col-12 p-3 d-lg-none d-block">
+                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+              </div>
+
+
+
+
+                <div className="d-flex flex-wrap">
                   {
                     data1.map((data,i)=>{
                       return(
-                        <div className="col-6" key={i}>
-                <CoreCard data={data} />
-                </div>
+                        <div className="col-12 col-md-6" key={i}>
+                         <CoreCard data={data} />
+                      </div>
 
                       )
                     })
                   }
                 </div>
               </div>
-              <div className="col-12 col-lg-6 p-3">
+              <div className="col-6 p-3 d-none d-lg-block">
                 <img src={Img} alt="sample image" className="mb-4 w-100 " />
               </div>
             </div>

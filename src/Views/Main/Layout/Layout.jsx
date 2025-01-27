@@ -11,6 +11,7 @@ import Images from 'Utils/Image';
 import { OverallModel } from 'Views/Common/OverallModal';
 import OffCanvas from 'Components/Offcanvas/OffCanvas';
 
+
 const Layout = () => {
     const state = store.getState()
     const dispatch = useDispatch();

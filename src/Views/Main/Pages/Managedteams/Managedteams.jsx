@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Icons from "Utils/Icons";
 import Footer from "Components/footer";
 import DetailViewForm from "../DetailViewForm";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { useCustomNavigate } from "Components/CustomHooks";
 
 const Managedteams = () => {
+  const [isActive, setIsActive] = useState("managed-teams");
   const navigate = useCustomNavigate();
   return (
     <div className="d-flex flex-column">
@@ -13,57 +14,74 @@ const Managedteams = () => {
         <p className=" detailImageText text-white mb-0">Managed Teams</p>
       </div>
       <div className="overview-Container d-flex justify-content-center py-5">
-        <div className="col-10 d-flex flex-column flex-lg-row justify-content-between ">
-          <div className="globalCapacity col-12 col-lg-3 d-flex justify-content-center rounded-3">
+        <div className="container d-flex flex-column flex-lg-row justify-content-between ">
+          <div className="globalCapacity col-12 col-lg-4 d-flex justify-content-center rounded-3">
             <div className="globalCapacityBox">
               <h3 className="fw-bold mb-3">Managed Teams</h3>
-              <div
-                className="featureButton d-flex p-3  rounded-3 mb-3"
-                onClick={() => {
-                  navigate("/managed-teams");
-                }}
+
+              <NavLink
+                className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "
+                to="/managed-teams/manage_overview"
               >
-                <p className="mb-0 me-3 text-white fw-bold">
-                  Managed Teams Overview & Features
-                </p>
-                <span className="fw-bold">{Icons.arrowIcon}</span>
-              </div>
-              <div
-                className="featureButtonDark d-flex p-3  rounded-3 mb-3"
-                onClick={() => {
-                  navigate("/managed-teams/relationship");
-                }}
+                <div class="col-12 d-flex align-items-center">
+                  <div className="col-10">
+                    <p className="mb-0 me-3 text-white text-start fw-bold">
+                    Managed Teams Overview & Features
+                    </p></div>
+                  <div className="col-2 text-end pe-2 fw-bold">
+                    <span className="fw-bold">{Icons.arrowIcon}</span>
+                  </div>
+                </div>
+              </NavLink>
+
+              <NavLink
+                className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "
+                to="/managed-teams/relationship"
               >
-                <p className="mb-0 me-3 text-white fw-bold">
-                  Client & Employee Relationship
-                </p>
-                <span className="fw-bold">{Icons.arrowIcon}</span>
-              </div>
-              <div
-                className="featureButtonDark d-flex p-3 rounded-3 mb-3"
-                onClick={() => {
-                  navigate("/managed-teams/record");
-                }}
+                <div class="col-12 d-flex align-items-center">
+                  <div className="col-10">
+                    <p className="mb-0 me-3 text-white text-start fw-bold">
+                    Client & Employee Relationship
+                    </p></div>
+                  <div className="col-2 text-end pe-2 fw-bold">
+                    <span className="fw-bold">{Icons.arrowIcon}</span>
+                  </div>
+                </div>
+              </NavLink>
+
+              <NavLink
+                className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "
+                to="/managed-teams/record"
               >
-                <p className="mb-0 me-3 text-white fw-bold">
-                  Employee on Record (EOR)
-                </p>
-                <span className="fw-bold">{Icons.arrowIcon}</span>
-              </div>
-              <div
-                className="featureButtonDark d-flex p-3 rounded-3 mb-3"
-                onClick={() => {
-                  navigate("/managed-teams/services");
-                }}
+                <div class="col-12 d-flex align-items-center">
+                  <div className="col-10">
+                    <p className="mb-0 me-3 text-white text-start fw-bold">
+                    Employee on Record (EOR)
+                    </p></div>
+                  <div className="col-2 text-end pe-2 fw-bold">
+                    <span className="fw-bold">{Icons.arrowIcon}</span>
+                  </div>
+                </div>
+              </NavLink>
+
+              <NavLink
+                className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "
+                to="/managed-teams/services"
               >
-                <p className="mb-0 me-3 text-white fw-bold">
-                  Managed Shared Services
-                </p>
-                <span className="fw-bold">{Icons.arrowIcon}</span>
-              </div>
+                <div class="col-12 d-flex align-items-center">
+                  <div className="col-10">
+                    <p className="mb-0 me-3 text-white text-start fw-bold">
+                    Managed Shared Services
+                    </p></div>
+                  <div className="col-2 text-end pe-2 fw-bold">
+                    <span className="fw-bold">{Icons.arrowIcon}</span>
+                  </div>
+                </div>
+              </NavLink>
+
             </div>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-8 ps-4 ms-3">
             <Outlet />
           </div>
         </div>

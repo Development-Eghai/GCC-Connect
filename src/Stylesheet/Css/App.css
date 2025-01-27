@@ -46,6 +46,8 @@
   --section-one-bg: #2ABC2A;
   --section-two-bg: #042126;
   
+  --bs-accordion-btn-bg: #75e24c !important;
+
 }
 
 .btn-brand-outerLayer-color {
@@ -63,7 +65,7 @@
 ::-webkit-scrollbar {
   width: 5px;
   height: 4px;
-  background-color: #aaa;
+  background-color: #e2e2e2;
 }
 
 
@@ -76,7 +78,7 @@ input::-webkit-inner-spin-button {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 12px;
-  background: #d82d2d;
+  background: var(--section-one-bg);
 }
 
 .is-invalid {
@@ -265,9 +267,9 @@ body {
 
 
 /* header  */
-header {
+/* header {
   height: var(--header-height);
-}
+} */
 
 .header-card {
   padding: var(--header-padding-y);

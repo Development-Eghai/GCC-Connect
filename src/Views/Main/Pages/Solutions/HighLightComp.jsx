@@ -37,7 +37,7 @@ const HighLightComp = () => {
         </div>
       </div>
 
-      <div className="col-12 col-lg-8 p-5 mt-5 ">
+      <div className="col-12 col-lg-8 p-3 p-md-5 mt-5 ">
         <DetailViewForm />
       </div>
     </div>

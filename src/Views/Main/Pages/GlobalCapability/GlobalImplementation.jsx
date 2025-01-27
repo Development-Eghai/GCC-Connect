@@ -5,17 +5,17 @@ const GlobalImplementation = () => {
   return (
     <div className="p-3">
       <div className="tittleContainer mb-5">
-        <div className="d-flex w-75 p-3 rounded-4">
-          <p className="mb-0 me-3 fs-3 fw-bold text-success">Phase 2:</p>
-          <p className="mb-0 fs-3 fw-bold ">GCC Implementation</p>
+        <div className="d-flex w-100 w-lg-75 p-3 rounded-4">
+          <p className="mb-0 me-3 fs-5 fs-md-3 fw-bold text-success">Phase 2:</p>
+          <p className="mb-0 fs-5 fs-md-3 fw-bold ">GCC Implementation</p>
         </div>
       </div>
-      <div className="headerContainer px-4">
+      <div className="headerContainer px-lg-4">
         <div className="col-12 d-flex ">
-          <div className="col-2 d-flex align-items-center">
+        <div className='col-4 col-md-2 col-lg-3 d-flex align-items-center'>
             <span>{Icons.manArrowIcon}</span>
           </div>
-          <div className="col-10">
+          <div className='col-8 col-md-10 col-lg-9'>
             <h4 className="text-success fw-bold">Goal</h4>
             <p className="fw-bold fs-5">
               Execute a seamless setup process for your GCC.
@@ -24,8 +24,8 @@ const GlobalImplementation = () => {
         </div>
       </div>
       <hr />
-      <div className="BodyContainer col-12 d-flex flex-wrap justify-content-center ">
-        <div className="col-4 d-flex flex-column p-3">
+      <div className="BodyContainer col-12 d-flex flex-column flex-lg-row flex-wrap  ">
+        <div className="col-12 col-lg-4 d-flex flex-column p-3">
           <div style={{ height: "100px" }}></div>
           <hr />
 
@@ -37,7 +37,7 @@ const GlobalImplementation = () => {
             </p>
           </div>
         </div>
-        <div className="col-4 d-flex flex-column p-3">
+        <div className="col-12 col-lg-4 d-flex flex-column p-3">
           <div style={{ height: "100px" }}></div>
           <hr />
 
@@ -50,7 +50,7 @@ const GlobalImplementation = () => {
             </p>
           </div>
         </div>
-        <div className="col-4 d-flex flex-column p-3">
+        <div className="col-12 col-lg-4 d-flex flex-column p-3">
           <div style={{ height: "100px" }}></div>
           <hr />
 
@@ -64,7 +64,7 @@ const GlobalImplementation = () => {
             </p>
           </div>
         </div>
-        <div className="col-4 d-flex flex-column p-3">
+        <div className="col-12 col-lg-4 d-flex flex-column p-3">
           <div style={{ height: "100px" }}></div>
           <hr />
 
@@ -76,7 +76,7 @@ const GlobalImplementation = () => {
             </p>
           </div>
         </div>
-        <div className="col-4 d-flex flex-column p-3">
+        <div className="col-12 col-lg-4 d-flex flex-column p-3">
           <div style={{ height: "100px" }}></div>
           <hr />
 

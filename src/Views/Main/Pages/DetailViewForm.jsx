@@ -3,13 +3,13 @@ import Icons from "Utils/Icons"
 
 const DetailViewForm = () => {
   return (
-    <div className="bg-white p-5 rounded-4">
-      <h4 className="px-3 fw-bold">
+    <div className="bg-white p-3 p-sm-5 rounded-4">
+      <h4 className="px-sm-3 fw-bold">
         Fill out the form below, and our team will connect with you as soon as
         possible.
       </h4>
       <form className="row g-3">
-        <div className="col-md-6 p-2 px-3">
+        <div className="col-md-6 p-2 px-sm-3">
           <label for="inputFirstName" className="form-label ">
             First Name
           </label>
