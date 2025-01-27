@@ -38,8 +38,8 @@ const TalentManagedSolution = () => {
   ];
   return (
     <div className="container-fluid p-0 d-flex flex-column vh-100">
-      <div className="detailImage col-12">
-        <p className=" detailImageText text-white mb-0">
+      <div className="talent-solution col-12">
+        <p className=" talent-solutionText text-white mb-0">
         Talent Management Solutions
         </p>
       </div>

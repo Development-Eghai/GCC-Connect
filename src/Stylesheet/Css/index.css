@@ -1544,6 +1544,75 @@ th {
   max-height: 500px !important;
 }
 
+
+.headertextsg{
+  font-size: 14px;
+}
+
+.offcanvas_button:hover{
+background-color: #0AA50E !important;
+color: #fff !important;
+padding: 5px 10px 5px 10px !important;
+border-radius: 6px;
+}
+
+.offcanvas_button.active{
+  background-color: #0AA50E;
+  color: #fff;
+  padding: 5px 10px 5px 10px !important;
+  border-radius: 6px;
+  } 
+
+.offcanvas_button{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 5px 10px 5px 10px !important;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  }
+
+  .accordion-item{
+    border: none !important;
+
+  }
+
+.globaljustify{
+  text-align: justify !important;
+  font-size: 15px !important;
+  text-align-last: left !important;
+
+}
+
+.globalHead{
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+
+.navbardropdown:hover{
+  color: #fff;
+  border-radius: 6px;
+  }
+  
+  .navbardropdown.active{
+    background-color: #0AA50E;
+    color: #fff;
+    padding: 5px 10px 5px 10px !important;
+    border-radius: 6px;
+    } 
+  
+  .navbardropdown{
+    color: #323232;
+    padding: 5px 10px 5px 10px !important;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+    }
+
+    
 .detailImage {
   /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
   min-height: 400px;
@@ -1612,69 +1681,513 @@ th {
   }
 }
 
-.headertextsg{
-  font-size: 14px;
+
+    
+.ConsultingandAdvisoryServicesImage {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.offcanvas_button:hover{
-background-color: #0AA50E !important;
-color: #fff !important;
-padding: 5px 10px 5px 10px !important;
-border-radius: 6px;
+.ConsultingandAdvisoryServicesImage::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/Consulting& Advisory.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.4;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
 }
 
-.offcanvas_button.active{
-  background-color: #0AA50E;
-  color: #fff;
-  padding: 5px 10px 5px 10px !important;
-  border-radius: 6px;
-  } 
+.ConsultingandAdvisoryServicesImageText {
+  position: absolute;
+  font-size: 4vw;
+  color: #000 !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
 
-.offcanvas_button{
-  background-color: rgb(255, 255, 255);
-  color: #000000;
-  padding: 5px 10px 5px 10px !important;
-  border-radius: 6px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+@media (max-width: 768px) {
+  .ConsultingandAdvisoryServicesImage {
+    min-height: 200px;
+    text-align: center;
 
   }
 
-  .accordion-item{
-    border: none !important;
+  .ConsultingandAdvisoryServicesImageText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .ConsultingandAdvisoryServicesImage {
+    min-height: 200px;
+  }
+
+  .ConsultingandAdvisoryServicesImageText {
+    font-size: 7vw;
+  }
+}
+
+
+
+.SmartTalentAcquisition {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.SmartTalentAcquisition::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/SmartTalentAcquisiton.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.SmartTalentAcquisitionText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .SmartTalentAcquisition {
+    min-height: 200px;
+    text-align: center;
 
   }
 
-.globaljustify{
-  text-align: justify !important;
-  font-size: 15px !important;
-  text-align-last: left !important;
-
-}
-
-.globalHead{
-  font-size: 18px !important;
-  font-weight: 700 !important;
-}
-
-
-.navbardropdown:hover{
-  color: #fff;
-  border-radius: 6px;
+  .SmartTalentAcquisitionText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  
-  .navbardropdown.active{
-    background-color: #0AA50E;
-    color: #fff;
-    padding: 5px 10px 5px 10px !important;
-    border-radius: 6px;
-    } 
-  
-  .navbardropdown{
-    color: #323232;
-    padding: 5px 10px 5px 10px !important;
-    border-radius: 6px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  
-    }
+}
+
+@media (max-width: 480px) {
+  .SmartTalentAcquisition {
+    min-height: 200px;
+  }
+
+  .SmartTalentAcquisitionText {
+    font-size: 7vw;
+  }
+}
+
+
+
+.AI-ledTalent {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.AI-ledTalent::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/AILedTalentSupply.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.AI-ledTalentText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .AI-ledTalent {
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .AI-ledTalentText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .AI-ledTalent {
+    min-height: 200px;
+  }
+
+  .AI-ledTalentText {
+    font-size: 7vw;
+  }
+}
+
+
+
+/* talent-solution */
+
+
+.talent-solution {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.talent-solution::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/TalentManagementSolutions.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.talent-solutionText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .talent-solution {
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .talent-solutionText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .talent-solution {
+    min-height: 200px;
+  }
+
+  .talent-solutionText {
+    font-size: 7vw;
+  }
+}
+
+
+
+/* managed-services */
+
+.managed-services {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.managed-services::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/ManagedServices.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.managed-servicesText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .managed-services {
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .managed-servicesText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .managed-services {
+    min-height: 200px;
+  }
+
+  .managed-servicesText {
+    font-size: 7vw;
+  }
+}
+
+
+
+/* workspace-solution */
+
+.workspace-solution {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.workspace-solution::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/WorkspaceSolutions.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.workspace-solutionText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .workspace-solution {
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .workspace-solutionText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .workspace-solution {
+    min-height: 200px;
+  }
+
+  .workspace-solutionText {
+    font-size: 7vw;
+  }
+}
+
+
+/* features */
+
+.features {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.features::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/BuiltOperateTransfer.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.featuresText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .features {
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .featuresText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    min-height: 200px;
+  }
+
+  .featuresText {
+    font-size: 7vw;
+  }
+}

@@ -36,8 +36,8 @@ const AILedService = () => {
   ];
   return (
     <div className="container-fluid p-0 d-flex flex-column vh-100">
-      <div className="detailImage col-12">
-        <p className=" detailImageText text-white mb-0">
+      <div className="AI-ledTalent col-12">
+        <p className=" AI-ledTalentText text-white mb-0">
         AI-led Talent Supply Process
         </p>
       </div>

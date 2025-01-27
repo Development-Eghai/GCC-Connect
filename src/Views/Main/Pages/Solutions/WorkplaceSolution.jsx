@@ -23,8 +23,8 @@ const WorkplaceSolution = () => {
   ];
   return (
     <div className="container-fluid p-0 d-flex flex-column vh-100">
-      <div className="detailImage col-12">
-        <p className=" detailImageText text-white mb-0">Workspace Solutions</p>
+      <div className="workspace-solution col-12">
+        <p className=" workspace-solutionText text-white mb-0">Workspace Solutions</p>
       </div>
       <div className="mainContainer">
         <div className="mainContent d-flex justify-content-center">
