@@ -11,9 +11,17 @@ const BuildOperator = () => {
   const navigate = useCustomNavigate();
   return (
     <div className="d-flex flex-column">
-      <div className="features">
+      {/* <div className="features">
+      <img src="./BuiltOperateTransfer.jpg" alt="" />
         <p className=" featuresText text-white mb-0">
           Build Operate <br /> Transfer
+        </p>
+      </div> */}
+
+<div className="build-operator">
+        <img src="./BuiltOperateTranser.jpg" alt="" />
+        <p className="build-operatorText text-white mb-0">
+        Build Operate <br /> Transfer
         </p>
       </div>
       <div className="overview-Container d-flex justify-content-center py-5">

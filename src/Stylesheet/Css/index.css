@@ -2191,3 +2191,223 @@ border-radius: 6px;
     font-size: 7vw;
   }
 }
+
+
+
+/* Managed Teams*/
+
+.managed-teams {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.managed-teams::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/ManagedTeam.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.managed-teamsText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .managed-teams{
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .managed-teamsText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .managed-teams{
+    min-height: 200px;
+  }
+
+  .managed-teamsText {
+    font-size: 7vw;
+  }
+}
+
+/* Build Operator */
+
+
+.build-operator {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.build-operator::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/BuiltOperateTransfer.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.build-operatorText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .build-operator{
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .build-operatorText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .build-operator{
+    min-height: 200px;
+  }
+
+  .build-operatorText {
+    font-size: 7vw;
+  }
+}
+
+
+/* Global Capacity*/
+
+.global-capability {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.global-capability::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/GlobalCapabilityCenter.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.global-capabilityText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .global-capability{
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .global-capabilityText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .global-capability{
+    min-height: 200px;
+  }
+
+  .global-capabilityText {
+    font-size: 7vw;
+  }
+}

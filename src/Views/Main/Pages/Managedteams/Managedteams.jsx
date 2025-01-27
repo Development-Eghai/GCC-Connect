@@ -10,8 +10,8 @@ const Managedteams = () => {
   const navigate = useCustomNavigate();
   return (
     <div className="d-flex flex-column">
-      <div className="detailImage">
-        <p className=" detailImageText text-white mb-0">Managed Teams</p>
+      <div className="managed-teams">
+        <p className=" managed-teamsText text-white mb-0">Managed Teams</p>
       </div>
       <div className="overview-Container d-flex justify-content-center py-5">
         <div className="container d-flex flex-column flex-lg-row justify-content-between ">

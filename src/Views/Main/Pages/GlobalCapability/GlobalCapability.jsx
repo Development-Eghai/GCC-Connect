@@ -11,9 +11,9 @@ const GlobalCapability = () => {
   const navigate = useCustomNavigate();
   return (
     <div className="d-flex flex-column">
-      <div className="detailImage">
+      <div className="global-capability">
         <img src="./GlobalCapabilityCenter.jpg" alt="" />
-        <p className="detailImageText text-white mb-0">
+        <p className="global-capabilityText text-white mb-0">
           Global Capability <br /> Center
         </p>
       </div>
