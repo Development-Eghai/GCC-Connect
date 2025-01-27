@@ -7,7 +7,7 @@ import Img from "Assets/Images/Image.jpg";
 const ConsultingServices = () => {
   const cardData = [
     {
-      title: "Believe in power of implication",
+      title: "GCC Advisory Services",
       content:
         "As your trusted partner, we provide strategic guidance to navigate the complexities of GCC operations. From strategy development to execution and expansion, we empower organizations with actionable insights and frameworks designed to achieve scalable, resilient ecosystems.",
     },

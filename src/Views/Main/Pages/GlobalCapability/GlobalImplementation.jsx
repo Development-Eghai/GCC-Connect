@@ -25,8 +25,10 @@ const GlobalImplementation = () => {
       </div>
       <hr />
       <div className="BodyContainer col-12 d-flex flex-column flex-lg-row flex-wrap  ">
-        <div className="col-12 col-lg-4 d-flex flex-column p-3">
-          <div style={{ height: "100px" }}></div>
+        <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+        <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
           <hr />
 
           <div>
@@ -37,8 +39,10 @@ const GlobalImplementation = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-lg-4 d-flex flex-column p-3">
-          <div style={{ height: "100px" }}></div>
+        <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+        <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
           <hr />
 
           <div>
@@ -50,8 +54,10 @@ const GlobalImplementation = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-lg-4 d-flex flex-column p-3">
-          <div style={{ height: "100px" }}></div>
+        <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+        <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
           <hr />
 
           <div className="">
@@ -64,8 +70,10 @@ const GlobalImplementation = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-lg-4 d-flex flex-column p-3">
-          <div style={{ height: "100px" }}></div>
+        <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+        <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
           <hr />
 
           <div className="">
@@ -76,8 +84,10 @@ const GlobalImplementation = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-lg-4 d-flex flex-column p-3">
-          <div style={{ height: "100px" }}></div>
+        <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+        <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
           <hr />
 
           <div className="">

@@ -92,7 +92,7 @@ const GlobalCapability = () => {
               </NavLink>
             </div>
           </div>
-          <div className=" col-12 col-lg-8 ps-4 ms-3">
+          <div className=" col-12 col-lg-8 p-3">
             <Outlet />
           </div>
         </div>

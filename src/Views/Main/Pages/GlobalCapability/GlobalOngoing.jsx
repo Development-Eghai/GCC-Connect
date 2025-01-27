@@ -3,7 +3,7 @@ import Icons from 'Utils/Icons'
 
 const GlobalOngoing = () => {
   return (
-    <div className="p-3">
+    <div className="p-3 col-12">
     <div className="tittleContainer mb-5">
       <div className="d-flex w-100 w-md-75 p-3 rounded-4">
         <p className="mb-0 me-3 fs-3 fw-bold text-success">Phase 3:</p>
@@ -25,9 +25,11 @@ const GlobalOngoing = () => {
     </div>
     <hr />
     <div className="BodyContainer col-12 d-flex flex-column flex-lg-row  flex-wrap justify-content-center ">
-      <div className="col-12 col-lg-4 d-flex flex-column p-3">
-        <div style={{ height: "100px" }}></div>
-        <hr />
+      <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+      <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
+                <hr className='w-100' />
 
         <div>
           <h5 className="fw-bold text-center">Talent Lifecycle Management</h5>
@@ -36,9 +38,11 @@ const GlobalOngoing = () => {
           </p>
         </div>
       </div>
-      <div className="col-12 col-lg-4 d-flex flex-column p-3">
-        <div style={{ height: "100px" }}></div>
-        <hr />
+      <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+      <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
+                <hr className='w-100' />
 
         <div>
           <h5 className="fw-bold text-center">
@@ -49,10 +53,11 @@ const GlobalOngoing = () => {
           </p>
         </div>
       </div>
-      <div className="col-12 col-lg-4 d-flex flex-column p-3">
-        <div style={{ height: "100px" }}></div>
-        <hr />
-
+      <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+      <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
+                <hr className='w-100' />
         <div className="">
           <h5 className="fw-bold text-center">
           Workspace Mangement
@@ -62,9 +67,11 @@ const GlobalOngoing = () => {
           </p>
         </div>
       </div>
-      <div className="col-12 col-lg-4 d-flex flex-column p-3">
-        <div style={{ height: "100px" }}></div>
-        <hr />
+      <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+      <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
+        <hr className='w-100' />
 
         <div className="">
           <h5 className="fw-bold text-center">IT Change Mangement</h5>
@@ -73,9 +80,11 @@ const GlobalOngoing = () => {
           </p>
         </div>
       </div>
-      <div className="col-12 col-lg-4 d-flex flex-column p-3">
-        <div style={{ height: "100px" }}></div>
-        <hr />
+      <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+      <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
+                <hr className='w-100' />
 
         <div className="">
           <h5 className="fw-bold text-center">HR Operations</h5>

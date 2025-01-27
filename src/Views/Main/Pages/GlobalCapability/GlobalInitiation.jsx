@@ -26,8 +26,10 @@ const GlobalInitiation = () => {
         </div>
         <hr />
         <div className="BodyContainer col-12 d-flex flex-column flex-lg-row ">
-            <div className="col-12 col-lg-4 d-flex flex-column p-3">
-                <div style={{height:"100px"}}></div>
+            <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+                <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
                 <hr />
              
                 <div>
@@ -35,8 +37,10 @@ const GlobalInitiation = () => {
                     <p className='text-secondary mb-0 text-center' >Creating a customized blueprint that aligns with your business vision.</p>
                 </div>
             </div>
-            <div className="col-12 col-lg-4 d-flex flex-column p-3">
-                <div style={{height:"100px"}}></div>
+            <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+                <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
                 <hr />
              
                 <div>
@@ -44,8 +48,10 @@ const GlobalInitiation = () => {
                     <p className='text-secondary mb-0 text-center'>Offering insights from industry specialists to streamline your GCC setup.</p>
                 </div>
             </div>
-            <div className="col-12 col-lg-4 d-flex flex-column p-3">
-                <div style={{height:"100px"}}></div>
+            <div className="col-12 col-lg-4 d-flex flex-column align-items-center p-3">
+                <div >
+                <span>{Icons.manArrowIcon}</span>
+                </div>
                 <hr />
              
                 <div className=''>

@@ -35,7 +35,7 @@ const GlobalOverview = () => {
                   <div className="keyFeatureIcin d-flex justify-content-center mb-3 ">
                     <span>{Icons.manKeyIcon}</span>
                   </div>
-                  <hr className="" />
+                  <hr className="" /> 
                   <p className="fw-bold fs-5">
                     Scalable solutions to align with business growth
                   </p>
