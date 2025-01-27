@@ -58,19 +58,57 @@ const Header = () => {
               <span>{Icons.header_title_arrow_black}</span>
             </div>
 
-            
+
 
             <div className="col3 d-flex align-items-center nav_dropdown fw-500">
               Solutions
+
               <div className="nav_dropdown_absolute_one py-2">
+
                 <ul className="list-unstyled nav_dropdown_absolute_list mb-0">
-                  <li>
+                  <li className=" border-bottom py-2 ">
                     <Link to="/consulting-services" className="w-100">
                       Consulting and Advisory Services
                     </Link>
                   </li>
-                  <li className="nav_dropdown_nested">
-                    <span className="w-100">Talent Supply Strategy</span>
+                  <div>
+                    <Accordion className="mt-3 border-bottom" >
+                      <Accordion.Item eventKey="10">
+                        <Accordion.Header>Talent Supply Strategy</Accordion.Header>
+                        <Accordion.Body>
+                          <li className=" border-bottom ">
+                            <NavLink
+                              to="/smart-talent"
+                              onClick={closeOffcanvas}
+                              className="d-block py-2 text-decoration-none navbardropdown"
+                            >
+                              Smart Talent Acquisition with AI-Led Innovation
+                            </NavLink>
+                          </li>
+                          <li className=" border-bottom ">
+                            <NavLink
+                              to="/ailed-service"
+                              onClick={closeOffcanvas}
+                              className="d-block py-2 text-decoration-none navbardropdown"
+                            >
+                              AI Led Talent Supply Process
+                            </NavLink>
+                          </li>
+                          <li >
+                            <NavLink
+                              to="/talent-solution"
+                              onClick={closeOffcanvas}
+                              className="d-block py-2 text-decoration-none navbardropdown"
+                            >
+                              Talent Management Solutions
+                            </NavLink>
+                          </li>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                  </div>
+
+                  {/* <span className="w-100">Talent Supply Strategy</span>
                     <div className="nav_dropdown_nested_absolute py-2">
                       <ul className="text-dark list-unstyled mb-0">
                         <li>
@@ -89,14 +127,14 @@ const Header = () => {
                           </Link>
                         </li>
                       </ul>
-                    </div>
-                  </li>
-                  <li>
+                    </div> */}
+
+                  <li className=" border-bottom  py-2">
                     <Link to="/managed-services" className="w-100">
                       Managed Services
                     </Link>
                   </li>
-                  <li>
+                  <li className=" py-2 ">
                     <Link to="/workspace-solution" className="w-100">
                       Workspace Solutions
                     </Link>
