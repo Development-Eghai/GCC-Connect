@@ -17,6 +17,10 @@ import Login from "Views/Common/Login";
 import Error from "Views/Common/error";
 import Layout from "Views/Main/Layout/Layout";
 import Home from "Views/Main/Pages/Home";
+import About from "Views/Main/Pages/Aboutpage"
+import BlogList from "./Components/BlogList"
+import BlogDetails from "./Components/BlogDetails"
+
 
 import Contact from "Views/Main/Pages/Contact";
 import GlobalCapability from "Views/Main/Pages/GlobalCapability/GlobalCapability";
@@ -84,6 +88,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/about-page" element={<About />} />
+          <Route path="/blog"  element={<BlogList />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
+
 
           <Route path="/details" element={<GlobalCapability />}>
             <Route path="features" element={<GlobalOverview />} />

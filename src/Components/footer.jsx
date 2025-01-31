@@ -56,12 +56,12 @@ const Footer = () => {
           </div>
 
           {/* Logo Section */}
-          <div className="footer-column col-12 col-md text-center">
+          <div className="footer-column col-12 col-md text-center order-0 order-md-1">
             <img src={Footerlogomark} alt="Footer Logo" />
           </div>
         </div>
       </div>
-      <div className="container  col-12">
+      <div className="container col-12">
         <div className="row align-items-center">
           {/* Footer Bottom Left */}
           <div className="col-12 col-md-6 text-start">
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
 
           {/* Get in Touch Right */}
-          <div className="col-12 col-md-6 mt-3 text-end">
+          <div className="col-12 col-md-6 mt-3 text-end d-none  d-md-block">
             <div className="get-in-touch">
               <span className="get-in-touch-line">Get in</span>
               <span className="get-in-touch-line">Touch →</span>
@@ -80,8 +80,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-
     </footer>
   );
 };

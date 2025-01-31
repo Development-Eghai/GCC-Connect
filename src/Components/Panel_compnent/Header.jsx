@@ -53,10 +53,10 @@ const Header = () => {
           </div>
 
           <div className="col-lg-7 col-xxl-5 px-3 d-none d-lg-flex justify-content-between">
-            <div className="col3 d-flex align-items-center ">
+            <Link  to="/about-page" className="col3 d-flex align-items-center text-decoration-none text-dark  fw-500  ">
               <p className="mb-0 me-2 fw-500">About</p>
               <span>{Icons.header_title_arrow_black}</span>
-            </div>
+            </Link>
 
 
 
@@ -166,10 +166,10 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="col3 d-flex align-items-center ">
+            <Link to="/blog" className="col3 text-dark text-decoration-none d-flex align-items-center ">
               <p className="mb-0 me-2 fw-500">Blog</p>
               <span>{Icons.header_title_arrow_black}</span>
-            </div>
+            </Link>
 
             <ButtonComponent
               title="Contact Us"

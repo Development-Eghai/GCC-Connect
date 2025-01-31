@@ -1333,6 +1333,19 @@ th {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .getTouchBox {
+      padding: 20px;
+      margin-top: 30px;
+      text-align: center;
+  }
+
+  .getTouchBox p {
+      font-size: 1.2rem;
+  }
+}
+
+
 .detailsForm-Container {
   min-height: 500px;
   position: relative;
@@ -1539,9 +1552,11 @@ th {
 
 
 .globalCapacity {
-  background-color: #F9F9F9 !important;
+  /* background-color: #F9F9F9 !important; */
   padding: 50px 5px 85px 5px !important;
-  max-height: 500px !important;
+  min-height: 500px; /* Ensures at least 500px height but allows it to grow */
+  height: auto !important; /* Makes height adjust to content */
+  overflow: auto; /* Adds scrolling if content exceeds 500px */
 }
 
 
@@ -2410,4 +2425,191 @@ border-radius: 6px;
   .global-capabilityText {
     font-size: 7vw;
   }
+}
+
+.abouttext{
+  line-height: 2 !important;
+  font-size: 16px;
+  font-family: inter;
+}
+
+
+.aboutheadtext{
+color: var(--section-one-bg);
+}
+
+
+.Aboutpagehead {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Aboutpagehead::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/SmartTalentAcquisiton.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.AboutpageheadText {
+text-align: center;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 600;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+}
+
+@media (max-width: 768px) {
+  .Aboutpagehead {
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .AboutpageheadText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    text-align: center;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .Aboutpagehead {
+    min-height: 200px;
+  }
+
+  .AboutpageheadText {
+    font-size: 7vw;
+  }
+}
+
+
+.coreCard {
+  border: 1px solid #a1a1a1;
+  border-radius: 14px;
+  cursor: pointer;
+  }
+  /* .coreCard:hover {
+  transform: translateY(-8px);
+  transition: transform 0.2s ease-in-out;
+  } */
+
+
+  .coremodalCard {
+    border: 1px solid #a1a1a1;
+    border-radius: 14px;
+    cursor: pointer;
+    height: 100%; /* Ensures cards are of equal height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .keyFeature {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 15px; */
+     /* Adjust the gap between cards */
+  }
+  
+  .keyFeature .col {
+    display: flex;
+    flex: 1;
+  }
+  
+
+  /* BlogDetails.css */
+.modal-body {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.modal-body img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-body h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+
+/* BlogList.css */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  padding: 15px;
+  border-radius: 23px;
+}
+
+.blog-card-body {
+  padding: 15px;
+}
+
+.blog-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-card-desc {
+  font-size: 0.95rem;
+  color: #666;
 }

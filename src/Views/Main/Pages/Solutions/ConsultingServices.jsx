@@ -60,13 +60,18 @@ const ConsultingServices = () => {
                 </p>
               </div>
               <div className="col-12 col-lg-6 p-3">
-                <img src={require('../../../../Assets/Images/SmartTalentAcquisitionwithAILedInnovation.jpg')} alt="sample image" className="mb-4 w-100  rounded" />
+                <img
+                  src={require("../../../../Assets/Images/SmartTalentAcquisitionwithAILedInnovation.jpg")}
+                  alt="sample image"
+                  className="mb-4 w-100  rounded"
+                />
               </div>
             </div>
-            <div className="coreOfferingBox d-flex flex-wrap">
+        
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               {cardData.map((data, i) => {
                 return (
-                  <div className="col-12 col-md-6 col-lg-3" key={i}>
+                  <div className="col p-3 " key={i}>
                     <CoreCard data={data} key={i} />
                   </div>
                 );

@@ -1,67 +1,73 @@
-import React from 'react'
-import Icons from 'Utils/Icons'
+import React from "react";
+import Icons from "Utils/Icons";
 
 const Build = () => {
+    const buildSteps = [
+        {
+            title: "Legal Entity Setup",
+            description: "Establish a compliant legal framework for your GCC.",
+        },
+        {
+            title: "Workspace Design",
+            description: "Develop a functional and engaging workspace.",
+        },
+        {
+            title: "Leadership Hiring",
+            description: "Recruit experienced leaders and build a high-performing team.",
+        },
+    ];
+
     return (
-        <div className='p-3'>
-            <div className="tittleContainer mb-5">
-                <div className='globalTitleBtn d-flex w-75 p-3 rounded-4'>
-                    <p className='mb-0 me-3 fs-3 fw-bold text-white'>Phase 2:</p>
-                    <p className='mb-0 fs-3 fw-bold '>GCC Build</p>
+        <div className="">
+            {/* Title Section */}
+            <div className="row justify-content-start">
+                <div className="col-12 col-md-10 col-lg-8">
+                    <div className="globalTitleBtn d-flex flex-column flex-md-row align-items-start align-items-md-center p-3 rounded-4">
+                        <p className="mb-0 me-md-3 fs-4 fs-md-3 fw-bold text-white">Phase 2:</p>
+                        <p className="mb-0 fs-4 fs-md-3 fw-bold">GCC Build</p>
+                    </div>
                 </div>
-
             </div>
-            <div className="headerContainer px-4">
-                <div className='col-12 d-flex '>
-                    <div className='col-2 d-flex align-items-center'>
+
+            {/* Purpose Section */}
+            <div className="headerContainer mt-5 px-4">
+                <div className="row d-flex flex-column flex-lg-row align-items-start text-start text-lg-start">
+                    {/* Icon Section */}
+                    <div className="col-12 col-lg-2 d-flex align-items-start justify-content-start mb-2 mb-lg-0">
                         <span>{Icons.manArrowIcon}</span>
                     </div>
-                    <div className='col-10'>
-                        <h4 className='text-success fw-bold'>Purpose</h4>
-                        <p className='fw-bold fs-5'>Set up the GCC framework with operational readiness.</p>
+                    {/* Text Content */}
+                    <div className="col-12 col-lg-10">
+                        <h4 className="text-success fw-bold">Purpose</h4>
+                        <p className="fw-bold fs-5 mb-0">
+                            Set up the GCC framework with operational readiness.
+                        </p>
                     </div>
                 </div>
-
             </div>
+
             <hr />
-            <div className="BodyContainer col-12 d-flex">
-                <div className="col-4 d-flex flex-column p-3">
-                    <div >
-                        <span>{Icons.manArrowIcon}</span>
+
+            {/* Build Steps Section */}
+            <div className="BodyContainer col-12 d-flex flex-wrap">
+                {buildSteps.map((step, index) => (
+                    <div
+                        className="col-12 col-sm-6 col-lg-4 px-2 d-flex mb-3"
+                        key={index}
+                    >
+                        <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
+                            <div className="keyFeatureIcin d-flex justify-content-start mb-3">
+                                <span>{Icons.manArrowIcon}</span>
+                            </div>
+                            <hr />
+                            <h5 className="globalHead">{step.title}</h5>
+                            <p className="text-secondary globaljustify mb-0">{step.description}</p>
+                        </div>
                     </div>
-                    <hr />
-
-                    <div>
-                        <h5 className='globalHead' >Legal Entity Setup</h5>
-                        <p className='text-secondary globaljustify mb-0 text-center' >Establish a compliant legal framework for your GCC.</p>
-                    </div>
-                </div>
-                <div className="col-4 d-flex flex-column p-3">
-                    <div >
-                        <span>{Icons.manArrowIcon}</span>
-                    </div>            <hr />
-
-                    <div>
-                        <h5 className='globalHead'>Workspace Design</h5>
-                        <p className='text-secondary globaljustify mb-0 text-center'>Develop a functional and engaging workspace.</p>
-                    </div>
-                </div>
-                <div className="col-4 d-flex flex-column p-3">
-                    <div >
-                        <span>{Icons.manArrowIcon}</span>
-                    </div>            <hr />
-
-                    <div className=''>
-                        <h5 className='globalHead'>Leadership Hiring</h5>
-                        <p className='text-secondary globaljustify mb-0 text-center '>Recruit experienced leaders and build a high-performing team.</p>
-                    </div>
-                </div>
-
-
+                ))}
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default Build
+export default Build;

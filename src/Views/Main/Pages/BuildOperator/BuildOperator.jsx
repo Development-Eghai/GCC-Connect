@@ -18,10 +18,10 @@ const BuildOperator = () => {
         </p>
       </div> */}
 
-<div className="build-operator">
+      <div className="build-operator">
         <img src="./BuiltOperateTranser.jpg" alt="" />
         <p className="build-operatorText text-white mb-0">
-        Build Operate <br /> Transfer
+          Build Operate <br /> Transfer
         </p>
       </div>
       <div className="overview-Container d-flex justify-content-center py-5">
@@ -54,7 +54,7 @@ const BuildOperator = () => {
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
                     <p className="mb-0 me-3 text-white text-start fw-bold">
-                    GCC Initiation
+                      GCC Initiation
                     </p></div>
                   <div className="col-2 text-end pe-2 fw-bold">
                     <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -69,7 +69,7 @@ const BuildOperator = () => {
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
                     <p className="mb-0 me-3 text-white text-start fw-bold">
-                    GCC Builld
+                      GCC Builld
                     </p></div>
                   <div className="col-2 text-end pe-2 fw-bold">
                     <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -84,7 +84,7 @@ const BuildOperator = () => {
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
                     <p className="mb-0 me-3 text-white text-start fw-bold">
-                    GCC Operate
+                      GCC Operate
                     </p></div>
                   <div className="col-2 text-end pe-2 fw-bold">
                     <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -99,7 +99,7 @@ const BuildOperator = () => {
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
                     <p className="mb-0 me-3 text-white text-start fw-bold">
-                    GCC Transfer
+                      GCC Transfer
                     </p></div>
                   <div className="col-2 text-end pe-2 fw-bold">
                     <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -108,9 +108,10 @@ const BuildOperator = () => {
               </NavLink>
             </div>
           </div>
-          <div className="col-12 col-lg-8 ps-4 pb-5 ms-3">
+          <div className="w-full lg:w-2/3 ps-4 sm:ps-0 pe-4 sm:pe-0 pb-5 ms-3 sm:ms-0">
             <Outlet />
           </div>
+
         </div>
       </div>
       <div className="detailsForm-Container  mt-4 d-flex justify-content-center mb-5 ">

@@ -27,15 +27,15 @@ const Home = () => {
             <div>
                 <DomainExperienceSection />
             </div>
-            <div>
+            {/* <div>
                 <TestimonialCarousel />
-            </div>
+            </div> */}
             <div>
                 <LogoRow />
             </div>
-            <div>
+            {/* <div>
                 <NewsArticles />
-            </div>
+            </div> */}
             <div>
                 <Footer />
             </div>
