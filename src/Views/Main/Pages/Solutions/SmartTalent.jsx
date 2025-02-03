@@ -5,6 +5,7 @@ import HighLightComp from "./HighLightComp";
 import CoreCard from "./CoreCard";
 import Img from "Assets/Images/Image.jpg";
 import Icons from "Utils/Icons";
+import DomainExperienceSection from "Components/DomainExperienceSection";
 const SmartTalent = () => {
   const data1 = [
     {
@@ -18,15 +19,16 @@ const SmartTalent = () => {
       content:
         "Develop a data-driven approach to choose optimal locations for recruitment.",
     },
+    
+  ]
+
+
+  const cardData = [
     {
       title: "Compensation Insights",
       content:
         "Leverage detailed, data-backed compensation analysis to stay competitive in attracting top talent.",
     },
-  ]
-
-
-  const cardData = [
     {
       title: "Employee Value Proposition (EVP)",
       content:
@@ -58,7 +60,7 @@ const SmartTalent = () => {
                   {
                     data1.map((data, i) => {
                       return (
-                        <div className="col-12 col-md-6 col-xl-4 p-2" key={i}>
+                        <div className="col-12 col-md-6 col-xl-6 p-2" key={i}>
 
                           <CoreCard data={data} />
 
@@ -83,14 +85,14 @@ const SmartTalent = () => {
                 <div className="coreOfferingBox row justify-content-between">
                   {cardData.map((data, i) => {
                     return (
-                      <div className="col-12 col-md-6 mt-3 col-lg-4 px-3" key={i}>
+                      <div className="col-12 col-md-3 mt-3 col-lg-3 px-3" key={i}>
                         <CoreCard data={data} key={i} />
                       </div>
                     );
                   })}
 
                 
-                 <div className="col-12 mt-3 col-lg-8 p-3 d-flex flex-column justify-content-evenly rounded-4" style={{ backgroundColor: "#042126" }}>
+                 <div className="col-12 mt-3 col-lg-6 p-3 d-flex flex-column justify-content-evenly rounded-4" style={{ backgroundColor: "#042126" }}>
                     <div className="  d-flex justify-content-center align-items-center">
                       <span>{Icons.manArroowWhiteIcon}</span>
                     </div>
@@ -102,10 +104,14 @@ const SmartTalent = () => {
                 </div>
               </div>
             </div>
+       
           </div>
+          <div className="container">
+  <DomainExperienceSection />
+</div>
         </div>
 
-        <div className="highlightForm">
+        <div className="highlightForm mt-0 pt-0">
           <HighLightComp />
         </div>
       </div>

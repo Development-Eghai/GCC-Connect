@@ -65,7 +65,7 @@ const Careers = () => {
                 <div className="row">
                     {jobListings.map((job, index) => (
                         <div className="col-12 mb-4" key={index}>
-                            <div className="card shadow-sm border-0 rounded-3 d-flex flex-row align-items-center p-3">
+                            <div className="card  shadow-sm border-0 rounded-3 d-flex flex-row align-items-center p-3">
                                 <img src={job.image} alt={job.title} className="rounded-3 me-3" style={{ width: '120px', height: '120px', objectFit: 'cover' }} />
                                 <div className="card-body d-flex flex-column">
                                     <h5 className="card-title fw-bold">{job.title}</h5>

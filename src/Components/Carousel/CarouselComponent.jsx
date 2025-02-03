@@ -29,10 +29,10 @@ const CarouselComponent = () => {
                             </div>
                         </div>
                     </Carousel.Item>
-                    <Carousel.Item className="bg-success " >
+                    <Carousel.Item  >
                         <div className='carousel-item-cls '>
-                            <div className="col-12 bg-success">
-                                <div className='col-9'>
+                            <div className="col-12 ">
+                                <div className='col-12'>
                                 <DomainExperienceSection />
                                 </div>
 
