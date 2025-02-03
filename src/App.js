@@ -21,6 +21,8 @@ import About from "Views/Main/Pages/Aboutpage"
 import BlogList from "./Components/BlogList"
 import BlogDetails from "./Components/BlogDetails"
 import Leadership from "Views/Main/Pages/LeadershipPage";
+import Careers from "Views/Main/Pages/CareersPage";
+
 
 
 import Contact from "Views/Main/Pages/Contact";
@@ -91,6 +93,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/about-page" element={<About />} />
           <Route path="/leadership-page" element={<Leadership />} />
+          <Route path="/Careers-page" element={<Careers />} />
           <Route path="/blog"  element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
 

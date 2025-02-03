@@ -1,6 +1,8 @@
 
+import DomainExperienceSection from 'Components/DomainExperienceSection';
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import SolutionsOfferings from 'Views/Main/Pages/SolutionHome';
 
 const CarouselComponent = () => {
     return (
@@ -31,8 +33,7 @@ const CarouselComponent = () => {
                         <div className='carousel-item-cls '>
                             <div className="col-12 bg-success">
                                 <div className='col-9'>
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <DomainExperienceSection />
                                 </div>
 
                             </div>
@@ -41,8 +42,7 @@ const CarouselComponent = () => {
                     <Carousel.Item>
                         <div className='carousel-item-cls'>
                             <div className="col-9">
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <SolutionsOfferings />
                             </div>
                         </div>
                     </Carousel.Item>

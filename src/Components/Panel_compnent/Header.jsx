@@ -72,7 +72,7 @@ const Header = () => {
                     </Link>
                   </li>
                   <li className=" border-bottom  py-2">
-                    <Link to="/career-page" className="w-100">
+                    <Link to="/Careers-page" className="w-100">
                       Career
                     </Link>
                   </li>
@@ -277,7 +277,7 @@ const Header = () => {
                     </li>
                     <li className=" border-bottom ">
                       <NavLink
-                        to="/career-page"
+                        to="/Careers-page"
                         onClick={closeOffcanvas}
                         className="d-block py-2 text-decoration-none offcanvas_button"
                       >

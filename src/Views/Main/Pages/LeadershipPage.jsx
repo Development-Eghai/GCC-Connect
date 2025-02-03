@@ -1,24 +1,55 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap
+import Img from '../../../Assets/Images/BuiltOperateTransfer.jpg';
 
 const Leadership = () => {
     const teamMembers = [
         {
             name: "John Doe",
             role: "CEO",
-            image: "path_to_image_1.jpg",
+            image: Img,
             responsibility: "Oversees the company's overall operations."
         },
         {
             name: "Jane Smith",
             role: "CTO",
-            image: "path_to_image_2.jpg",
+            image: Img,
             responsibility: "Leads the technology and product development."
         },
         {
             name: "Mike Johnson",
             role: "COO",
-            image: "path_to_image_3.jpg",
+            image: Img,
+            responsibility: "Handles the company's day-to-day operations."
+        },
+        {
+            name: "Mike Johnson",
+            role: "COO",
+            image: Img,
+            responsibility: "Handles the company's day-to-day operations."
+        },
+        {
+            name: "Mike Johnson",
+            role: "COO",
+            image: Img,
+            responsibility: "Handles the company's day-to-day operations."
+        },
+        {
+            name: "Mike Johnson",
+            role: "COO",
+            image: Img,
+            responsibility: "Handles the company's day-to-day operations."
+        },
+        {
+            name: "Mike Johnson",
+            role: "COO",
+            image: Img,
+            responsibility: "Handles the company's day-to-day operations."
+        },
+        {
+            name: "Mike Johnson",
+            role: "COO",
+            image: Img,
             responsibility: "Handles the company's day-to-day operations."
         },
         // Add more members as needed
@@ -34,12 +65,12 @@ const Leadership = () => {
             <div className="row">
                 {teamMembers.map((member, index) => (
                     <div className="col-md-4 mb-4 px-3" key={index}>
-                        <div className="card shadow-sm border-light rounded">
+                        <div className="card about-card shadow-sm border-light rounded">
                             <img src={member.image} className="card-img-top" alt={member.name} style={{ height: '250px', objectFit: 'cover' }} />
                             <div className="card-body text-center">
                                 <h5 className="card-title font-weight-bold">{member.name}</h5>
                                 <h6 className="card-subtitle mb-3 text-muted">{member.role}</h6>
-                                <p className="card-text text-secondary">{member.responsibility}</p>
+                                <p className="card-text text-center text-secondary">{member.responsibility}</p>
                             </div>
                         </div>
                     </div>
