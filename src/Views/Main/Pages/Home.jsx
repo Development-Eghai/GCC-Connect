@@ -7,6 +7,7 @@ import TestimonialCarousel from 'Components/TestimonialCarousel'
 import React from 'react'
 import NewsArticles from 'Components/NewsArticles'
 import Footer from 'Components/footer'
+import SolutionsOfferings from './SolutionHome'
 
 const Home = () => {
     return (
@@ -27,12 +28,12 @@ const Home = () => {
             <div>
                 <DomainExperienceSection />
             </div>
-            {/* <div>
-                <TestimonialCarousel />
-            </div> */}
             <div>
-                <LogoRow />
+                <SolutionsOfferings />
             </div>
+            {/* <div>
+                <LogoRow />
+            </div> */}
             {/* <div>
                 <NewsArticles />
             </div> */}

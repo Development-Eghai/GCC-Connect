@@ -5,6 +5,7 @@ import HighLightComp from "./HighLightComp";
 import CoreCard from "./CoreCard";
 import Img from "Assets/Images/Image.jpg";
 import Icons from "Utils/Icons";
+import DomainExperienceSection from "Components/DomainExperienceSection";
 const AILedService = () => {
   const data1 = [
     {
@@ -18,15 +19,16 @@ const AILedService = () => {
       content:
         "Save time with AI-powered candidate screening that prioritizes quality over quantity.",
     },
+   
+  ]
+
+
+  const cardData = [
     {
       title: "Pre-Validated Talent Pipeline",
       content:
         "Benefit from a ready-to-deploy talent pool of over 5,000 pre-screened candidates.",
     },
-  ]
-
-
-  const cardData = [
     {
       title: "Technology-Enabled Outreach",
       content:
@@ -58,7 +60,7 @@ const AILedService = () => {
                   {
                     data1.map((data, i) => {
                       return (
-                        <div className="col-12 col-md-6 col-lg-4 px-2" key={i}>
+                        <div className="col-12 col-md-6 col-lg-6  px-3 py-3" key={i}>
 
                           <CoreCard data={data} />
 
@@ -76,16 +78,20 @@ const AILedService = () => {
             <div className="coreOfferingBox d-flex flex-wrap">
               {cardData.map((data, i) => {
                 return (
-                  <div className="col-12 col-md-6 col-lg-4 px-3" key={i}>
+                  <div className="col-12 col-md-6 col-lg-3 px-3 py-3" key={i}>
                     <CoreCard data={data} key={i} />
                   </div>
                 );
               })}
-              <div className="col-lg-8 p-4 d-flex flex-column justify-content-evenly rounded-4" style={{ backgroundColor: "#042126" }}>
+              <div className="col-lg-6 px-4 py-3 d-flex flex-column justify-content-evenly rounded-4" style={{ backgroundColor: "#042126" }}>
                 <div className="d-flex justify-content-center align-items-center "><span>{Icons.manArroowWhiteIcon}</span></div>
                 <div className="d-flex justify-content-center align-items-center"><p className="mb-0 text-white">PixelAdvant’s AI-led process ensures you secure top talent faster, saving time, resources, and effort while driving recruitment excellence.</p></div>
               </div>
             </div>
+<div>
+  <DomainExperienceSection />
+</div>
+
           </div>
         </div>
         <div className="highlightForm">

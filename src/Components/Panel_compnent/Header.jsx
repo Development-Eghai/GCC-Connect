@@ -53,10 +53,38 @@ const Header = () => {
           </div>
 
           <div className="col-lg-7 col-xxl-5 px-3 d-none d-lg-flex justify-content-between">
-            <Link  to="/about-page" className="col3 d-flex align-items-center text-decoration-none text-dark  fw-500  ">
+            {/* <Link  to="/about-page" className="col3 d-flex align-items-center text-decoration-none text-dark  fw-500  ">
               <p className="mb-0 me-2 fw-500">About</p>
               <span>{Icons.header_title_arrow_black}</span>
-            </Link>
+              
+            </Link> */}
+
+            <div className="col3 d-flex align-items-center nav_dropdown fw-500">
+              <p className="mb-0 me-2 fw-500">About</p>
+              <span>{Icons.header_title_arrow_black}</span>
+
+              <div className="nav_dropdown_absolute_one py-2">
+
+                <ul className="list-unstyled nav_dropdown_absolute_list mb-0">
+                  <li className=" border-bottom py-2 ">
+                    <Link to="/about-page" className="w-100">
+                      About
+                    </Link>
+                  </li>
+                  <li className=" border-bottom  py-2">
+                    <Link to="/career-page" className="w-100">
+                      Career
+                    </Link>
+                  </li>
+                  <li className=" py-2 ">
+                    <Link to="/leadership-page" className="w-100">
+                      Leadership
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
 
 
 
@@ -215,7 +243,7 @@ const Header = () => {
         <div className="offcanvas-body">
           <div className="offcanvas-content">
             <ul className="list-unstyled">
-              <li className=" border-bottom ">
+              {/* <li className=" border-bottom ">
                 <NavLink
                   to="/"
                   onClick={closeOffcanvas}
@@ -223,7 +251,44 @@ const Header = () => {
                 >
                   About
                 </NavLink>
-              </li>
+              </li> */}
+
+              <Accordion className="mb-3 mt-3 pb-2 border-bottom " >
+                <Accordion.Item eventKey="20">
+                  <Accordion.Header>About</Accordion.Header>
+                  <Accordion.Body>
+                    <li className=" border-bottom ">
+                      <NavLink
+                        to="/about-page"
+                        onClick={closeOffcanvas}
+                        className="d-block py-2 text-decoration-none offcanvas_button"
+                      >
+                        Overview
+                      </NavLink>
+                    </li>
+                    <li className=" border-bottom ">
+                      <NavLink
+                        to="/leadership-page"
+                        onClick={closeOffcanvas}
+                        className="d-block py-2 text-decoration-none offcanvas_button"
+                      >
+                        Leadership
+                      </NavLink>
+                    </li>
+                    <li className=" border-bottom ">
+                      <NavLink
+                        to="/career-page"
+                        onClick={closeOffcanvas}
+                        className="d-block py-2 text-decoration-none offcanvas_button"
+                      >
+                        Careers
+                      </NavLink>
+                    </li>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+
+
               <li>
               </li>
               <Accordion className="mt-3 pb-2 border-bottom border-0 " >
