@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GCC-Connect/static/css/main.cdd7a853.css",
-    "main.js": "/GCC-Connect/static/js/main.51e4b81c.js",
+    "main.css": "/GCC-Connect/static/css/main.c28faa83.css",
+    "main.js": "/GCC-Connect/static/js/main.f524bca4.js",
     "static/media/SmartTalentAcquisiton.jpg": "/GCC-Connect/static/media/SmartTalentAcquisiton.066fa463910c45149b81.jpg",
     "static/media/WorkspaceSolutions.jpg": "/GCC-Connect/static/media/WorkspaceSolutions.e6f4c24950670110b53b.jpg",
     "static/media/Flexiblegrowth-alignedpayment.jpg": "/GCC-Connect/static/media/Flexiblegrowth-alignedpayment.7aed4db8572ed533a6c8.jpg",
@@ -10,19 +10,25 @@
     "static/media/ManagedServices.jpg": "/GCC-Connect/static/media/ManagedServices.8712688ff99100b02234.jpg",
     "static/media/Consulting& Advisory.jpg": "/GCC-Connect/static/media/Consulting& Advisory.04c8d66b2a957aa6f6c0.jpg",
     "static/media/TalentManagementSolutions.jpg": "/GCC-Connect/static/media/TalentManagementSolutions.02fd483bab46c7706ce3.jpg",
-    "static/media/GlobalCapabilityCenter.jpg": "/GCC-Connect/static/media/GlobalCapabilityCenter.e1a7750dc20bc6c2ed6d.jpg",
     "static/media/ManagedTeam.jpg": "/GCC-Connect/static/media/ManagedTeam.65485da7ed5a6096f4e9.jpg",
     "static/media/AILedTalentSupply.jpg": "/GCC-Connect/static/media/AILedTalentSupply.2dddeea948e02eee0735.jpg",
+    "static/media/GCCImageBG.png": "/GCC-Connect/static/media/GCCImageBG.de2f834e21da5df9fb4d.png",
     "static/media/bg-service.webp": "/GCC-Connect/static/media/bg-service.623ecedc6b8d0c38efc9.webp",
     "static/media/ImageContainer.png": "/GCC-Connect/static/media/ImageContainer.766359242c5ad1d84ab7.png",
+    "static/media/Phaseimg.png": "/GCC-Connect/static/media/Phaseimg.2c3a1d750f48cd58be8c.png",
     "static/media/error-1.png": "/GCC-Connect/static/media/error-1.6cefb0bf5c9f9120aa6d.png",
+    "static/media/Desig.png": "/GCC-Connect/static/media/Desig.9bb7f04a71b78399e67d.png",
+    "static/media/Goal.png": "/GCC-Connect/static/media/Goal.86b4aab1f8c8f5384a4b.png",
     "static/media/company_logo.png": "/GCC-Connect/static/media/company_logo.eb6532543d09c0d33a54.png",
+    "static/media/Expertise.png": "/GCC-Connect/static/media/Expertise.d464a63668e7a3160258.png",
+    "static/media/Industr.png": "/GCC-Connect/static/media/Industr.d2f81289b371e16ffab8.png",
+    "static/media/Roadmap.png": "/GCC-Connect/static/media/Roadmap.168c7aed1e9084d08975.png",
     "index.html": "/GCC-Connect/index.html",
-    "main.cdd7a853.css.map": "/GCC-Connect/static/css/main.cdd7a853.css.map",
-    "main.51e4b81c.js.map": "/GCC-Connect/static/js/main.51e4b81c.js.map"
+    "main.c28faa83.css.map": "/GCC-Connect/static/css/main.c28faa83.css.map",
+    "main.f524bca4.js.map": "/GCC-Connect/static/js/main.f524bca4.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdd7a853.css",
-    "static/js/main.51e4b81c.js"
+    "static/css/main.c28faa83.css",
+    "static/js/main.f524bca4.js"
   ]
 }
