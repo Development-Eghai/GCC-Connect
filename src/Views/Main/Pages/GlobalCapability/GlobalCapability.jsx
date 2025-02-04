@@ -167,7 +167,7 @@ const GlobalCapability = () => {
         <div className="container d-flex flex-column flex-lg-row justify-content-between ">
           <div className="globalCapacity col-12 col-lg-4 d-flex justify-content-center rounded-3">
             <div className="globalCapacityBox">
-              <h3 className="fw-bold mb-3">Global Capability Center</h3>
+              <h3 className="fw-bold mb-3 text-white">Global Capability Center</h3>
 
               {/* <NavLink
                 className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "

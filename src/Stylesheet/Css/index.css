@@ -1308,9 +1308,9 @@ th {
 
 
 .globalCapacityBox .featureButton {
-  background-color: #f2f2f2 !important;
+  /* background-color: #f2f2f2 !important; */
   border-left: 10px solid #dbdbdb;
-  color: #000 !important;
+  color: #ffffff !important;
 }
 
 .globalCapacityBox .featureButton.active {
@@ -1550,7 +1550,7 @@ th {
   /* background-color: #222 !important; */
   height: 75px;
   align-items: center;
-  color: #000 !important;
+  color: #ffffff !important;
 }
 
 .globalCapacityBox .featureButton.active {
@@ -1562,7 +1562,7 @@ th {
 .iconarrow{
   height: 36px;
   width: 36px;
-  background-color: #1c1c1c;
+  background-color: #080808;
   padding: 10px;
   border-radius: 100px !important;
   
@@ -1570,7 +1570,7 @@ th {
 
 
 .globalCapacity {
-  background-color: #f9f9f9 !important;
+  background-color: var(--section-two-bg) !important;
   padding: 50px 5px 85px 5px !important;
   min-height: 500px;
   /* Ensures at least 500px height but allows it to grow */
