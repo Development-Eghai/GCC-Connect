@@ -1305,12 +1305,18 @@ th {
   }
 }
 
+
+
 .globalCapacityBox .featureButton {
-  background-color: #222 !important;
+  background-color: #f2f2f2 !important;
+  border-left: 10px solid #dbdbdb;
+  color: #000 !important;
 }
 
 .globalCapacityBox .featureButton.active {
   background-color: #01A04C !important;
+  border-left: 10px solid #000000;
+
 }
 
 .detailsForm {
@@ -1335,13 +1341,13 @@ th {
 
 @media (max-width: 768px) {
   .getTouchBox {
-      padding: 20px;
-      margin-top: 30px;
-      text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
   }
 
   .getTouchBox p {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1541,44 +1547,59 @@ th {
 }
 
 .globalCapacityBox .featureButton {
-  background-color: #222 !important;
+  /* background-color: #222 !important; */
   height: 75px;
   align-items: center;
+  color: #000 !important;
 }
 
 .globalCapacityBox .featureButton.active {
   background-color: #01A04C !important;
+  color: #ffffff !important;
+
+}
+
+.iconarrow{
+  height: 36px;
+  width: 36px;
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 100px !important;
+  
 }
 
 
 .globalCapacity {
-  /* background-color: #F9F9F9 !important; */
+  background-color: #f9f9f9 !important;
   padding: 50px 5px 85px 5px !important;
-  min-height: 500px; /* Ensures at least 500px height but allows it to grow */
-  height: auto !important; /* Makes height adjust to content */
-  overflow: auto; /* Adds scrolling if content exceeds 500px */
+  min-height: 500px;
+  /* Ensures at least 500px height but allows it to grow */
+  height: auto !important;
+  /* Makes height adjust to content */
+  overflow: auto;
+  /* Adds scrolling if content exceeds 500px */
 }
 
 
-.headertextsg{
+.headertextsg {
   font-size: 14px;
 }
 
-.offcanvas_button:hover{
-background-color: #0AA50E !important;
-color: #fff !important;
-padding: 5px 10px 5px 10px !important;
-border-radius: 6px;
+.offcanvas_button:hover {
+  background-color: #0AA50E !important;
+  color: #fff !important;
+  padding: 5px 10px 5px 10px !important;
+  border-radius: 6px;
 }
 
-.offcanvas_button.active{
+.offcanvas_button.active {
   background-color: #0AA50E;
   color: #fff;
   padding: 5px 10px 5px 10px !important;
   border-radius: 6px;
-  } 
+}
 
-.offcanvas_button{
+.offcanvas_button {
   background-color: rgb(255, 255, 255);
   color: #000000;
   padding: 5px 10px 5px 10px !important;
@@ -1586,48 +1607,48 @@ border-radius: 6px;
   margin-top: 10px;
   margin-bottom: 10px;
 
-  }
+}
 
-  .accordion-item{
-    border: none !important;
+.accordion-item {
+  border: none !important;
 
-  }
+}
 
-.globaljustify{
+.globaljustify {
   text-align: justify !important;
   font-size: 15px !important;
   text-align-last: left !important;
 
 }
 
-.globalHead{
+.globalHead {
   font-size: 18px !important;
   font-weight: 700 !important;
 }
 
 
-.navbardropdown:hover{
+.navbardropdown:hover {
   color: #fff;
   border-radius: 6px;
-  }
-  
-  .navbardropdown.active{
-    background-color: #0AA50E;
-    color: #fff;
-    padding: 5px 10px 5px 10px !important;
-    border-radius: 6px;
-    } 
-  
-  .navbardropdown{
-    color: #323232;
-    padding: 5px 10px 5px 10px !important;
-    border-radius: 6px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  
-    }
+}
 
-    
+.navbardropdown.active {
+  background-color: #0AA50E;
+  color: #fff;
+  padding: 5px 10px 5px 10px !important;
+  border-radius: 6px;
+}
+
+.navbardropdown {
+  color: #323232;
+  padding: 5px 10px 5px 10px !important;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+
 .detailImage {
   /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
   min-height: 400px;
@@ -1697,7 +1718,7 @@ border-radius: 6px;
 }
 
 
-    
+
 .ConsultingandAdvisoryServicesImage {
   /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
   min-height: 400px;
@@ -2255,7 +2276,7 @@ border-radius: 6px;
 }
 
 @media (max-width: 768px) {
-  .managed-teams{
+  .managed-teams {
     min-height: 200px;
     text-align: center;
 
@@ -2272,7 +2293,7 @@ border-radius: 6px;
 }
 
 @media (max-width: 480px) {
-  .managed-teams{
+  .managed-teams {
     min-height: 200px;
   }
 
@@ -2328,7 +2349,7 @@ border-radius: 6px;
 }
 
 @media (max-width: 768px) {
-  .build-operator{
+  .build-operator {
     min-height: 200px;
     text-align: center;
 
@@ -2345,7 +2366,7 @@ border-radius: 6px;
 }
 
 @media (max-width: 480px) {
-  .build-operator{
+  .build-operator {
     min-height: 200px;
   }
 
@@ -2373,14 +2394,14 @@ border-radius: 6px;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-image: url('../../Assets/Images/GlobalCapabilityCenter.jpg');
+  height: 95%;
+  background-image: url('../../Assets/Images/Icons/KeyFeatures/GCCImageBG.png');
   /* Local image */
   background-size: cover;
   /* Ensures the image covers the entire container */
   background-position: center;
   /* Centers the image */
-  opacity: 0.5;
+  opacity: 1;
   /* Optional: Adjust transparency */
   z-index: -1;
   /* Places the backdrop behind the content */
@@ -2389,7 +2410,7 @@ border-radius: 6px;
 .global-capabilityText {
   position: absolute;
   font-size: 4vw;
-  color: var(--section-two-bg) !important;
+  /* color: var(--section-two-bg) !important; */
   /* Relative font size for responsiveness */
   font-style: normal;
   font-weight: 500;
@@ -2401,7 +2422,7 @@ border-radius: 6px;
 }
 
 @media (max-width: 768px) {
-  .global-capability{
+  .global-capability {
     min-height: 200px;
     text-align: center;
 
@@ -2418,7 +2439,7 @@ border-radius: 6px;
 }
 
 @media (max-width: 480px) {
-  .global-capability{
+  .global-capability {
     min-height: 200px;
   }
 
@@ -2427,15 +2448,15 @@ border-radius: 6px;
   }
 }
 
-.abouttext{
+.abouttext {
   line-height: 2 !important;
   font-size: 16px;
   font-family: inter;
 }
 
 
-.aboutheadtext{
-color: var(--section-one-bg);
+.aboutheadtext {
+  color: var(--section-one-bg);
 }
 
 
@@ -2469,7 +2490,7 @@ color: var(--section-one-bg);
 }
 
 .AboutpageheadText {
-text-align: center;
+  text-align: center;
   font-size: 4vw;
   color: var(--section-two-bg) !important;
   /* Relative font size for responsiveness */
@@ -2514,36 +2535,62 @@ text-align: center;
   border: 1px solid #a1a1a1;
   border-radius: 14px;
   cursor: pointer;
-  }
-  /* .coreCard:hover {
+}
+
+/* .coreCard:hover {
   transform: translateY(-8px);
   transition: transform 0.2s ease-in-out;
   } */
 
 
-  .coremodalCard {
-    border: 1px solid #a1a1a1;
-    border-radius: 14px;
-    cursor: pointer;
-    height: 100%; /* Ensures cards are of equal height */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .keyFeature {
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: 15px; */
-     /* Adjust the gap between cards */
-  }
-  
-  .keyFeature .col {
-    display: flex;
-    flex: 1;
-  }
-  
+.coremodalCard {
+  border: 1px solid #a1a1a1;
+  border-radius: 14px;
+  cursor: pointer;
+  height: 100%;
+  /* Ensures cards are of equal height */
+  display: flex;
+  flex-direction: column;
+}
 
-  /* BlogDetails.css */
+.coremodalCardoverview {
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 100%;
+  /* Ensures cards are of equal height */
+  /* display: flex;
+    flex-direction: column; */
+}
+
+.image-container {
+  height: 300px; /* Adjust as needed */
+  overflow: hidden;
+  position: relative; /* Prevents image overflow */
+}
+
+.image-container img {
+  height: 100%;
+  object-fit: contain; /* Ensures the image fits without distortion */
+}
+
+
+
+
+.keyFeature {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 15px; */
+  /* Adjust the gap between cards */
+}
+
+.keyFeature .col {
+  display: flex;
+  flex: 1;
+}
+
+
+/* BlogDetails.css */
 .modal-body {
   padding: 20px;
   background-color: #f9f9f9;

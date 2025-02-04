@@ -12,10 +12,155 @@ const GlobalCapability = () => {
   return (
     <div className="d-flex flex-column">
       <div className="global-capability">
-        <img src="./GlobalCapabilityCenter.jpg" alt="" />
+        <img src="." alt="" />
         <p className="global-capabilityText text-white mb-0">
           Global Capability <br /> Center
         </p>
+      </div>
+
+      <div className="container">
+        <div className="col-lg-12 col-md-12 col-12">
+          <div className="row">
+            <div className="col-lg-5 col-md-6  col-sm-12   p-4">
+              <div className="">
+                <h3 className="mb-3">Overview</h3>
+                <p className="globaljustify">
+                  Flexible growth-aligned payment model for building global
+                  capabilities.Our GCC model helps you establish a fully functional
+                  global capability center tailored to your business needs. From
+                  legal entity setup to workspace design and talent acquisition, we
+                  provide end-to-end support with the flexibility to scale as your
+                  business grows.
+                </p>
+
+
+
+              </div>
+            </div>
+
+            <div className="col-lg-7 col-md-6 col-6 col-sm-12 p-4">
+              {/* <div className=''>
+            <img src={require('../../../../Assets/Images/Flexiblegrowth-alignedpayment.jpg')} alt="sample image" className="mb-4 w-100 rounded " />
+          </div> */}
+              <div className="image-container">
+                <img
+                  src={require('../../../../Assets/Images/Icons/KeyFeatures/Phaseimg.png')}
+                  alt="sample image"
+                  className="mb-4 w-100 rounded img-fluid"
+                />
+              </div>
+
+            </div>
+
+            <div>
+              <h3 className=" mt-3 px-3">Key Features</h3>
+
+              <div className="keyFeature mt-3 row d-flex flex-wrap">
+                {/* First Feature */}
+                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-3 d-flex mb-3">
+                  <div className="coremodalCardoverview d-flex align-items-center w-100 p-3">
+                    <div className="keyFeatureIcin me-3">
+                      <span>
+                      <img
+                        src={require('../../../../Assets/Images/Icons/KeyFeatures/Scalable.png')}
+                        alt="sample image"
+                        className="mb-4 w-100 rounded img-fluid"
+                      />
+                      </span>
+                    </div>
+                    <div className="vr mx-3"></div>
+                    <div className="flex-grow-1">
+                      <p className="globalHead text-start m-0">
+                        Comprehensive setup and operational management
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Second Feature */}
+                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-3 d-flex mb-3">
+                  <div className="coremodalCardoverview d-flex align-items-center w-100 p-3">
+                    <div className="keyFeatureIcin me-3">
+                      <span> <img
+                        src={require('../../../../Assets/Images/Icons/KeyFeatures/Comprehensive.png')}
+                        alt="sample image"
+                        className="mb-4 w-100 rounded img-fluid"
+                      /></span>
+                    </div>
+                    <div className="vr mx-3"></div>
+                    <div className="flex-grow-1">
+                      <p className="globalHead text-start m-0">
+                        Scalable solutions to align with business growth
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Third Feature */}
+                <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-3 d-flex mb-3">
+                  <div className="coremodalCardoverview d-flex align-items-center w-100 p-3">
+                    <div className="keyFeatureIcin me-3">
+                      <span>
+                      <img
+                        src={require('../../../../Assets/Images/Icons/KeyFeatures/Expertise.png')}
+                        alt="sample image"
+                        className="mb-4 w-100 rounded img-fluid"
+                      />
+                      </span>
+                    </div>
+                    <div className="vr mx-3"></div>
+                    <div className="flex-grow-1">
+                      <p className="globalHead text-start m-0">
+                        Expertise in tax, compliance, and talent strategy
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              {/* <div className="keyFeature col-12 d-flex flex-column flex-sm-row flex-wrap">
+                <div className="col-12 col-sm-4 col-lg-6 col-xl-4 px-2 d-flex mb-3">
+                  <div className="coremodalCard  flex-column justify-content-between w-100 p-3">
+                    <div className="keyFeatureIcin justify-content-start mb-3">
+                      <span>{Icons.manArrowIcon}</span>
+                    </div>
+                    <hr />
+                    <p className="globalHead text-wrap">
+                      Comprehensive setup and operational management
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-12 col-sm-4 col-lg-6 col-xl-4 px-3 d-flex mb-3">
+                  <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3">
+                    <div className="keyFeatureIcin d-flex justify-content-start mb-3">
+                      <span>{Icons.manKeyIcon}</span>
+                    </div>
+                    <hr />
+                    <p className="globalHead">
+                      Scalable solutions to align with business growth
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-12 col-sm-4 col-lg-6 col-xl-4 px-3 d-flex mb-3">
+                  <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3">
+                    <div className="keyFeatureIcin d-flex justify-content-start mb-3">
+                      <span>{Icons.graphIcon}</span>
+                    </div>
+                    <hr />
+                    <p className="globalHead">
+                      Expertise in tax, compliance, and talent strategy
+                    </p>
+                  </div>
+                </div>
+              </div> */}
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <div className="overview-Container d-flex justify-content-center py-5">
@@ -24,7 +169,7 @@ const GlobalCapability = () => {
             <div className="globalCapacityBox">
               <h3 className="fw-bold mb-3">Global Capability Center</h3>
 
-              <NavLink
+              {/* <NavLink
                 className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "
                 to="/details/features"
               >
@@ -37,7 +182,7 @@ const GlobalCapability = () => {
                     <span className="fw-bold">{Icons.arrowIcon}</span>
                   </div>
                 </div>
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "
@@ -45,12 +190,12 @@ const GlobalCapability = () => {
               >
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
-                    <p className="mb-0 me-3 text-white fw-bold">
-                      GCC Initiation
+                    <p className="mb-0 me-3  fw-bold">
+                     1. GCC Initiation
                     </p>
                   </div>
                   <div className="col-2 text-end pe-2 fw-bold">
-                    <span className="fw-bold">{Icons.arrowIcon}</span>
+                    <span className="fw-bold px-3 iconarrow">{Icons.arrowIcon}</span>
                   </div>
                 </div>
 
@@ -62,12 +207,12 @@ const GlobalCapability = () => {
               >
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
-                    <p className="mb-0 me-3 text-white fw-bold">
-                      GCC Implementation
+                    <p className="mb-0 me-3  fw-bold">
+                     2. GCC Implementation
                     </p>
                   </div>
                   <div className="col-2 text-end pe-2 fw-bold">
-                    <span className="fw-bold">{Icons.arrowIcon}</span>
+                    <span className="fw-bold px-3 iconarrow">{Icons.arrowIcon}</span>
                   </div>
                 </div>
 
@@ -81,12 +226,12 @@ const GlobalCapability = () => {
 
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
-                    <p className="mb-0 me-3 text-white fw-bold">
-                      GCC Ongoing Support
+                    <p className="mb-0 me-3  fw-bold">
+                     3. GCC Ongoing Support
                     </p>
                   </div>
                   <div className="col-2 text-end pe-2 fw-bold">
-                    <span className="fw-bold">{Icons.arrowIcon}</span>
+                    <span className="fw-bold px-3 iconarrow">{Icons.arrowIcon}</span>
                   </div>
                 </div>
               </NavLink>

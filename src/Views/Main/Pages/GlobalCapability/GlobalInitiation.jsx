@@ -27,7 +27,13 @@ const GlobalInitiation = () => {
             <div className="headerContainer px-lg-4">
                 <div className='col-12 d-flex '>
                     <div className='col-4 col-md-2 col-lg-3 d-flex align-items-center'>
-                        <span>{Icons.manArrowIcon}</span>
+                        <span>
+                            <img
+                                src={require('../../../../Assets/Images/Icons/Goal/Goal.png')}
+                                alt="sample image"
+                                className="mb-4 w-50 rounded img-fluid"
+                            />
+                        </span>
                     </div>
                     <div className='col-8 col-md-10 col-lg-9'>
                         <h4 className='text-success fw-bold'>Goal</h4>
@@ -39,9 +45,13 @@ const GlobalInitiation = () => {
             <hr />
             <div className="keyFeature col-12 d-flex flex-column flex-sm-row flex-wrap">
                 <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                    <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
+                    <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                         <div className="keyFeatureIcin d-flex justify-content-center mb-3">
-                            <span>{Icons.manArrowIcon}</span>
+                            <span><img
+                                src={require('../../../../Assets/Images/Icons/GCCInitiation/Desig.png')}
+                                alt="sample image"
+                                className=" w-50 rounded img-fluid"
+                            /></span>
                         </div>
                         <hr />
                         <div className="d-flex flex-column flex-grow-1">
@@ -56,7 +66,13 @@ const GlobalInitiation = () => {
                 <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
                     <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                         <div className="keyFeatureIcin d-flex justify-content-center mb-3">
-                            <span>{Icons.manArrowIcon}</span>
+                            <span>
+                                <img
+                                src={require('../../../../Assets/Images/Icons/GCCInitiation/Industr.png')}
+                                alt="sample image"
+                                className=" w-50 rounded img-fluid"
+                            />
+                            </span>
                         </div>
                         <hr />
                         <div className="d-flex flex-column flex-grow-1">
@@ -71,7 +87,13 @@ const GlobalInitiation = () => {
                 <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
                     <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                         <div className="keyFeatureIcin d-flex justify-content-center mb-3">
-                            <span>{Icons.manArrowIcon}</span>
+                            <span>
+                                <img
+                                src={require('../../../../Assets/Images/Icons/GCCInitiation/Roadmap.png')}
+                                alt="sample image"
+                                className=" w-50 rounded img-fluid"
+                            />
+                            </span>
                         </div>
                         <hr />
                         <div className="d-flex flex-column flex-grow-1">

@@ -176,7 +176,7 @@ const Header = () => {
               <div className="nav_dropdown_absolute_one py-2">
                 <ul className="list-unstyled nav_dropdown_absolute_list mb-0">
                   <li>
-                    <Link to="/details/features" className="w-100">
+                    <Link to="/details/initiation" className="w-100">
                       Global Capability Center
                     </Link>
                   </li>
