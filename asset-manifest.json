@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GCC-Connect/static/css/main.205ffe92.css",
-    "main.js": "/GCC-Connect/static/js/main.45bd7134.js",
+    "main.css": "/GCC-Connect/static/css/main.ea3bc4dd.css",
+    "main.js": "/GCC-Connect/static/js/main.42428a90.js",
     "static/media/SmartTalentAcquisiton.jpg": "/GCC-Connect/static/media/SmartTalentAcquisiton.066fa463910c45149b81.jpg",
     "static/media/WorkspaceSolutions.jpg": "/GCC-Connect/static/media/WorkspaceSolutions.e6f4c24950670110b53b.jpg",
     "static/media/Flexiblegrowth-alignedpayment.jpg": "/GCC-Connect/static/media/Flexiblegrowth-alignedpayment.7aed4db8572ed533a6c8.jpg",
@@ -12,10 +12,12 @@
     "static/media/TalentManagementSolutions.jpg": "/GCC-Connect/static/media/TalentManagementSolutions.02fd483bab46c7706ce3.jpg",
     "static/media/ManagedTeam.jpg": "/GCC-Connect/static/media/ManagedTeam.65485da7ed5a6096f4e9.jpg",
     "static/media/AILedTalentSupply.jpg": "/GCC-Connect/static/media/AILedTalentSupply.2dddeea948e02eee0735.jpg",
+    "static/media/Phases_of_GCC.png": "/GCC-Connect/static/media/Phases_of_GCC.92617ded5eea7c1f9d7b.png",
     "static/media/GCCImageBG.png": "/GCC-Connect/static/media/GCCImageBG.de2f834e21da5df9fb4d.png",
     "static/media/bg-service.webp": "/GCC-Connect/static/media/bg-service.623ecedc6b8d0c38efc9.webp",
     "static/media/ImageContainer.png": "/GCC-Connect/static/media/ImageContainer.766359242c5ad1d84ab7.png",
-    "static/media/Phaseimg.png": "/GCC-Connect/static/media/Phaseimg.2c3a1d750f48cd58be8c.png",
+    "static/media/Phases_Of_BOT_Model.jpg": "/GCC-Connect/static/media/Phases_Of_BOT_Model.b9e6f1e52ba108f52c70.jpg",
+    "static/media/Managed-Teams.jpg": "/GCC-Connect/static/media/Managed-Teams.e87d88104541a4867f5c.jpg",
     "static/media/error-1.png": "/GCC-Connect/static/media/error-1.6cefb0bf5c9f9120aa6d.png",
     "static/media/Desig.png": "/GCC-Connect/static/media/Desig.9bb7f04a71b78399e67d.png",
     "static/media/Goal.png": "/GCC-Connect/static/media/Goal.86b4aab1f8c8f5384a4b.png",
@@ -24,11 +26,11 @@
     "static/media/Industr.png": "/GCC-Connect/static/media/Industr.d2f81289b371e16ffab8.png",
     "static/media/Roadmap.png": "/GCC-Connect/static/media/Roadmap.168c7aed1e9084d08975.png",
     "index.html": "/GCC-Connect/index.html",
-    "main.205ffe92.css.map": "/GCC-Connect/static/css/main.205ffe92.css.map",
-    "main.45bd7134.js.map": "/GCC-Connect/static/js/main.45bd7134.js.map"
+    "main.ea3bc4dd.css.map": "/GCC-Connect/static/css/main.ea3bc4dd.css.map",
+    "main.42428a90.js.map": "/GCC-Connect/static/js/main.42428a90.js.map"
   },
   "entrypoints": [
-    "static/css/main.205ffe92.css",
-    "static/js/main.45bd7134.js"
+    "static/css/main.ea3bc4dd.css",
+    "static/js/main.42428a90.js"
   ]
 }
