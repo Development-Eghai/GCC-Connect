@@ -38,16 +38,6 @@ const ManagedOverview = () => {
             <h3 className="mb-5">Key Features</h3>
             <div className="keyFeature col-12 d-flex">
                 {keyFeatures.map((feature, index) => (
-                    // <div key={index} className="col-4 px-2">
-                    //     <div>
-                    //         <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                    //             <span>{feature.icon}</span>
-                    //         </div>
-                    //         <hr />
-                    //         <p className="globalHead">{feature.title}</p>
-                    //         <p className='text-secondary globaljustify mb-0 text-center'>{feature.description}</p>
-                    //     </div>
-                    // </div>
                     <div
                         className="col-12 col-sm-6  col-md-6 col-lg-4 px-2 d-flex mb-3"
                         key={index}

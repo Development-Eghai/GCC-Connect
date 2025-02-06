@@ -7,32 +7,100 @@ import { useCustomNavigate } from "Components/CustomHooks";
 
 const Managedteams = () => {
   const [isActive, setIsActive] = useState("managed-teams");
+  const keyFeatures = [
+    {
+      title: "Employee Employer Relationship",
+      description: "Contract management, performance reviews, and resource allocation.",
+      icon: Icons.manArrowIcon
+    },
+    {
+      title: "Employee on Record (EOR)",
+      description: "Payroll, benefits, compliance, and tax management.",
+      icon: Icons.manArrowIcon
+    },
+    {
+      title: "Managed Shared Services",
+      description: "Oversight of compliance, HR functions, and shared resources.",
+      icon: Icons.manArrowIcon
+    },
+  ];
   const navigate = useCustomNavigate();
   return (
     <div className="d-flex flex-column">
       <div className="managed-teams">
         <p className=" managed-teamsText text-white mb-0">Managed Teams</p>
       </div>
+
+      <div className="container">
+        <div className="col-lg-12 col-md-12 col-12">
+          <div className="row">
+            <div className="col-lg-5 col-md-6  col-sm-12   p-4">
+              <div className="">
+                <h3 className="mb-3">Overview</h3>
+                <p className="globaljustify">
+                  Effortlessly manage your workforce with GCC View 360’s Managed Teams Model. We handle all legal, administrative, and operational responsibilities for your employees, allowing you to focus on your core business.                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-7 col-md-6 col-12 col-sm-12 p-4">
+              <div className="image-container">
+                <img
+                  src={require('../../../../Assets/Images/Managed-Teams/Managed-Teams.jpg')}
+                  alt="sample image"
+                  className="mb-4 w-100 rounded img-fluid"
+                />
+              </div>
+            </div>
+            <div>
+              <h3 className=" mt-3 px-3">Key Features</h3>
+              <div className="mt-sm-5">
+                {/* Key Features Section */}
+                <div className="keyFeature col-12 d-flex">
+                  {keyFeatures.map((feature, index) => (
+                    <div
+                      className="col-12 col-sm-6  col-md-6 col-lg-4 px-2 d-flex mb-3"
+                      key={index}
+                    >
+                      <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
+                        <div className="keyFeatureIcin d-flex justify-content-start mb-3">
+                          <span>{Icons.manArrowIcon}</span>
+                        </div>
+                        <hr />
+                        <h5 className="globalHead">{feature.title}</h5>
+                        <p className="text-secondary globaljustify mb-0">{feature.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div className="overview-Container d-flex justify-content-center py-5">
         <div className="container d-flex flex-column flex-lg-row justify-content-between ">
-          <div className="globalCapacity col-12 col-lg-4 d-flex justify-content-center rounded-3">
-            <div className="globalCapacityBox">
-              <h3 className="fw-bold mb-3">Managed Teams</h3>
+          <div className=" col-12 col-lg-4 d-flex justify-content-center rounded-3">
+          <div className=" w-100 mb-3 mx-3" >
 
-              <NavLink
+            <div className="globalCapacityBox globalCapacity">
+              <h3 className="fw-bold mb-3 gccheadingclr text-white">Managed Teams</h3>
+
+              {/* <NavLink
                 className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "
                 to="/managed-teams/manage_overview"
               >
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
                     <p className="mb-0 me-3 text-white text-start fw-bold">
-                    Managed Teams Overview & Features
+                      Managed Teams Overview & Features
                     </p></div>
                   <div className="col-2 text-end pe-2 fw-bold">
                     <span className="fw-bold">{Icons.arrowIcon}</span>
                   </div>
                 </div>
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 className="featureButton text-decoration-none d-flex p-3 rounded-3 mb-3 "
@@ -41,7 +109,7 @@ const Managedteams = () => {
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
                     <p className="mb-0 me-3 text-white text-start fw-bold">
-                    Client & Employee Relationship
+                      Client & Employee Relationship
                     </p></div>
                   <div className="col-2 text-end pe-2 fw-bold">
                     <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -56,7 +124,7 @@ const Managedteams = () => {
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
                     <p className="mb-0 me-3 text-white text-start fw-bold">
-                    Employee on Record (EOR)
+                      Employee on Record (EOR)
                     </p></div>
                   <div className="col-2 text-end pe-2 fw-bold">
                     <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -71,7 +139,7 @@ const Managedteams = () => {
                 <div class="col-12 d-flex align-items-center">
                   <div className="col-10">
                     <p className="mb-0 me-3 text-white text-start fw-bold">
-                    Managed Shared Services
+                      Managed Shared Services
                     </p></div>
                   <div className="col-2 text-end pe-2 fw-bold">
                     <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -79,6 +147,7 @@ const Managedteams = () => {
                 </div>
               </NavLink>
 
+            </div>
             </div>
           </div>
           <div className="w-full lg:w-2/3 ps-4 sm:ps-0 pe-4 sm:pe-0 pb-5 ms-3 sm:ms-0">
@@ -91,7 +160,7 @@ const Managedteams = () => {
           <div className="col-12 col-lg-4 p-5">
             <div className="mt-5">
               <p className="text-white fs-4 fw-bold mb-4">
-              Whether you’re exploring new business opportunities, seeking tailored solutions for your organization, or simply have questions, we’re here to help.
+                Whether you’re exploring new business opportunities, seeking tailored solutions for your organization, or simply have questions, we’re here to help.
               </p>
               <ul className="detailsForm-List p-0 m-0">
                 <li className="d-flex my-3 align-items-start">

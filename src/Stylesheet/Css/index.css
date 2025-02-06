@@ -1309,13 +1309,13 @@ th {
 
 .globalCapacityBox .featureButton {
   /* background-color: #f2f2f2 !important; */
-  border-left: 10px solid #dbdbdb;
+  /* border-left: 10px solid #dbdbdb; */
   color: #ffffff !important;
 }
 
 .globalCapacityBox .featureButton.active {
   background-color: #01A04C !important;
-  border-left: 10px solid #000000;
+  /* border-left: 10px solid #000000; */
 
 }
 
@@ -1568,16 +1568,55 @@ th {
   
 }
 
+.gccheadingclr{
+  color: #0AA50E !important;
+  font-size: 24px !important;
+  padding-bottom: 8px;
+}
+
+/* .globalCapacity {
+  background-color: var(--section-two-bg) !important;
+  padding: 50px 50px 50px 50px !important;
+  height: auto !important;
+  overflow: auto;
+  border-radius: 16px;
+} */
+
 
 .globalCapacity {
   background-color: var(--section-two-bg) !important;
-  padding: 50px 5px 85px 5px !important;
-  min-height: 500px;
-  /* Ensures at least 500px height but allows it to grow */
+  padding: 40px !important; /* Use viewport width for better responsiveness */
   height: auto !important;
-  /* Makes height adjust to content */
   overflow: auto;
-  /* Adds scrolling if content exceeds 500px */
+  border-radius: 16px;
+  max-width: 420px; /* Set a max-width to prevent stretching on large screens */
+  margin: auto; /* Center the div */
+}
+
+/* Tablet (Portrait) */
+@media screen and (max-width: 1024px) {
+  .globalCapacity {
+    padding: 25px !important;
+    max-width: 90%;
+  }
+}
+
+/* Mobile (Landscape) */
+@media screen and (max-width: 768px) {
+  .globalCapacity {
+    padding: 20px !important;
+    max-width: 95%;
+    border-radius: 12px;
+  }
+}
+
+/* Mobile (Portrait) */
+@media screen and (max-width: 480px) {
+  .globalCapacity {
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
 }
 
 

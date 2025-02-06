@@ -181,12 +181,12 @@ const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/build-operator/bot_modal" className="w-100">
+                    <Link to="/build-operator/initiation" className="w-100">
                       Build Operate Transfer
                     </Link>
                   </li>
                   <li>
-                    <Link to="/managed-teams/manage_overview" className="w-100">
+                    <Link to="managed-teams/relationship" className="w-100">
                       Managed Teams
                     </Link>
                   </li>
@@ -368,7 +368,7 @@ const Header = () => {
                   <Accordion.Body>
                     <li className=" border-bottom ">
                       <NavLink
-                        to="/details/features"
+                        to="/details/initiation"
                         onClick={closeOffcanvas}
                         className="d-block py-2 text-decoration-none offcanvas_button"
                       >
@@ -377,7 +377,7 @@ const Header = () => {
                     </li>
                     <li className=" border-bottom ">
                       <NavLink
-                        to="/build-operator/bot_modal"
+                        to="/build-operator/initiation"
                         onClick={closeOffcanvas}
                         className="d-block py-2 text-decoration-none offcanvas_button"
                       >
@@ -386,7 +386,7 @@ const Header = () => {
                     </li>
                     <li className=" border-bottom ">
                       <NavLink
-                        to="/managed-teams/manage_overview"
+                        to="managed-teams/relationship"
                         onClick={closeOffcanvas}
                         className="d-block py-2 text-decoration-none offcanvas_button"
                       >
