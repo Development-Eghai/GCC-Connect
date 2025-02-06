@@ -6,18 +6,22 @@ const BuildOperate = () => {
         {
             title: "Control/SOW Setup",
             description: "Finalize service agreements and scope of work.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Operate/Control-SOW-Setup.png')
         },
         {
             title: "Project Initiation",
             description: "Launch and manage GCC operations.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Operate/Project-Initiation.png')
         },
         {
             title: "Resource Management",
             description: "Ensure optimal use of people, processes, and technology.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Operate/Resource-Management.png')
         },
         {
             title: "Risk Management",
             description: "Address challenges proactively to maintain business continuity.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Operate/Risk-Management.png')
         },
     ];
 
@@ -64,7 +68,11 @@ const BuildOperate = () => {
                                 >
                                     <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                                         <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                                            <span>{Icons.manArrowIcon}</span>
+                                            <img
+                                                src={step?.image}
+                                                alt="sample image"
+                                                className="w-50 rounded img-fluid"
+                                            />
                                         </div>
                                         <hr />
                                         <h5 className="globalHead">{step.title}</h5>

@@ -5,23 +5,28 @@ const GlobalOngoing = () => {
   const cardData = [
     {
       title: "Talent Lifecycle Management",
-      content: "Managing recruitment, onboarding, retention and offboarding processes."
+      content: "Managing recruitment, onboarding, retention and offboarding processes.",
+      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/Talent Life Cycle Management.png')
     },
     {
       title: "Tax & Compliance",
-      content: "Staying ahead of regulatory requirements, onboarding, retention, and offboarding processes."
+      content: "Staying ahead of regulatory requirements, onboarding, retention, and offboarding processes.",
+      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/Tax & Compliance.png')
     },
     {
       title: "Workspace Management",
-      content: "Ensuring a modern, efficient workplace environment."
+      content: "Ensuring a modern, efficient workplace environment.",
+      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/Workspace Management.png')
     },
     {
       title: "IT Change Management",
-      content: "Supporting digital transformation and IT enhancements."
+      content: "Supporting digital transformation and IT enhancements.",
+      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/IT Change Management.png')
     },
     {
       title: "HR Operations",
-      content: "Handling payroll, benefits, and HR compliance efficiently."
+      content: "Handling payroll, benefits, and HR compliance efficiently.",
+      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/HR Operations.png')
     }
   ];
 
@@ -67,7 +72,11 @@ const GlobalOngoing = () => {
                 <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3" key={index}>
                   <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                     <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                      <span>{Icons.manArrowIcon}</span>
+                    <img
+                    src={item?.image}
+                    alt="sample image"
+                    className="w-50 rounded img-fluid"
+                  />  
                     </div>
                     <hr />
                     <div className="d-flex flex-column flex-grow-1">

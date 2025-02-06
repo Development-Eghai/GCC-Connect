@@ -6,14 +6,20 @@ const BuildTransfer = () => {
         {
             title: "Asset & Responsibility Transfer",
             description: "Seamlessly hand over all operational assets.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Transfer/Asset-Transfer.png')
+
         },
         {
             title: "Knowledge Transfer",
             description: "Equip your team with insights and documentation.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Transfer/Knowledge-Transfer.png')
+
         },
         {
             title: "Post-Exit Support",
             description: "Provide guidance to ensure a smooth transition.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Transfer/Post-Exit-Support.png')
+
         },
     ];
 
@@ -60,7 +66,11 @@ const BuildTransfer = () => {
                                 >
                                     <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                                         <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                                            <span>{Icons.manArrowIcon}</span>
+                                            <img
+                                                src={step?.image}
+                                                alt="sample image"
+                                                className="w-50 rounded img-fluid"
+                                            />
                                         </div>
                                         <hr />
                                         <h5 className="globalHead">{step.title}</h5>
@@ -71,7 +81,7 @@ const BuildTransfer = () => {
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     );
 };

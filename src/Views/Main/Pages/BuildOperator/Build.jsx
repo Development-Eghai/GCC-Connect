@@ -6,14 +6,17 @@ const Build = () => {
         {
             title: "Legal Entity Setup",
             description: "Establish a compliant legal framework for your GCC.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Build/Legal-Entity-Setup.png')
         },
         {
             title: "Workspace Design",
             description: "Develop a functional and engaging workspace.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Build/Workspace-Design.png')
         },
         {
             title: "Leadership Hiring",
             description: "Recruit experienced leaders and build a high-performing team.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Build/Leadership-Hiring.png')
         },
     ];
 
@@ -60,7 +63,11 @@ const Build = () => {
                                 >
                                     <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                                         <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                                            <span>{Icons.manArrowIcon}</span>
+                                        <img
+                                                src={step?.image}
+                                                alt="sample image"
+                                                className="w-50 rounded img-fluid"
+                                            />
                                         </div>
                                         <hr />
                                         <h5 className="globalHead">{step.title}</h5>

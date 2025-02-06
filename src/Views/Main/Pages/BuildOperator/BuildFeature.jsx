@@ -6,23 +6,28 @@ const BuildFeature = () => {
   const keyFeatures = [
     {
       title: "Cost Efficiency",
-      description: "Minimized upfront investments with a gradual scale-up",
+      description: "Mininnnmized upfront investments with a gradual scale-up",
+      image: require('../../../../Assets/Images/BOT_Icons/Key-Features/Cost-Efficiency.png')
     },
     {
       title: "Risk Mitigation",
       description: "Expert-led setup and operations reduce potential challenges",
+      image: require('../../../../Assets/Images/BOT_Icons/Key-Features/Risk-Mitigation.png')
     },
     {
       title: "Customization",
       description: "Tailored solutions to match your business goals and culture",
+      image: require('../../../../Assets/Images/BOT_Icons/Key-Features/Customization.png')
     },
     {
       title: "Compliance",
       description: "Adherence to local regulations and global standards",
+      image: require('../../../../Assets/Images/BOT_Icons/Key-Features/Compliance.png')
     },
     {
       title: "Seamless Transition",
       description: "Ownership transfer with minimal disruptions",
+      image: require('../../../../Assets/Images/BOT_Icons/Key-Features/Seamless-Transition.png')
     },
   ];
 
@@ -46,7 +51,11 @@ const BuildFeature = () => {
           <div className="col-12 col-sm-6 col-lg-4 px-2 d-flex mb-3" key={index}>
             <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
               <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                <span>{Icons.manArrowIcon}</span>
+                <img
+                  src={feature?.image}
+                  alt="sample image"
+                  className="w-75 rounded img-fluid"
+                />
               </div>
               <hr />
               <h5 className="globalHead">{feature.title}</h5>

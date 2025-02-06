@@ -42,7 +42,13 @@ const GlobalImplementation = () => {
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
                 <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                   <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
-                    <span>{Icons.manArrowIcon}</span>
+                    <span>
+                      <img
+                        src={require('../../../../Assets/Images/Icons/GCC Implementation/Legal Entity Setup.png')}
+                        alt="sample image"
+                        className=" w-50 rounded img-fluid"
+                      />
+                    </span>
                   </div>
                   <hr />
                   <div className="d-flex flex-column flex-grow-1">
@@ -58,7 +64,13 @@ const GlobalImplementation = () => {
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
                 <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                   <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
-                    <span>{Icons.manArrowIcon}</span>
+                    <span>
+                      <img
+                        src={require('../../../../Assets/Images/Icons/GCC Implementation/Leadership & Resource Hiring.png')}
+                        alt="sample image"
+                        className=" w-50 rounded img-fluid"
+                      />
+                    </span>
                   </div>
                   <hr />
                   <div className="d-flex flex-column flex-grow-1">
@@ -75,7 +87,13 @@ const GlobalImplementation = () => {
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
                 <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                   <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
-                    <span>{Icons.manArrowIcon}</span>
+                    <span>
+                      <img
+                        src={require('../../../../Assets/Images/Icons/GCC Implementation/Workspace Design & Definition.png')}
+                        alt="sample image"
+                        className=" w-50 rounded img-fluid"
+                      />
+                    </span>
                   </div>
                   <hr />
                   <div className="d-flex flex-column flex-grow-1">
@@ -93,7 +111,13 @@ const GlobalImplementation = () => {
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
                 <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                   <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
-                    <span>{Icons.manArrowIcon}</span>
+                    <span>
+                      <img
+                        src={require('../../../../Assets/Images/Icons/GCC Implementation/Talent Strategy & Supply.png')}
+                        alt="sample image"
+                        className=" w-50 rounded img-fluid"
+                      />
+                    </span>
                   </div>
                   <hr />
                   <div className="d-flex flex-column flex-grow-1">
@@ -109,7 +133,13 @@ const GlobalImplementation = () => {
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
                 <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                   <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
-                    <span>{Icons.manArrowIcon}</span>
+                    <span>
+                      <img
+                        src={require('../../../../Assets/Images/Icons/GCC Implementation/HumanCapital.png')}
+                        alt="sample image"
+                        className=" w-50 rounded img-fluid"
+                      />
+                    </span>
                   </div>
                   <hr />
                   <div className="d-flex flex-column flex-grow-1">

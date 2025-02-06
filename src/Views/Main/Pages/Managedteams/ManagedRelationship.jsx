@@ -3,9 +3,16 @@ import Icons from "Utils/Icons";
 
 const ManagedRelationship = () => {
     const relationshipDetails = [
-        "Establish a strong foundation with a clear strategy and roadmap.",
-        "GCC View 360 acts as the operational partner, facilitating resource management.",
+        {
+            text: "Establish a strong foundation with a clear strategy and roadmap.",
+            image: require('../../../../Assets/Images/Managed-Teams/Client-Emplyee-Relationship/Roadmap.png')
+        },
+        {
+            text: "GCC View 360 acts as the operational partner, facilitating resource management.",
+            image: require('../../../../Assets/Images/Managed-Teams/Client-Emplyee-Relationship/Operational Partner.png')
+        }
     ];
+
 
     return (
         <div className="px-3">
@@ -26,17 +33,22 @@ const ManagedRelationship = () => {
                                     <div className="row coremodalCard p-4 align-items-start">
                                         {/* Icon Section */}
                                         <div className="col-12 py-3 col-lg-2 d-flex justify-content-start mb-2 mb-lg-0">
-                                            <span>{Icons.manArrowIcon}</span>
+                                            <img
+                                                src={detail.image}  
+                                                alt="sample image"
+                                                className="w-75 rounded img-fluid"
+                                            />
                                         </div>
                                         <hr />
                                         {/* Text Content */}
                                         <div className="col-12 col-lg-10">
-                                            <p className="fw-bold fs-5 mb-0">{detail}</p>
+                                            <p className="fw-bold fs-5 mb-0">{detail.text}</p>
                                         </div>
                                     </div>
                                     <span className="px-4"> </span>
                                 </div>
                             ))}
+
                         </div>
 
                     </div>

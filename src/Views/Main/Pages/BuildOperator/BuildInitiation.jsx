@@ -6,14 +6,17 @@ const BuildInitiation = () => {
         {
             title: "Design & Strategy",
             description: "Create a roadmap aligned with your business objectives.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Initiation/Design-and-Strategy.png')
         },
         {
             title: "Expert Recommendation",
             description: "Leverage industry knowledge to guide your GCC setup.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Initiation/Expert-Recommendation.png')
         },
         {
             title: "Project Plan",
             description: "Define clear milestones and timelines for execution.",
+            image: require('../../../../Assets/Images/BOT_Icons/GCC-Initiation/Project-Plan.png')
         },
     ];
 
@@ -60,7 +63,11 @@ const BuildInitiation = () => {
                                 >
                                     <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                                         <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                                            <span>{Icons.manArrowIcon}</span>
+                                            <img
+                                                src={step?.image}
+                                                alt="sample image"
+                                                className="w-50 rounded img-fluid"
+                                            />
                                         </div>
                                         <hr />
                                         <h5 className="globalHead">{step.title}</h5>
