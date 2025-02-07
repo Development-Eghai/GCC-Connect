@@ -114,6 +114,7 @@ const AboutComponent = () => {
                     <button className="contact-btn" onClick={()=>{navigate('/contact')}}>Contact Us <span>&rarr;</span></button>
                 </div>
             </div>
+            
         </section>
     );
 };

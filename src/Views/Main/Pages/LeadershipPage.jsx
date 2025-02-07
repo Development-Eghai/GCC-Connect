@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap
 import Img from '../../../Assets/Images/BuiltOperateTransfer.jpg';
+import Footer from 'Components/footer';
 
 const Leadership = () => {
     const teamMembers = [
@@ -56,6 +57,7 @@ const Leadership = () => {
     ];
 
     return (
+        <div>
         <div className="container mt-5">
             <div className="text-center  mb-5">
                 <h2 className="display-4 text-dary fw-bold">Our Leadership Team</h2>
@@ -76,7 +78,12 @@ const Leadership = () => {
                     </div>
                 ))}
             </div>
+            </div>
+            <div>
+                <Footer />
+            </div>
         </div>
+
     );
 };
 

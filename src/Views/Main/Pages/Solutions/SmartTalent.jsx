@@ -10,12 +10,14 @@ const SmartTalent = () => {
   const data1 = [
     {
       title: "Talent Heat Maps",
+      icon:Icons.talentHeadMapsIcon,
       content:
         "Visualize talent distribution across regions to target the best hiring locations.",
     },
 
     {
       title: "Location Strategy",
+      icon:Icons.locationStrategyIcon,
       content:
         "Develop a data-driven approach to choose optimal locations for recruitment.",
     },
@@ -26,11 +28,13 @@ const SmartTalent = () => {
   const cardData = [
     {
       title: "Compensation Insights",
+      icon:Icons.compensationIcon,
       content:
         "Leverage detailed, data-backed compensation analysis to stay competitive in attracting top talent.",
     },
     {
       title: "Employee Value Proposition (EVP)",
+      icon:Icons.employeeValueIcon,
       content:
         "Craft compelling EVP strategies to enhance employer branding and attract the right talent.",
     }
@@ -54,7 +58,7 @@ const SmartTalent = () => {
                 </p>
 
                 <div className="col-12 p-lg-3 d-lg-none d-block">
-                  <img src={Img} alt="sample image" className="mb-4 w-100 " />
+                  <img src={require("../../../../Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg")}  alt="sample image" className="mb-4 w-100 " />
                 </div>
                 <div className="d-flex flex-wrap">
                   {
@@ -72,7 +76,7 @@ const SmartTalent = () => {
                 </div>
               </div>
               <div className="col-12 col-lg-6 p-3 d-none d-lg-block">
-                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+                <img src={require("../../../../Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg")} alt="sample image" className="mb-4 w-100 " />
               </div>
             </div>
 

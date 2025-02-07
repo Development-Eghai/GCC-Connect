@@ -2,18 +2,21 @@ import Footer from "Components/footer";
 import React from "react";
 import HighLightComp from "./HighLightComp";
 import CoreCard from "./CoreCard";
-import Img from "Assets/Images/Image.jpg";
+import Icons from "Utils/Icons";
+
 
 const TalentManagedSolution = () => {
   const data1 = [
     {
       title: "End-to-End Hiring Solutions",
+      icon:Icons.hiringSolutionIcon,
       content:
         "Execute a seamless hiring strategy with tailored solutions for every stage of the recruitment lifecycle, ensuring you attract and onboard the right talent.",
     },
 
    {
       title: "Interview as a Service",
+      icon:Icons.interviewServiceIcon,
       content:
         "Overcome capacity constraints with our network of expert interviewers skilled in evaluating candidates across roles, technologies, and industries.",
     }
@@ -23,14 +26,17 @@ const TalentManagedSolution = () => {
   const cardData = [
 {
       title: "Compensation & Rewards Strategy",
+      icon:Icons.compensationRewardIcon,
       content:
         "Stay ahead in the talent market with compensation and rewards solutions designed to attract, retain, and motivate high-performing employees.",
     },   {
       title: "Change Management Expertise",
+      icon:Icons.changeManagementIcon,
       content:
         "Seamlessly navigate organizational shifts and scale teams effectively with our proven change management frameworks.",
     },   {
       title: "Future-Ready Workforce Planning",
+      icon:Icons.workorePlaningIcon,
       content:
         "Develop strategies to build a resilient workforce capable of adapting to evolving market dynamics and technological advancements.",
     },
@@ -54,7 +60,7 @@ const TalentManagedSolution = () => {
                 </p>
 
                 <div className="col-12 p-3 d-lg-none d-block">
-                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+                <img src={require("../../../../Assets/Images/Talent-Managemen-System.jpg")}  alt="sample image" className="mb-4 w-100 " />
               </div>
 
 
@@ -74,7 +80,7 @@ const TalentManagedSolution = () => {
                 </div>
               </div>
               <div className="col-6 p-3 d-none d-lg-block">
-                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+                <img src={require("../../../../Assets/Images/Talent-Managemen-System.jpg")}  alt="sample image" className="mb-4 w-100 " />
               </div>
             </div>
             <div className="coreOfferingBox d-flex flex-wrap">

@@ -1,3 +1,45 @@
+import advisoryIcon from "../Assets/Images/BOT_Icons/Consulting-And-Advisory-Icons/GCC-Advisory-Services.png"
+import benchmarkIcon from "../Assets/Images/BOT_Icons/Consulting-And-Advisory-Icons/Benchmarking-Insights.png"
+import locationIcon from "../Assets/Images/BOT_Icons/Consulting-And-Advisory-Icons/Location-Analysis.png"
+import marketIcon from "../Assets/Images/BOT_Icons/Consulting-And-Advisory-Icons/Market-Research.png"
+import peerIcon from "../Assets/Images/BOT_Icons/Consulting-And-Advisory-Icons/Peer-Intelligence.png"
+import talentIcon from "../Assets/Images/BOT_Icons/Consulting-And-Advisory-Icons/Talent-Optimization.png"
+
+import hrSharedIcon from "../Assets/Images/BOT_Icons/Managed-Services-Icons/HR-Shared-Services.png"
+import suportServiceIcon from "../Assets/Images/BOT_Icons/Managed-Services-Icons/Support-Services.png"
+import taxCompliabeIcon from "../Assets/Images/BOT_Icons/Managed-Services-Icons/Tax-And-Compliane.png"
+import logisticIcon from "../Assets/Images/BOT_Icons/Managed-Services-Icons/Transportation-and-Logistics.png"
+
+import designConsultingIcon from "../Assets/Images/BOT_Icons/Workspace-Solutions/Innovative-Workspace-Design-Consultation.png"
+import prineLocationIcon from "../Assets/Images/BOT_Icons/Workspace-Solutions/Innovative-Workspace-Strategies-Prime-Location-Selection.png"
+import scalableSolutionIcon from "../Assets/Images/BOT_Icons/Workspace-Solutions/Scalable-Workspace-Solutions.png"
+
+import compensationIcon from "../Assets/Images/BOT_Icons/Smart-Talent-icons/Compensation-Insights.png"
+import employeeValueIcon from "../Assets/Images/BOT_Icons/Smart-Talent-icons/Employee-Value-Proposition.png"
+import locationStrategyIcon from "../Assets/Images/BOT_Icons/Smart-Talent-icons/Location-Strategy.png"
+import talentHeadMapsIcon from "../Assets/Images/BOT_Icons/Smart-Talent-icons/Talent-Heat-Maps.png"
+
+import talentPoolIcon from "../Assets/Images/BOT_Icons/AI-Led-Icons/Intelligent-Talent-Pools.png"
+import optimizedScreenIcon from "../Assets/Images/BOT_Icons/AI-Led-Icons/Optimized-Screening.png"
+import talentPipelineIcon from "../Assets/Images/BOT_Icons/AI-Led-Icons/Pre-Validated-Talent-Pipeline.png"
+import technologyEnabledIcon from "../Assets/Images/BOT_Icons/AI-Led-Icons/Technology-Enabled-Outreach.png"
+
+import changeManagementIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/Change-Manangement-Expertise.png"
+import compensationRewardIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/Compensation-and-Reward-Strategy.png"
+import hiringSolutionIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/End-End-Hiring-Solutions.png"
+import workorePlaningIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/Future-Ready-Workorce-Planninh.png"
+import interviewServiceIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/Interview-as-a-Service.png"
+
+
+
+
+
+
+
+
+
+
+
 const header_title_arrow_white = <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
   <path d="M10 9.80108V0H0.198919V0.633514H8.91892L0 9.55243L0.447568 10L9.36649 1.08108V9.80108H10Z" fill="#F8F6E3" />
 </svg>
@@ -320,6 +362,8 @@ const manArroowWhiteIcon=<svg xmlns="http://www.w3.org/2000/svg" width="65" heig
 
 
 
+
+
 const Icons = {
   header_title_arrow_white,
   header_title_arrow_black,
@@ -345,7 +389,42 @@ const Icons = {
   facebookIconBlack,
   twiterIconblack,
   linkedinIconBlack,
-  manArroowWhiteIcon
+  manArroowWhiteIcon,
+  advisoryIcon,
+  benchmarkIcon,
+  locationIcon,
+  marketIcon,
+  peerIcon,
+  talentIcon,
+  hrSharedIcon,
+  suportServiceIcon,
+  taxCompliabeIcon,
+  logisticIcon,
+  designConsultingIcon,
+  prineLocationIcon,
+  scalableSolutionIcon,
+  compensationIcon,
+  employeeValueIcon,
+  locationStrategyIcon,
+  talentHeadMapsIcon,
+  talentPoolIcon,
+  optimizedScreenIcon,
+  talentPipelineIcon,
+  technologyEnabledIcon,
+  changeManagementIcon,
+  compensationRewardIcon,
+  hiringSolutionIcon,
+  workorePlaningIcon,
+  interviewServiceIcon
+
+
+  
+
+
+
+
+
+
 
 }
 

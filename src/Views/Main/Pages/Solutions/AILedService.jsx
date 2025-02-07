@@ -10,12 +10,14 @@ const AILedService = () => {
   const data1 = [
     {
       title: "Intelligent Talent Pools",
+      icon:Icons.talentPoolIcon,
       content:
         "Identify and access the most suitable candidates for each role.",
     },
 
     {
       title: "Optimized Screening",
+      icon:Icons.optimizedScreenIcon,
       content:
         "Save time with AI-powered candidate screening that prioritizes quality over quantity.",
     },
@@ -26,11 +28,13 @@ const AILedService = () => {
   const cardData = [
     {
       title: "Pre-Validated Talent Pipeline",
+      icon:Icons.talentPipelineIcon,
       content:
         "Benefit from a ready-to-deploy talent pool of over 5,000 pre-screened candidates.",
     },
     {
       title: "Technology-Enabled Outreach",
+      icon:Icons.technologyEnabledIcon,
       content:
         "Engage candidates through cutting-edge communication tools to connect faster and more effectively.",
     }
@@ -54,7 +58,7 @@ const AILedService = () => {
                 </p>
 
                 <div className="col-12 p-lg-3 d-lg-none d-block">
-                  <img src={Img} alt="sample image" className="mb-4 w-100 " />
+                  <img src={require("../../../../Assets/Images/AI-Led-Talent-Supply-Process.jpg")} alt="sample image" className="mb-4 w-100 " />
                 </div>
                 <div className="d-flex flex-wrap">
                   {
@@ -72,7 +76,7 @@ const AILedService = () => {
                 </div>
               </div>
               <div className="col-12 col-lg-6 p-3 d-none d-lg-block">
-                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+                <img src={require("../../../../Assets/Images/AI-Led-Talent-Supply-Process.jpg")} alt="sample image" className="mb-4 w-100 " />
               </div>
             </div>
             <div className="coreOfferingBox d-flex flex-wrap">

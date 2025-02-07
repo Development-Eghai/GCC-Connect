@@ -4,8 +4,8 @@ import Icons from "Utils/Icons";
 const CoreCard = ({ data, key }) => {
   return (
         <div class="card coreCard h-100 p-3">
-      <div className="iconBox p-3  d-flex  justify-content-start">
-        <span>{Icons.manArrowIcon}</span>
+      <div className="iconBox p-3  d-flex  justify-content-start" style={{width:"130px",height:"130px"}}>
+        <img src={data.icon}  className="w-100 h-100" />
       </div>
       <hr></hr>
       <div class="card-body">

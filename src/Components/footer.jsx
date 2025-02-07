@@ -11,9 +11,9 @@ const Footer = () => {
             <h4>About</h4>
             <ul>
               <li>About Us</li>
-              <li>Sustainability</li>
+              {/* <li>Sustainability</li> */}
               <li>Leadership Team</li>
-              <li>News & Media</li>
+              {/* <li>News & Media</li> */}
               <li>Careers</li>
             </ul>
           </div>
@@ -30,14 +30,15 @@ const Footer = () => {
 
           {/* Industries Section */}
           <div className="footer-column col-12 col-md">
-            <h4>Industries</h4>
+            <h4>Solutions</h4>
             <ul>
-              <li>Banking & Finance</li>
-              <li>Sciences & Healthcare</li>
-              <li>Technology & Software</li>
-              <li>Education & Training</li>
-              <li>Hospitality & Leisure</li>
-              <li>Power & Utilities</li>
+              <li>Consulting and Advisory</li>
+              <li>Talent Supply Strategy</li>
+              <li>Smart Talent Acquisition with Al Led Innovation</li>
+              <li>Al Led Talent Supply Process </li>
+              <li>Talent Managerrient Solutions</li>
+              <li>Managed Services</li>
+              <li>Workspace Solutions </li>
             </ul>
           </div>
 
@@ -66,7 +67,10 @@ const Footer = () => {
           {/* Footer Bottom Left */}
           <div className="col-12 col-md-6 text-start">
             <div className="footer-bottom mt-5">
-              <p>©2024 GCC Connect, All Rights Reserved. Designed and Maintained by eGhai</p>
+              <p>
+                ©2024 GCC Connect, All Rights Reserved. Designed and Maintained
+                by eGhai
+              </p>
               <p>Terms & Conditions • Privacy Policy • Sitemap</p>
             </div>
           </div>

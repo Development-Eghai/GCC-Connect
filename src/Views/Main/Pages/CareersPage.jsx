@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap
 import Img from '../../../Assets/Images/ImageContainer.png';
+import Footer from 'Components/footer';
 
 const Careers = () => {
     const jobListings = [
@@ -55,6 +56,9 @@ const Careers = () => {
     };
 
     return (
+        <div>
+
+        
         <div className="container mt-5">
             <div className="text-center mb-4">
                 <h2 className="display-5 fw-bold text-dark">Join Our Team</h2>
@@ -81,7 +85,14 @@ const Careers = () => {
                     ))}
                 </div>
             </div>
+            
         </div>
+        <div>
+                <Footer />
+            </div>
+        </div>
+        
+        
     );
 };
 

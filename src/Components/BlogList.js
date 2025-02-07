@@ -78,7 +78,8 @@
 // BlogList.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { IoTabletLandscapeOutline } from 'react-icons/io5';
+
+import Footer from './footer';
 
 const BlogList = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -113,6 +114,9 @@ const BlogList = () => {
             </div>
             <div className="blog-container container" id="blog-list-container">
                 {renderBlogs()}
+            </div>
+            <div>
+                <Footer />
             </div>
             
         </div>

@@ -2,21 +2,24 @@ import Footer from "Components/footer";
 import React from "react";
 import HighLightComp from "./HighLightComp";
 import CoreCard from "./CoreCard";
-import Img from "Assets/Images/Image.jpg";
+import Icons from "Utils/Icons";
 const WorkplaceSolution = () => {
   const cardData = [
     {
       title: "Innovative Workspace Strategies & Prime Location Selection",
+      icon:Icons.prineLocationIcon,
       content:
         "Establish your presence in prime locations that offer unparalleled access to skilled professionals, robust infrastructure, and exceptional connectivity to support your business operations. Our workspace domain experts will define workplace strategies that would you identify locations that would support latest design along with Smart Technology Enablement workspaces. Our data-driven insights would help tailor workspaces that boost employee satisfaction, engagement, and productivity.",
     },
     {
       title: "Innovative Workspace Design Consultation",
+      icon:Icons.designConsultingIcon,
       content:
         "We craft strategies for dynamic and ergonomic work environments that enhance collaboration, creativity, and productivity. Flexible layouts and purpose-driven designs ensure your workspace meets the demands of a modern workforce.",
     },
     {
       title: "Scalable Workspace Solutions",
+      icon:Icons.scalableSolutionIcon,
       content:
         "We guide GCCs in creating efficient and productive workplaces. Our facilitation of facility management, catering, and IT support strategies ensures seamless operational execution, fostering an environment where employees can thrive.",
     },
@@ -42,7 +45,8 @@ const WorkplaceSolution = () => {
                 </p>
               </div>
               <div className="col-12 col-lg-6 p-3">
-                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+              
+                <img  src={require("../../../../Assets/Images/Workspace-Design.jpg")} alt="sample image" className="mb-4 w-100 " />
               </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">

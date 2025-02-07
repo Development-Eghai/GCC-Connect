@@ -2,27 +2,31 @@ import Footer from "Components/footer";
 import React from "react";
 import HighLightComp from "./HighLightComp";
 import CoreCard from "./CoreCard";
-import Img from "Assets/Images/Image.jpg";
+import Icons from "Utils/Icons";
 
 const ManagedService = () => {
   const cardData = [
     {
       title: "Tax and Finance Compliance",
+      icon:Icons.taxCompliabeIcon,
       content:
         "We provide end-to-end consultation on financial accounting, reporting, and compliance. Our expertise in tax management and optimization, FP&A, and regulatory requirements ensures GCCs are equipped to navigate evolving laws and standards. By leveraging GCCVue360, we deliver actionable insights for proactive financial decision-making.",
     },
     {
       title: "HR Shared Services",
+      icon:Icons.hrSharedIcon,
       content:
         "Transform the employee journey with our tailored advisory on Talent Lifecycle Management. From onboarding and background verification to HR operations and exit management, we use a holistic approach supported by AI-enabled tools to enhance employee engagement, satisfaction ",
     },
     {
       title: "Support Services",
+      icon:Icons.suportServiceIcon,
       content:
         "We guide GCCs in creating efficient and productive workplaces. Our facilitation of facility management, catering, and IT support strategies ensures seamless operational execution, fostering an environment where employees can thrive.",
     },
     {
       title: "Transportation & Logistics",
+      icon:Icons.logisticIcon,
       content:
         "Optimize workforce mobility with our expertise in transportation and logistics planning. We provide strategic insights to streamline employee commutes, supply chain management, and global mobility, including visa and relocation assistance, ensuring smooth and efficient operations.",
     },
@@ -48,7 +52,7 @@ const ManagedService = () => {
                 </p>
               </div>
               <div className="col-12 col-lg-6 p-3">
-                <img src={Img} alt="sample image" className="mb-4 w-100 " />
+                <img  src={require("../../../../Assets/Images/Managed-Services.jpg")} alt="sample image" className="mb-4 w-100 " />
               </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
