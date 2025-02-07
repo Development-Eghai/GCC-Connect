@@ -3,9 +3,19 @@ import Icons from "Utils/Icons";
 
 const ManagedRecord = () => {
     const recordDetails = [
-        "Employees are legally employed by GCC View 360.",
-        "We handle payroll, benefits, tax compliance, and regulatory matters.",
-        "This ensures seamless management of employment complexities.",
+        {
+            text: "Employees are legally employed by GCC View 360.",
+            image: require('../../../../Assets/Images/Managed-Teams/EOR/Officially-Employed.png')
+        },
+        {
+            text: "We handle payroll, benefits, tax compliance, and regulatory matters.",
+            image: require('../../../../Assets/Images/Managed-Teams/EOR/Payroll.png')
+        },
+        {
+            text: "This ensures seamless management of employment complexities.",
+            image: require('../../../../Assets/Images/Managed-Teams/EOR/Seamless-Management.png')
+        }
+
     ];
 
     return (
@@ -27,12 +37,16 @@ const ManagedRecord = () => {
                                     <div className="row coremodalCard p-4 align-items-start">
                                         {/* Icon Section */}
                                         <div className="col-12 py-3 col-lg-2 d-flex justify-content-start mb-2 mb-lg-0">
-                                            <span>{Icons.manArrowIcon}</span>
+                                            <img
+                                                src={detail.image}
+                                                alt="sample image"
+                                                className="w-75 rounded img-fluid"
+                                            />
                                         </div>
                                         <hr></hr>
                                         {/* Text Content */}
                                         <div className="col-12 col-lg-10">
-                                            <p className="fw-bold fs-5 mb-0">{detail}</p>
+                                            <p className="fw-bold fs-5 mb-0">{detail.text}</p>
                                         </div>
                                     </div>
                                     <span className="px-4"> </span>
@@ -45,7 +59,7 @@ const ManagedRecord = () => {
             </div>
 
 
-            
+
         </div>
     );
 };
