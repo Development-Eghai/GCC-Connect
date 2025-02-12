@@ -1,5 +1,6 @@
 import React from "react";
 import Footerlogomark from "../Assets/Images/Footer-Logo-Mark.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,11 +11,11 @@ const Footer = () => {
           <div className="footer-column col-12 col-md">
             <h4>About</h4>
             <ul>
-              <li>About Us</li>
-              {/* <li>Sustainability</li> */}
-              <li>Leadership Team</li>
-              {/* <li>News & Media</li> */}
-              <li>Careers</li>
+              <li className="footerLink"><Link to="/about-page">About us</Link></li>
+              <li className="footerLink"><Link>Sustainability</Link></li>
+              <li className="footerLink"> <Link to="/leadership-page">Leadership Team </Link></li>
+              <li className="footerLink"><Link>News & Media</Link></li>
+             <li className="footerLink"><Link to="/Careers-page">Carrers</Link></li>
             </ul>
           </div>
 
@@ -32,13 +33,12 @@ const Footer = () => {
           <div className="footer-column col-12 col-md">
             <h4>Solutions</h4>
             <ul>
-              <li>Consulting and Advisory</li>
-              <li>Talent Supply Strategy</li>
-              <li>Smart Talent Acquisition with Al Led Innovation</li>
-              <li>Al Led Talent Supply Process </li>
-              <li>Talent Managerrient Solutions</li>
-              <li>Managed Services</li>
-              <li>Workspace Solutions </li>
+              <li className="footerLink"><Link to="/consulting-services">Consulting and Advisory</Link></li>
+              <li className="footerLink"><Link to="/smart-talent">Smart Talent Acquisition with Al Led Innovation</Link></li>
+              <li className="footerLink"><Link to="/ailed-service">Al Led Talent Supply Process</Link></li>
+              <li className="footerLink"><Link to="/talent-solution">Talent Managerrient Solutions</Link></li>
+              <li className="footerLink"><Link to="/managed-services">Managed Services</Link></li>
+              <li className="footerLink"><Link to="/workspace-solution">Workspace Solutions</Link></li>
             </ul>
           </div>
 

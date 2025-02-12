@@ -44,9 +44,9 @@ const WorkplaceSolution = () => {
                   needs and sustained growth.
                 </p>
               </div>
-              <div className="col-12 col-lg-6 p-3">
+              <div className="col-12 col-lg-6 p-3" style={{height:"280px"}}>
               
-                <img  src={require("../../../../Assets/Images/Workspace-Design.jpg")} alt="sample image" className="mb-4 w-100 " />
+                <img  src={require("../../../../Assets/Images/Workspace-Design.jpg")} alt="sample image" className="mb-4 w-100 h-100" />
               </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">

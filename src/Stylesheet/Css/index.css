@@ -36,7 +36,7 @@
   --bs-spinner-height: 1.5rem !important;
 }
 
-.home-main-content {
+.home-min-content {
   height: calc(var(--root-height) - var(--header-height));
   background-color: var(--home-main-content-bg);
   padding: var(--home-main-content-padding);
@@ -2698,4 +2698,13 @@ th {
 .blog-card-desc {
   font-size: 0.95rem;
   color: #666;
+}
+
+.footerLink a{
+  text-decoration: none !important;
+  color:white !important;
+}
+
+.footerLink a:hover{
+  color: #00aaff !important;
 }

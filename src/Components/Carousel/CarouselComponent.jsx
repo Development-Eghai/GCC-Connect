@@ -27,13 +27,17 @@ const CarouselComponent = () => {
                                         <button className="contact-btn w-100 ">Our Services</button>
                                     </div> */}
 
-                  <div className="p-2 col-6 col-lg-3">
+                  <div className="p-2 col-12 col-md-6 col-lg-3">
+                    
                     <Link
                       to="/about-page"
-                      className="contact-btn-border  w-100 text-decoration-none"
+                      className="contact-btn-border col-12 col-md-6 col-lg-3 text-nowrap text-decoration-none "
                     >
                       About Us
                     </Link>
+
+                  
+                    
                   </div>
                 </div>
               </div>
@@ -57,10 +61,10 @@ const CarouselComponent = () => {
                   {/* <div className="p-2 col-6 col-lg-3">
                                         <button className="contact-btn w-100 ">Our Services</button>
                                     </div> */}
-                  <div className="p-2 col-6 col-lg-3">
+                  <div className="p-2 col-12 col-md-6 col-lg-3">
                     <Link
                       to="/details/initiation"
-                      className="contact-btn-border  w-100 text-decoration-none"
+                      className="contact-btn-border col-12 col-md-6 col-lg-3 text-nowrap text-decoration-none "
                     >
                       Explore Models
                     </Link>
@@ -87,10 +91,10 @@ const CarouselComponent = () => {
                   {/* <div className="p-2 col-6 col-lg-3">
                                         <button className="contact-btn w-100 ">Our Services</button>
                                     </div> */}
-                  <div className="p-2 col-6 col-lg-3">
+                  <div className="p-2 col-12 col-md-6 col-lg-3">
                     <Link
                       to="/consulting-services"
-                      className="contact-btn-border  w-100 text-decoration-none"
+                      className="contact-btn-border col-12 col-md-6 col-lg-3 text-nowrap text-decoration-none"
                     >
                       Discover Solutions
                     </Link>

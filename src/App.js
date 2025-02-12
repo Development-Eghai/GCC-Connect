@@ -48,6 +48,7 @@ import WorkplaceSolution from "Views/Main/Pages/Solutions/WorkplaceSolution";
 import TalentManagedSolution from "Views/Main/Pages/Solutions/TalentManagedSolution";
 import SmartTalent from "Views/Main/Pages/Solutions/SmartTalent";
 import AILedService from "Views/Main/Pages/Solutions/AILedService";
+import ScrollToTop from "Components/ScrollToTop";
 
 const App = () => {
   const { token, user_id, isOnline, Err, Toast_Type } = useSelector(
@@ -87,6 +88,7 @@ const App = () => {
 
   return isOnline ? (
     <HelmetProvider>
+      <ScrollToTop />
       <ToastContainer theme="light" />
       <Routes>
         <Route path="/" element={<Layout />}>
