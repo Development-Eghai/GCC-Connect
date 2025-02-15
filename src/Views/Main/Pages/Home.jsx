@@ -18,17 +18,17 @@ const Home = () => {
                     <CarouselComponent />
                 </div>
             </section>
-            <div>
+            <div id="experience" >
                 <AboutComponent />
             </div>
-            <div>
+            <div  id="about">
                 <ExperienceSection />
             </div>
 
             <div>
                 <DomainExperienceSection />
             </div>
-            <div>
+            <div id="solutions">
                 <SolutionsOfferings />
             </div>
             {/* <div>
