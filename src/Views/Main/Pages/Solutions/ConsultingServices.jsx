@@ -39,12 +39,12 @@ const ConsultingServices = () => {
       content:
         "Talent is the cornerstone of GCC success. We consult on strategies to attract, develop, and retain a workforce that aligns with evolving market demands, leveraging our proprietary frameworks to build enterprise-ready teams.",
     },
-    {
-      title: "Peer Intelligence",
-      icon:Icons.peerIcon,
-      content:
-        "Stay ahead in a fast-evolving market with insights into competitor strategies, emerging trends, and best practices. Our research-driven intelligence empowers you to make informed decisions on scaling capabilities, adopting innovations, and maintaining a competitive edge.",
-    },
+    // {
+    //   title: "Peer Intelligence",
+    //   icon:Icons.peerIcon,
+    //   content:
+    //     "Stay ahead in a fast-evolving market with insights into competitor strategies, emerging trends, and best practices. Our research-driven intelligence empowers you to make informed decisions on scaling capabilities, adopting innovations, and maintaining a competitive edge.",
+    // },
   ];
   return (
     <div className="container-fluid p-0 d-flex flex-column vh-100">

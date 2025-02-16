@@ -52,7 +52,7 @@ const Header = () => {
             </a>
           </div>
 
-          <div className="col-lg-7 col-xxl-5 px-3 d-none d-lg-flex justify-content-between">
+          <div className="col-lg-7 col-xxl-6 px-3 d-none d-lg-flex justify-content-between">
             {/* <Link  to="/about-page" className="col3 d-flex align-items-center text-decoration-none text-dark  fw-500  ">
               <p className="mb-0 me-2 fw-500">About</p>
               <span>{Icons.header_title_arrow_black}</span>
@@ -61,7 +61,7 @@ const Header = () => {
 
             <div className="col3 d-flex align-items-center nav_dropdown fw-500">
               <p className="mb-0 me-2 fw-500">About</p>
-              <span>{Icons.header_title_arrow_black}</span>
+              {/* <span>{Icons.header_title_arrow_black}</span> */}
 
               <div className="nav_dropdown_absolute_one py-2">
 
@@ -193,10 +193,28 @@ const Header = () => {
                 </ul>
               </div>
             </div>
+            <div className="col3 d-flex align-items-center nav_dropdown fw-500">
+              Products
+              <div className="nav_dropdown_absolute_one py-2">
+                <ul className="list-unstyled nav_dropdown_absolute_list mb-0">
+                  <li>
+                    <Link to="/products/click-100" className="w-100">
+                    Click100
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/products/advantage-plus" className="w-100">
+                    AdvantagePlus
+                    </Link>
+                  </li>
+            
+                </ul>
+              </div>
+            </div>
 
             <Link to="/blog" className="col3 text-dark text-decoration-none d-flex align-items-center ">
               <p className="mb-0 me-2 fw-500">Blog</p>
-              <span>{Icons.header_title_arrow_black}</span>
+              {/* <span>{Icons.header_title_arrow_black}</span> */}
             </Link>
 
             <ButtonComponent

@@ -49,6 +49,8 @@ import TalentManagedSolution from "Views/Main/Pages/Solutions/TalentManagedSolut
 import SmartTalent from "Views/Main/Pages/Solutions/SmartTalent";
 import AILedService from "Views/Main/Pages/Solutions/AILedService";
 import ScrollToTop from "Components/ScrollToTop";
+import Click from "Views/Main/Pages/Products/Click";
+import AdvantagePlus from "Views/Main/Pages/Products/AdvantagePlus";
 
 const App = () => {
   const { token, user_id, isOnline, Err, Toast_Type } = useSelector(
@@ -120,6 +122,11 @@ const App = () => {
             <Route path="relationship" element={<ManagedRelationship />} />
             <Route path="record" element={<ManagedRecord />} />
             <Route path="services" element={<ManagedServices />} />
+          </Route>
+          <Route path="/products">
+            <Route path="click-100" element={<Click />} />
+            <Route path="advantage-plus" element={<AdvantagePlus />} />
+
           </Route>
 
           <Route path="/contact" element={<Contact />} />

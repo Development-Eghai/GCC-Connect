@@ -4,34 +4,40 @@ import Icons from 'Utils/Icons'
 
 const HighLightComp = () => {
   return (
-    <div className="detailsForm-Container  mt-3 d-flex justify-content-center mb-5 ">
-    <div className="detailsForm col-11 h-100 d-flex flex-column flex-lg-row rounded-5 mt-4">
+    <div className="detailsForm-Container  d-flex justify-content-center mt-5 mb-5">
+    <div className="detailsForm col-11 h-100 d-flex flex-column flex-lg-row rounded-5">
       <div className="col-12 col-lg-4 p-5">
         <div className="mt-5">
           <p className="text-white fs-4 fw-bold mb-4">
-            Whether you’re exploring new business opportunities, seeking
-            tailored solutions for your organization, or simply have
-            questions, we’re here to help.
+          Experience Pixeladvant Expertsie 
+          </p>
+          <p className="text-white fs-4 fw-bold mb-4">
+          Let our trusted expert's how you how we can help in your GCC journey: 
           </p>
           <ul className="detailsForm-List p-0 m-0">
             <li className="d-flex my-3 align-items-start">
               <span>{Icons.tickYellow}</span>
-              <p className="mb-0 ms-3 text-white">Highlight 1</p>
+              <p className="mb-0 ms-3 text-white fs-5">Beyond proven technologies, we provide a new way of thinking</p>
             </li>
             <hr className="text-white opacity-100 my-2" />
             <li className="d-flex my-3 align-items-start">
               <span>{Icons.tickYellow}</span>
-              <p className="mb-0 ms-3 text-white">Highlight 2</p>
+              <p className="mb-0 ms-3 text-white fs-5">Powerful solutions designed to solve your GCC needs.</p>
             </li>
             <hr className="text-white opacity-100 my-2" />
             <li className="d-flex my-3 align-items-start">
               <span>{Icons.tickYellow}</span>
-              <p className="mb-0 ms-3 text-white">Highlight 3</p>
+              <p className="mb-0 ms-3 text-white fs-5">Quickly adapt to changing GCC business requirements with a flexible, configurable system </p>
             </li>
             <hr className="text-white opacity-100 my-2" />
             <li className="d-flex my-3 align-items-start">
               <span>{Icons.tickYellow}</span>
-              <p className="mb-0 ms-3 text-white">Highlight 4</p>
+              <p className="mb-0 ms-3 text-white fs-5">Streamline manual, time-consuming processes with our modernized approach</p>
+            </li>
+            <hr className="text-white opacity-100 my-2" />
+            <li className="d-flex my-3 align-items-start">
+              <span>{Icons.tickYellow}</span>
+              <p className="mb-0 ms-3 text-white fs-5">Utilize a team of GCC experts with a deep collective of knowledge and support </p>
             </li>
           </ul>
         </div>

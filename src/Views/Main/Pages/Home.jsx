@@ -25,9 +25,9 @@ const Home = () => {
                 <ExperienceSection />
             </div>
 
-            <div>
+            {/* <div>
                 <DomainExperienceSection />
-            </div>
+            </div> */}
             <div id="solutions">
                 <SolutionsOfferings />
             </div>

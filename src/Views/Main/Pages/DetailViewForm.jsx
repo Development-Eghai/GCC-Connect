@@ -5,8 +5,7 @@ const DetailViewForm = () => {
   return (
     <div className="bg-white p-3 p-sm-5 rounded-4">
       <h4 className="px-sm-3 fw-bold">
-        Fill out the form below, and our team will connect with you as soon as
-        possible.
+      Request a Demo or Contact Us 
       </h4>
       {/* <form className="row g-3">
         <div className="col-md-6 p-2 px-sm-3">
@@ -120,7 +119,7 @@ const DetailViewForm = () => {
           </label>
         </div>
         <div className="px-3 col-12">
-          <button className="col-12 py-4 FormBtn rounded-3" type="submit">
+          <button className="col-12 py-4 FormBtn rounded-3 fs-3 fw-bold" type="submit">
             Submit <span className="ms-2">{Icons.arrowIcon}</span>
           </button>
         </div>

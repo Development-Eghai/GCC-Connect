@@ -110,9 +110,9 @@ const SmartTalent = () => {
             </div>
        
           </div>
-          <div className="container">
+          {/* <div className="container">
   <DomainExperienceSection />
-</div>
+</div> */}
         </div>
 
         <div className="highlightForm mt-0 pt-0">

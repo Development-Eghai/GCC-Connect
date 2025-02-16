@@ -30,6 +30,23 @@ import hiringSolutionIcon from "../Assets/Images/BOT_Icons/Talent-management-ico
 import workorePlaningIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/Future-Ready-Workorce-Planninh.png"
 import interviewServiceIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/Interview-as-a-Service.png"
 
+import talentNetworkIcon from "../Assets/Images/Click/Icons/Talent-Network.png"
+import clickAIIcon from "../Assets/Images/Click/Icons/Artificial-Intelligence.png"
+import clickAutomationIcon from "../Assets/Images/Click/Icons/Automation.png"
+
+import bulkResumeIcon from "../Assets/Images/AdvantagePlus/Icons/Bulk-Resume.png"
+import jdExpertiseIcon from "../Assets/Images/AdvantagePlus/Icons/JD-Expertise.png"
+import jobDescriptionIcon from "../Assets/Images/AdvantagePlus/Icons/Job-Description.png"
+import marketBasedIcon from "../Assets/Images/AdvantagePlus/Icons/Market-based-Talent.png"
+import speedQualityIcon from "../Assets/Images/AdvantagePlus/Icons/Speed-and-Quality.png"
+import techStackIcon from "../Assets/Images/AdvantagePlus/Icons/Tech-Stack.png"
+
+import employeeEmployerIcon from "Assets/Images/Managed-Teams/Features/Employee-Emplyer-Relationship.png"
+import employeeRecordIcon from "Assets/Images/Managed-Teams/Features/Employee-On-Record.png"
+import managedSharedIcon from "Assets/Images/Managed-Teams/Features/Managed-Shared-Services.png"
+
+
+
 
 
 
@@ -415,7 +432,22 @@ const Icons = {
   compensationRewardIcon,
   hiringSolutionIcon,
   workorePlaningIcon,
-  interviewServiceIcon
+  interviewServiceIcon,
+  talentNetworkIcon,
+  clickAIIcon,
+  clickAutomationIcon,
+  bulkResumeIcon,
+  jdExpertiseIcon,
+  jobDescriptionIcon,
+  marketBasedIcon,
+  speedQualityIcon,
+  techStackIcon,
+  employeeEmployerIcon,
+  employeeRecordIcon,
+  managedSharedIcon
+
+  
+
 
 
   

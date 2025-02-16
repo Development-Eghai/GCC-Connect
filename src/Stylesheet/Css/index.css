@@ -1355,7 +1355,7 @@ th {
 .detailsForm-Container {
   min-height: 500px;
   position: relative;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .FormBtn {
@@ -2449,7 +2449,7 @@ th {
 .global-capabilityText {
   position: absolute;
   font-size: 4vw;
-  /* color: var(--section-two-bg) !important; */
+  color: var(--section-two-bg) !important;
   /* Relative font size for responsiveness */
   font-style: normal;
   font-weight: 500;
@@ -2486,6 +2486,157 @@ th {
     font-size: 7vw;
   }
 }
+
+/* Advantage Plus*/
+
+.advantage-plus{
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.advantage-plus::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  background-image: url('../../Assets/Images/AdvantagePlus/Advantage-Plus-Banner.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 1;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.advantage-plusText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+
+}
+
+@media (max-width: 768px) {
+  .advantage-plus{
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .advantage-plusText  {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .advantage-plus {
+    min-height: 200px;
+  }
+
+  .advantage-plusText  {
+    font-size: 7vw;
+  }
+}
+
+/* Click 100*/
+
+.click{
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.click::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  background-image: url('../../Assets/Images/Click/Click-100-Banner.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 1;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.clickText {
+  position: absolute;
+  font-size: 4vw;
+
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+ 
+}
+
+@media (max-width: 768px) {
+  .click{
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .clickText  {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .click {
+    min-height: 200px;
+  }
+
+  .clickText {
+    font-size: 7vw;
+  }
+}
+
+
+
+
 
 .abouttext {
   line-height: 2 !important;
@@ -2707,4 +2858,10 @@ th {
 
 .footerLink a:hover{
   color: #00aaff !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0);
+ color: #000000;
 }

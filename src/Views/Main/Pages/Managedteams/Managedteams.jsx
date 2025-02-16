@@ -11,17 +11,17 @@ const Managedteams = () => {
     {
       title: "Employee Employer Relationship",
       description: "Contract management, performance reviews, and resource allocation.",
-      icon: Icons.manArrowIcon
+      icon: Icons.employeeEmployerIcon
     },
     {
       title: "Employee on Record (EOR)",
       description: "Payroll, benefits, compliance, and tax management.",
-      icon: Icons.manArrowIcon
+      icon: Icons.employeeRecordIcon
     },
     {
       title: "Managed Shared Services",
       description: "Oversight of compliance, HR functions, and shared resources.",
-      icon: Icons.manArrowIcon
+      icon: Icons.managedSharedIcon
     },
   ];
   const navigate = useCustomNavigate();
@@ -62,8 +62,8 @@ const Managedteams = () => {
                       key={index}
                     >
                       <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                        <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                          <span>{Icons.manArrowIcon}</span>
+                        <div className="keyFeatureIcin d-flex justify-content-center mb-3">
+                        <img src={feature.icon}  className="" style={{width:"100px",height:"100px"}} />
                         </div>
                         <hr />
                         <h5 className="globalHead">{feature.title}</h5>

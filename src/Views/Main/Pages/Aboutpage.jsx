@@ -47,7 +47,7 @@ const AboutPage = () => {
           {/* Right Side: Video Thumbnail with Play Button (col-6) */}
           <div className="col-md-6 position-relative text-center">
             <img
-              src="/GCC-Connect/static/media/Flexiblegrowth-alignedpayment.7aed4db8572ed533a6c8.jpg" // Replace with actual image URL
+              src={require("../../../Assets/Images/About-Us.jpg")} // Replace with actual image URL
               alt="Business handshake"
               className=" p-3 img-fluid rounded-5 "
             />
