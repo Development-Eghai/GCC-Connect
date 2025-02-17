@@ -56,11 +56,11 @@ const TalentManagedSolution = () => {
               <div className="col-12 col-lg-6 ">
                 <h3 className="mb-3 headTextGreen">Overview</h3>
                 <p className="mb-4 ">
-                GCC Vue360 provides comprehensive talent management solutions that align with your organizational goals and workforce needs. Our offerings include:
+                GCC  Vue360 provides comprehensive talent management solutions that align with your organizational goals and workforce needs. Our offerings include:
                 </p>
 
                 <div className="col-12 p-3 d-lg-none d-block">
-                <img src={require("../../../../Assets/Images/Talent-Managemen-System.jpg")}  alt="sample image" className="mb-4 w-100 " />
+                <img src={require("../../../../Assets/Images/Talent-Managemen-System.jpg")}  alt="sample image" className="mb-4 w-100 rounded custom-img-height-solution" />
               </div>
 
 

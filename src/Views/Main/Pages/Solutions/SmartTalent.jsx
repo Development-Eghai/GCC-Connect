@@ -58,7 +58,7 @@ const SmartTalent = () => {
                 </p>
 
                 <div className="col-12 p-lg-3 d-lg-none d-block">
-                  <img src={require("../../../../Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg")}  alt="sample image" className="mb-4 w-100 " />
+                  <img src={require("../../../../Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg")}  alt="sample image" className="mb-4 w-100 rounded custom-img-height-solution " />
                 </div>
                 <div className="d-flex flex-wrap">
                   {

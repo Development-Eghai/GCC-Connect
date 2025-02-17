@@ -28,7 +28,7 @@
 //                                     </div> */}
 
 //                   <div className="p-2 col-12 col-md-6 col-lg-3">
-                    
+
 //                     <Link
 //                       to="/about-page"
 //                       className="contact-btn-border col-12 col-md-6 col-lg-3 text-nowrap text-decoration-none "
@@ -36,8 +36,8 @@
 //                       About Us
 //                     </Link>
 
-                  
-                    
+
+
 //                   </div>
 //                 </div>
 //               </div>
@@ -126,26 +126,36 @@ const CarouselComponent = () => {
   return (
     <section>
       <div className="container-fluid px-0">
-        <Carousel interval={null} className="py-5 px-5">
+        <Carousel interval={null} className="">
           <Carousel.Item>
             <div className="carousel-item-cls">
               <div className="col-12 col-md-8">
                 <p>Putting the right solutions and methods in place!</p>
                 <h1 className="fw-bold">Empowering Global Innovation Centers</h1>
-                <p>
+                <p >
                   GCC View360 product provides end-to-end solutions that are required by companies for setting up
                   successful innovation centers in India. We will partner with companies at every stage of this process.
                 </p>
-                <div className="d-flex col-12 justify-content-start">
-                  <div className="p-2 col-12 col-md-6 col-lg-3">
+                <div className="d-flex mt-4 flex-wrap col-12 justify-content-start gap-3">
+                  <div className="p-2 col-12 col-md-6 col-lg-4">
                     <button
-                      className="contact-btn-border col-12 col-md-6 col-lg-12 text-nowrap text-decoration-none"
+                      className="contact-btn-borderfill w-100 text-nowrap text-decoration-none"
                       onClick={() => scrollToSection("about")}
                     >
                       About Us
                     </button>
                   </div>
+                  <div className="p-2 col-12 col-md-6 col-lg-4">
+                    <button
+                      className="contact-btn-border w-100 text-nowrap text-decoration-none"
+                      onClick={() => scrollToSection("experience")}
+                    >
+                      Experience
+                    </button>
+                  </div>
                 </div>
+
+
               </div>
             </div>
           </Carousel.Item>
@@ -159,13 +169,21 @@ const CarouselComponent = () => {
                   Centers (GCCs) efficiently. From Build-Operate-Transfer (BOT) to Fully Owned Subsidiary setups, our
                   approach ensures strategic execution and operational excellence.
                 </p>
-                <div className="d-flex col-12 justify-content-start">
-                  <div className="p-2 col-12 col-md-6 col-lg-3">
+                <div className="d-flex  mt-4 flex-wrap col-12 justify-content-start gap-3">
+                  <div className="p-2 col-12 col-md-6 col-lg-4">
                     <button
-                      className="contact-btn-border col-12 col-md-6 col-lg-12 text-nowrap text-decoration-none"
+                      className="contact-btn-borderfill w-100 text-nowrap text-decoration-none"
                       onClick={() => scrollToSection("experience")}
                     >
                       Experience
+                    </button>
+                  </div>
+                  <div className="p-2 col-12 col-md-6 col-lg-4">
+                    <button
+                      className="contact-btn-border w-100 text-nowrap text-decoration-none"
+                      onClick={() => scrollToSection("solutions")}
+                    >
+                      Discover Solutions
                     </button>
                   </div>
                 </div>
@@ -182,16 +200,26 @@ const CarouselComponent = () => {
                   compliance support, and operational excellence strategies. We simplify the GCC journey, allowing
                   businesses to focus on innovation and growth.
                 </p>
-                <div className="d-flex col-12 justify-content-start">
-                  <div className="p-2 col-12 col-md-6 col-lg-3">
+
+                <div className="d-flex mt-4 flex-wrap col-12 justify-content-start gap-3">
+                  <div className="p-2 col-12 col-md-6 col-lg-4">
                     <button
-                      className="contact-btn-border col-12 col-md-6 col-lg-12 text-nowrap text-decoration-none"
+                      className="contact-btn-borderfill w-100 text-nowrap text-decoration-none"
                       onClick={() => scrollToSection("solutions")}
                     >
                       Discover Solutions
                     </button>
                   </div>
+                  <div className="p-2 col-12 col-md-6 col-lg-4">
+                    <button
+                      className="contact-btn-border w-100 text-nowrap text-decoration-none"
+                      onClick={() => scrollToSection("about")}
+                    >
+                      About Us
+                    </button>
+                  </div>
                 </div>
+
               </div>
             </div>
           </Carousel.Item>
