@@ -115,10 +115,11 @@ const SmartTalent = () => {
 </div> */}
         </div>
 
-        <div className="highlightForm mt-0 pt-0">
+       
+      </div>
+      <div className="highlightForm mt-0 pt-0">
           <HighLightComp />
         </div>
-      </div>
       <div className="FooterContainer">
         <Footer />
       </div>

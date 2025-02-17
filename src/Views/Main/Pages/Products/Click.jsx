@@ -26,8 +26,13 @@ const Click = () => {
   ];
   return (
     <div className="container-fluid p-0 d-flex flex-column vh-100">
-      <div className="click col-12">
+      {/* <div className="click col-12">
         <p className=" clickText  text-white mb-0">Click100</p>
+      </div> */}
+      <div className="click-Hunder">
+        <p className="click-HunderText text-white mb-0">
+        Click100
+        </p>
       </div>
       <div className="mainContainer">
         <div className="mainContent d-flex justify-content-center">
@@ -43,7 +48,7 @@ const Click = () => {
                   successful GCC setup and scale at greater speed with quality.
                 </p>
               </div>
-              <div className="col-12 col-lg-6 p-3" style={{ height: "280px" }}>
+              <div className="col-12 col-lg-6 p-3" >
                 <img
                   src={require("../../../../Assets/Images/Click/Click-100-Descriptive-Image.jpg")}
                   alt="sample image"

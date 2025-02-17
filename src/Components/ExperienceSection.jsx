@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Icons from 'Utils/Icons';
 
 const ExperienceSection = () => {
@@ -7,7 +8,7 @@ const ExperienceSection = () => {
       <div className="container px-3 px-md-5">
         <div className="row align-items-start">
           <div>
-          <div className="content ps-4">
+            <div className="content ps-4">
               <h3 className="fw-bold">About Us</h3>
               <p className="description">
                 Our leaders have a collective experience of 400 years together in cross-functional domain areas.
@@ -17,7 +18,7 @@ const ExperienceSection = () => {
 
           {/* Left Side - Image */}
           <div className="col-12 px-3 col-lg-6  text-start text-lg-start d-flex flex-column">
-           
+
 
             {/* Image at the bottom */}
             <div className="stat-card mt-auto">
@@ -54,9 +55,14 @@ const ExperienceSection = () => {
             </div>
 
             <div className="buttons d-flex flex-wrap gap-3 mt-3">
-              <button className="read-more-btn">Contact Us</button>
-              <button className="contact-btn-borderblack ">Read More</button>
+              <Link to="/contact" className="read-more-btn text-decoration-none">
+                Contact Us
+              </Link>
+              <Link to="/about-page" className="contact-btn-borderblack text-decoration-none ">
+                Read More
+              </Link>
             </div>
+
           </div>
 
         </div>

@@ -36,9 +36,9 @@ const ManagedService = () => {
       <div className="managed-services col-12">
         <p className=" managed-servicesText text-white mb-0">Managed Services</p>
       </div>
-      <div className="mainContainer">
+      <div className="container">
         <div className="mainContent d-flex justify-content-center">
-          <div className="col-9" >
+          <div className="col-12" >
             <div className=" d-flex flex-column flex-lg-row p-4">
               <div className=" col-12 col-lg-6 p-3">
                 <h3 className="mb-3 headTextGreen">Overview</h3>
@@ -51,11 +51,11 @@ const ManagedService = () => {
                   achieve sustainable growth.
                 </p>
               </div>
-              <div className="col-12 col-lg-6 p-3" style={{ height: "280px" }}>
+              <div className="col-12 col-lg-6 p-3">
                 <img
                   src={require("../../../../Assets/Images/Managed-Services.jpg")}
                   alt="sample image"
-                  className="mb-4 w-100 rounded custom-img-height-solution"
+                  className="mb-4 w-100 rounded "
                 />
               </div>
 
@@ -71,9 +71,10 @@ const ManagedService = () => {
             </div>
           </div>
         </div>
-        <div className="highlightForm">
-          <HighLightComp />
-        </div>
+
+      </div>
+      <div className="highlightForm">
+        <HighLightComp />
       </div>
       <div className="FooterContainer ">
         <Footer />

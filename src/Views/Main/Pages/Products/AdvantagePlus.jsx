@@ -60,7 +60,7 @@ const AdvantagePlus = () => {
               It is an industry breakthrough product which helps our global client to select thousands of candidates within few minutes for their open positions.  All of these profiles are preselected based on client agreed unique requirements and needs.
               </p>
             </div>
-            <div className="col-12 col-lg-6 p-3" style={{height:"280px"}}>
+            <div className="col-12 col-lg-6 p-3" >
             
               <img  src={require("../../../../Assets/Images/AdvantagePlus/Advatage-Plus-Descriptive-Plus.jpg")} alt="sample image" className="mb-4 w-100 h-100" />
             </div>

@@ -4,7 +4,7 @@ import Icons from 'Utils/Icons'
 
 const HighLightComp = () => {
   return (
-    <div className="detailsForm-Container  d-flex justify-content-center mt-5 mb-5">
+    <div className="detailsForm-Container  d-flex justify-content-center mt-3 mb-5">
     <div className="detailsForm col-11 h-100 d-flex flex-column flex-lg-row rounded-5">
       <div className="col-12 col-lg-4 p-5">
         <div className="mt-5">

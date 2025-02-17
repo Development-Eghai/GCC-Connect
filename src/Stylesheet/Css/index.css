@@ -699,8 +699,8 @@ th {
 
 .about-card .icon {
   /* font-size: 2.5rem; */
-  margin-bottom: 3rem;
-  border-radius: 50%;
+  margin-bottom: 1rem;
+  border-radius: 100%;
   padding: 1rem;
   display: inline-block;
 }
@@ -1466,6 +1466,42 @@ th {
   }
 }
 
+.text-Bar-Text{
+  font-size: 20px;
+}
+
+.getTouchBoxModeldnone{
+  position: relative;
+  top: 0;
+align-items: center;
+  background-color: #042126;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.getTouchBoxModel {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  background-color: #042126;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .getTouchBoxModel {
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .getTouchBoxModel p {
+    font-size: 1.2rem;
+  }
+}
 
 .detailsForm-Container {
   min-height: 500px;
@@ -2627,7 +2663,7 @@ th {
   /* Ensures the image covers the entire container */
   background-position: center;
   /* Centers the image */
-  opacity: 1;
+  opacity: 0.5;
   /* Optional: Adjust transparency */
   z-index: -1;
   /* Places the backdrop behind the content */
@@ -2979,4 +3015,150 @@ th {
 .carousel-control-next-icon {
   filter: invert(0);
  color: #000000;
+}
+
+.mega-menu {
+  position: absolute;
+  left: 50%;
+  /* top: 150%; */
+  transform: translateX(-75%);
+  width: 820px; /* Adjust width as needed */
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.col3:hover .mega-menu:hover {
+  display: block;
+}
+
+.mega-menu-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mega-menu-column {
+  width: 50%;
+}
+
+.mega-menu-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--section-one-bg);
+  margin-bottom: 5px;
+}
+
+.mega-menu-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.mega-menu-column ul li {
+  margin-bottom: 5px;
+}
+
+.mega-menu-column a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  /* padding-top: 15px !important;
+  padding-bottom: 15px !important; */
+  border-radius: 6px;
+}
+
+.mega-menu-column a:hover {
+  color: var(--section-one-bg);
+  padding: 10px;
+  /* padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  background-color: var(--section-one-bg); */
+  /* border-radius: 6px; */
+  border: none;
+}
+
+.nav_dropdown:hover .mega-menu,
+.mega-menu:hover {
+  display: block; /* Keep the menu open while hovering over it */
+}
+
+.mega-menu.active {
+  display: block !important;
+}
+
+
+
+.click-Hunder {
+  /* background: linear-gradient(180deg, rgba(80, 75, 75, 1) 0%, rgba(205, 201, 201, 1) 100%); */
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.click-Hunder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/Click/Click-100-Banner.jpg');
+  /* Local image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-position: center;
+  /* Centers the image */
+  opacity: 0.5;
+  /* Optional: Adjust transparency */
+  z-index: -1;
+  /* Places the backdrop behind the content */
+}
+
+.click-HunderText {
+  position: absolute;
+  font-size: 4vw;
+  color: var(--section-two-bg) !important;
+  /* Relative font size for responsiveness */
+  font-style: normal;
+  font-weight: 500;
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .click-Hunder {
+    min-height: 200px;
+    text-align: center;
+
+  }
+
+  .click-HunderText {
+    font-size: 6vw;
+    /* Adjust font size for smaller screens */
+    top: 50%;
+    font-weight: 500;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .click-Hunder {
+    min-height: 200px;
+  }
+
+  .click-HunderText {
+    font-size: 7vw;
+  }
 }

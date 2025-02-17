@@ -18,42 +18,43 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa"; // impor
 
 const solutions = [
   {
-    icon: <FaChalkboardTeacher size={40} color="green" />,
+    icon: <img src={require('Assets/Images/Homepage-Solutions/Conulting-and-Advisory.png')} alt="Consulting Icon" style={{ width: '40px', height: 'auto' }} />,
     title: "Consulting & Advisory",
     img: advisoryImg,
     description: "At AdvaniPeel’s GCC Vue360 Advisory Practice, we collaborate with organizations to unlock the full potential of GCC ecosystems in India.",
     link: "/consulting-services",
   },
+  
   {
-    icon: <FaUserTie size={40} color="green" />,
+    icon: <img src={require('Assets/Images/Homepage-Solutions/Smart-Talent-Acquisiton.png')} alt="Consulting Icon" style={{ width: '40px', height: 'auto' }} />,
     title: "Smart Talent Acquisition with AI - Led Innovation",
     img: smartImg,
     description: "PixelAdvisers AI-driven Smart Talent Acquisition platform transforms the way organizations plan and execute recruitment strategies.",
     link: "/smart-talent",
   },
   {
-    icon: <FaRobot size={40} color="green" />,
+    icon: <img src={require('Assets/Images/Homepage-Solutions/AI-Led-Talent-Supply.png')} alt="Consulting Icon" style={{ width: '40px', height: 'auto' }} />,
     title: "AI Led Talent Supply Process",
     img: aiLedImg,
     description: "Our advanced AI solutions ensure efficient and targeted talent acquisition.",
     link: "/ailed-service",
   },
   {
-    icon: <MdManageAccounts size={40} color="green" />,
+    icon: <img src={require('Assets/Images/Homepage-Solutions/Talent-Mangement-Solutions.png')} alt="Consulting Icon" style={{ width: '40px', height: 'auto' }} />,
     title: "Talent Management Solutions",
     img: talentImg,
     description: "GCC Vue360 provides comprehensive talent management solutions that align with your organizational goals and workforce needs.",
     link: "/talent-solution",
   },
   {
-    icon: <MdMapsHomeWork size={40} color="green" />,
+    icon: <img src={require('Assets/Images/Homepage-Solutions/Workspace-Solutions.png')} alt="Consulting Icon" style={{ width: '40px', height: 'auto' }} />,
     title: "Workspace Solutions",
     img: workplaceImg,
     description: "At PixelAdvant, we believe that a workspace is more than a physical space—it is a strategic asset that drives innovation, collaboration, and operational efficiency.",
     link: "/workspace-solution",
   },
   {
-    icon: <GrServices size={40} color="green" />,
+    icon: <img src={require('Assets/Images/Homepage-Solutions/Manged-Services.png')} alt="Consulting Icon" style={{ width: '40px', height: 'auto' }} />,
     title: "Managed Services",
     img: managedImg,
     description: "At PixelAdvant, we specialize in facilitating managed services that empower Global Capability Centers (GCCs) to optimize operations, ensure compliance, and drive value creation across key business functions.",

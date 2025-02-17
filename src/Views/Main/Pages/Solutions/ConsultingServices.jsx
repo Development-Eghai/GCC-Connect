@@ -72,7 +72,7 @@ const ConsultingServices = () => {
                 <img
                   src={require("../../../../Assets/Images/GCC-Consulting-and-Advisory.jpg")}
                   alt="sample image"
-                  className="mb-4 w-100  rounded"
+                  className="mb-4 w-100  rounded custom-img-height-solution"
                 />
               </div>
             </div>

@@ -4,6 +4,7 @@ import Footer from "Components/footer";
 import DetailViewForm from "../DetailViewForm";
 import { NavLink, Outlet } from "react-router-dom";
 import { useCustomNavigate } from "Components/CustomHooks";
+import HighLightComp from "../Solutions/HighLightComp";
 
 const GlobalCapability = () => {
   const [isActive, setIsActive] = useState("overview");
@@ -193,56 +194,38 @@ const GlobalCapability = () => {
               </div>
             </div>
           </div>
-          <div className=" col-12 col-lg-8 ">
+          <div className=" mb-5 col-12 col-lg-8 ">
             <Outlet />
           </div>
         </div>
       </div>
-      <div className="detailsForm-Container  mt-3 d-flex justify-content-center mb-5 ">
-        <div className="detailsForm col-11 h-100 d-flex flex-column flex-lg-row rounded-5 mt-4">
-          <div className="col-12 col-lg-4 p-5">
-            <div className="mt-5">
-              <p className="text-white fs-4 fw-bold mb-4">
-                Whether you’re exploring new business opportunities, seeking
-                tailored solutions for your organization, or simply have
-                questions, we’re here to help.
-              </p>
-              <ul className="detailsForm-List p-0 m-0">
-                <li className="d-flex my-3 align-items-start">
-                  <span>{Icons.tickYellow}</span>
-                  <p className="mb-0 ms-3 text-white">Highlight 1</p>
-                </li>
-                <hr className="text-white opacity-100 my-2" />
-                <li className="d-flex my-3 align-items-start">
-                  <span>{Icons.tickYellow}</span>
-                  <p className="mb-0 ms-3 text-white">Highlight 2</p>
-                </li>
-                <hr className="text-white opacity-100 my-2" />
-                <li className="d-flex my-3 align-items-start">
-                  <span>{Icons.tickYellow}</span>
-                  <p className="mb-0 ms-3 text-white">Highlight 3</p>
-                </li>
-                <hr className="text-white opacity-100 my-2" />
-                <li className="d-flex my-3 align-items-start">
-                  <span>{Icons.tickYellow}</span>
-                  <p className="mb-0 ms-3 text-white">Highlight 4</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-8 p-3 p-sm-5 mt-5 ">
-            <DetailViewForm />
-          </div>
-        </div>
-        <div className="col-8 getTouchBox">
-          <p className="text-white fs-5 fs-sm-4 fw-bold">
+      <div className="d-flex justify-content-center mb-0">
+        <div className="  mb-0 col-11 getTouchBoxModeldnone d-lg-none">
+          <p className="text-white text-Bar-Text ">
             Transform your GCC vision into reality with GCC View 360.
             <br />
             Get in Touch to start your journey today.
           </p>
         </div>
       </div>
+
+      <div className="detailsForm-Container   mt-lg-5 d-flex justify-content-center mb-5 ">
+      <div className="highlightForm">
+          <HighLightComp />
+        </div>
+        <div className="col-8 getTouchBoxModel d-none d-lg-block  d-xl-block">
+          <p className="text-white text-Bar-Text">
+            Transform your GCC vision into reality with GCC View 360.
+            <br />
+            Get in Touch to start your journey today.
+          </p>
+        </div>
+
+      </div>
+
+
+
+
       <div className="Footer-Container">
         <Footer />
       </div>

@@ -60,10 +60,11 @@ const WorkplaceSolution = () => {
             </div>
           </div>
         </div>
-        <div className="highlightForm">
+      
+      </div>
+      <div className="highlightForm">
           <HighLightComp />
         </div>
-      </div>
       <div className="FooterContainer">
         <Footer />
       </div>

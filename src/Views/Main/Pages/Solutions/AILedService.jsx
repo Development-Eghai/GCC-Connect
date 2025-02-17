@@ -92,16 +92,12 @@ const AILedService = () => {
                 <div className="d-flex justify-content-center align-items-center"><p className="mb-0 text-white">PixelAdvant’s AI-led process ensures you secure top talent faster, saving time, resources, and effort while driving recruitment excellence.</p></div>
               </div>
             </div>
-<div>
-  <DomainExperienceSection />
-</div>
-
           </div>
         </div>
-        <div className="highlightForm">
+      </div>
+      <div className="highlightForm">
           <HighLightComp />
         </div>
-      </div>
       <div className="FooterContainer">
         <Footer />
       </div>

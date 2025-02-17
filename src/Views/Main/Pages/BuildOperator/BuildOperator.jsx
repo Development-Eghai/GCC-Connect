@@ -4,6 +4,7 @@ import Footer from "Components/footer";
 import DetailViewForm from "../DetailViewForm";
 import { NavLink, Outlet } from "react-router-dom";
 import { useCustomNavigate } from "Components/CustomHooks";
+import HighLightComp from "../Solutions/HighLightComp";
 
 const BuildOperator = () => {
   const [isActive, setIsActive] = useState("build-operator");
@@ -188,7 +189,7 @@ const BuildOperator = () => {
 
         </div>
       </div>
-      <div className="detailsForm-Container  mt-4 d-flex justify-content-center mb-5 ">
+      {/* <div className="detailsForm-Container  mt-4 d-flex justify-content-center mb-5 ">
         <div className="detailsForm col-11  h-100 d-flex flex-column flex-lg-row rounded-5 mt-4">
           <div className="col-12 col-lg-4 p-5">
             <div className="mt-5">
@@ -235,7 +236,36 @@ const BuildOperator = () => {
             expansion.
           </p>
         </div>
+      </div> */}
+
+      <div className="d-flex justify-content-center mb-0">
+        <div className="  mb-0 col-11 getTouchBoxModeldnone d-lg-none">
+          <p className="text-white text-Bar-Text ">
+          Our BOT model combines industry expertise, operational excellence,
+            and a future-ready approach to provide scalable, efficient, and
+            low-risk solutions for GCC development. Contact us today to learn how BOT can accelerate your global
+            expansion.
+          </p>
+        </div>
       </div>
+
+      <div className="detailsForm-Container   mt-lg-5 d-flex justify-content-center mb-5 ">
+      <div className="highlightForm">
+          <HighLightComp />
+        </div>
+        <div className="col-8 getTouchBoxModel d-none d-lg-block  d-xl-block">
+          <p className="text-white text-Bar-Text">
+          Our BOT model combines industry expertise, operational excellence,
+            and a future-ready approach to provide scalable, efficient, and
+            low-risk solutions for GCC development.
+           
+            Contact us today to learn how BOT can accelerate your global
+            expansion.
+          </p>
+        </div>
+
+      </div>
+
       <div className="Footer-Container">
         <Footer />
       </div>

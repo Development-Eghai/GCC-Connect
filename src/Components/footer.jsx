@@ -12,9 +12,9 @@ const Footer = () => {
             <h4>About</h4>
             <ul>
               <li className="footerLink"><Link to="/about-page">About us</Link></li>
-              <li className="footerLink"><Link>Sustainability</Link></li>
+              {/* <li className="footerLink"><Link>Sustainability</Link></li> */}
               <li className="footerLink"> <Link to="/leadership-page">Leadership Team </Link></li>
-              <li className="footerLink"><Link>News & Media</Link></li>
+              {/* <li className="footerLink"><Link>News & Media</Link></li> */}
              <li className="footerLink"><Link to="/Careers-page">Carrers</Link></li>
             </ul>
           </div>
@@ -23,9 +23,11 @@ const Footer = () => {
           <div className="footer-column col-12 col-md">
             <h4>Models</h4>
             <ul>
-              <li>Captive Model</li>
-              <li>BOT</li>
-              <li>Shared Services Model</li>
+              <li>Global Capability
+              Center</li>
+              <li>Build Operate
+              Transfer</li>
+              <li>Managed Teams</li>
             </ul>
           </div>
 

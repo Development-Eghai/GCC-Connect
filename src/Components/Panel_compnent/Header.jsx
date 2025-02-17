@@ -16,7 +16,26 @@ const Header = () => {
     }
   };
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".nav_dropdown");
+    const megaMenu = document.querySelector(".mega-menu");
 
+    dropdown.addEventListener("mouseenter", function () {
+      megaMenu.classList.add("active");
+    });
+
+    // Keep menu open when hovering over it
+    megaMenu.addEventListener("mouseenter", function () {
+      megaMenu.classList.add("active");
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!dropdown.contains(event.target) && !megaMenu.contains(event.target)) {
+        megaMenu.classList.remove("active");
+      }
+    });
+  });
   return (
     <div className="">
       <div className="headerMediaContainer d-flex justify-content-center h-50">
@@ -85,89 +104,40 @@ const Header = () => {
               </div>
             </div>
 
-
-
-
             <div className="col3 d-flex align-items-center nav_dropdown fw-500">
               Solutions
-
-              <div className="nav_dropdown_absolute_one py-2">
-
-                <ul className="list-unstyled nav_dropdown_absolute_list mb-0">
-                  <li className=" border-bottom py-2 ">
-                    <Link to="/consulting-services" className="w-100">
-                      Consulting and Advisory Services
-                    </Link>
-                  </li>
-                  <div>
-                    <Accordion className="mt-3 border-bottom" >
-                      <Accordion.Item eventKey="10">
-                        <Accordion.Header>Talent Supply Strategy</Accordion.Header>
-                        <Accordion.Body>
-                          <li className=" border-bottom ">
-                            <NavLink
-                              to="/smart-talent"
-                              onClick={closeOffcanvas}
-                              className="d-block py-2 text-decoration-none navbardropdown"
-                            >
-                              Smart Talent Acquisition with AI-Led Innovation
-                            </NavLink>
-                          </li>
-                          <li className=" border-bottom ">
-                            <NavLink
-                              to="/ailed-service"
-                              onClick={closeOffcanvas}
-                              className="d-block py-2 text-decoration-none navbardropdown"
-                            >
-                              AI Led Talent Supply Process
-                            </NavLink>
-                          </li>
-                          <li >
-                            <NavLink
-                              to="/talent-solution"
-                              onClick={closeOffcanvas}
-                              className="d-block py-2 text-decoration-none navbardropdown"
-                            >
-                              Talent Management Solutions
-                            </NavLink>
-                          </li>
-                        </Accordion.Body>
-                      </Accordion.Item>
-                    </Accordion>
-                  </div>
-
-                  {/* <span className="w-100">Talent Supply Strategy</span>
-                    <div className="nav_dropdown_nested_absolute py-2">
-                      <ul className="text-dark list-unstyled mb-0">
-                        <li>
-                          <Link to="/smart-talent" className="w-100">
-                            Smart Talent Acquisition with AI-Led Innovation
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/ailed-service" className="w-100">
-                            AI Led Talent Supply Process
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/talent-solution" className="w-100">
-                            Talent Management Solutions
-                          </Link>
-                        </li>
+              <div>
+                <div className="nav_dropdown_absolute_one py-2 mega-menu">
+                  <div className="mega-menu-content pt-4 d-flex">
+                    {/* Workspace Column */}
+                    <div className="mega-menu-column px-3">
+                      <h5 className="mega-menu-title">Solutions</h5>
+                      <p className="mega-menu-description">
+                        A premium, customized, branded, and fully managed office solution
+                      </p>
+                      <ul className="list-unstyled ">
+                        <li><NavLink className=" py-2" to="/consulting-services">Consulting and Advisory Services</NavLink></li>
+                        <li><NavLink className=" py-2" to="/managed-services">Managed Services</NavLink></li>
+                        <li><NavLink className=" py-2" to="/workspace-solution">Workspace Solutions</NavLink></li>
                       </ul>
-                    </div> */}
+                    </div>
 
-                  <li className=" border-bottom  py-2">
-                    <Link to="/managed-services" className="w-100">
-                      Managed Services
-                    </Link>
-                  </li>
-                  <li className=" py-2 ">
-                    <Link to="/workspace-solution" className="w-100">
-                      Workspace Solutions
-                    </Link>
-                  </li>
-                </ul>
+                    {/* Talent Solutions Column */}
+                    <div className="mega-menu-column px-3">
+                      <h5 className="mega-menu-title">Talent Solutions</h5>
+                      <p className="mega-menu-description">
+                        Pioneering value-centric workforces with AI and analytics
+                      </p>
+                      <ul className="list-unstyled ">
+                        <li><NavLink className="  py-2" to="/consulting-services">Smart Talent Acquisition with AI-Led Innovation</NavLink></li>
+                        <li><NavLink className=" py-2" to="/ailed-service">AI Led Talent Supply Process</NavLink></li>
+                        <li><NavLink className=" py-2" to="/talent-solution">Talent Management Solutions</NavLink></li>
+                      </ul>
+                    </div>
+
+
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -193,22 +163,58 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            <div className="col3 d-flex align-items-center nav_dropdown fw-500">
+            {/* <div className="col3 d-flex align-items-center nav_dropdown fw-500">
               Products
               <div className="nav_dropdown_absolute_one py-2">
                 <ul className="list-unstyled nav_dropdown_absolute_list mb-0">
                   <li>
                     <Link to="/products/click-100" className="w-100">
-                    Click100
+                      Click100
                     </Link>
                   </li>
                   <li>
                     <Link to="/products/advantage-plus" className="w-100">
-                    AdvantagePlus
+                      AdvantagePlus
                     </Link>
                   </li>
-            
+
                 </ul>
+              </div>
+            </div> */}
+            <div className="col3 d-flex align-items-center nav_dropdown fw-500">
+              Products
+              <div>
+                <div className="nav_dropdown_absolute_one py-2 mega-menu">
+                  <div className="mega-menu-content pt-4 d-flex">
+                    {/* Workspace Column */}
+                    <div className="mega-menu-column px-3">
+                      <h5 className="mega-menu-title">Click 100</h5>
+                      <p className="mega-menu-description">
+                        Pioneering value-centric workforces with AI and analytics
+                      </p>
+                      <ul className="list-unstyled ">
+                        <li><NavLink className=" py-2" to="/products/click-100">Leep</NavLink></li>
+                        <li><NavLink className=" py-2" to="/products/click-100">Loop</NavLink></li>
+                        <li><NavLink className=" py-2" to="/products/click-100">Rise</NavLink></li>
+                      </ul>
+                    </div>
+
+                    {/* Talent Solutions Column */}
+                    <div className="mega-menu-column px-3">
+                      <h5 className="mega-menu-title">Advantage plus</h5>
+                      <p className="mega-menu-description">
+                        Pioneering value-centric workforces with AI and analytics
+                      </p>
+                      <ul className="list-unstyled ">
+                        <li><NavLink className="  py-2" to="/products/advantage-plus">Advantage Plus</NavLink></li>
+                        {/* <li><NavLink className=" py-2" to="/ailed-service">AI Led Talent Supply Process</NavLink></li>
+                        <li><NavLink className=" py-2" to="/talent-solution">Talent Management Solutions</NavLink></li> */}
+                      </ul>
+                    </div>
+
+
+                  </div>
+                </div>
               </div>
             </div>
 
