@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GCC-Connect/static/css/main.5deaf652.css",
-    "main.js": "/GCC-Connect/static/js/main.a33a0a72.js",
+    "main.css": "/GCC-Connect/static/css/main.21f17ad8.css",
+    "main.js": "/GCC-Connect/static/js/main.a920b61d.js",
     "static/media/SmartTalentAcquisiton.jpg": "/GCC-Connect/static/media/SmartTalentAcquisiton.066fa463910c45149b81.jpg",
     "static/media/Click-100-Descriptive-Image.jpg": "/GCC-Connect/static/media/Click-100-Descriptive-Image.10305b0acab632bf6972.jpg",
     "static/media/WorkspaceSolutions.jpg": "/GCC-Connect/static/media/WorkspaceSolutions.e6f4c24950670110b53b.jpg",
@@ -42,6 +42,7 @@
     "static/media/HR-Shared-Services.png": "/GCC-Connect/static/media/HR-Shared-Services.20ab6e7629a06691c043.png",
     "static/media/Desig.png": "/GCC-Connect/static/media/Desig.9bb7f04a71b78399e67d.png",
     "static/media/Design-and-Strategy.png": "/GCC-Connect/static/media/Design-and-Strategy.9bb7f04a71b78399e67d.png",
+    "static/media/Captive-Model.png": "/GCC-Connect/static/media/Captive-Model.47551466926636e4b23f.png",
     "static/media/Talent-Heat-Maps.png": "/GCC-Connect/static/media/Talent-Heat-Maps.09f63edfaee4efd1552a.png",
     "static/media/Compliance.png": "/GCC-Connect/static/media/Compliance.104bc7d8414a687ae6dd.png",
     "static/media/Interview-as-a-Service.png": "/GCC-Connect/static/media/Interview-as-a-Service.daf68f725181a6f1bbf9.png",
@@ -68,12 +69,15 @@
     "static/media/Automation.png": "/GCC-Connect/static/media/Automation.2d370fd6fa6888451aa1.png",
     "static/media/Knowledge-Transfer.png": "/GCC-Connect/static/media/Knowledge-Transfer.3f788bd6f7f682a96063.png",
     "static/media/Expert-Recommendation.png": "/GCC-Connect/static/media/Expert-Recommendation.924b84c308c751a24702.png",
+    "static/media/Talent-Mangement-Solutions.png": "/GCC-Connect/static/media/Talent-Mangement-Solutions.8abf63ea55bbeb9f4082.png",
     "static/media/Risk-Mitigation.png": "/GCC-Connect/static/media/Risk-Mitigation.abac12767a42b2cc88d7.png",
     "static/media/Payroll.png": "/GCC-Connect/static/media/Payroll.8b02002fca6ef0f28fe9.png",
     "static/media/Talent Strategy & Supply.png": "/GCC-Connect/static/media/Talent Strategy & Supply.63268a42cee05dd236a4.png",
+    "static/media/Shared-Services-Model.png": "/GCC-Connect/static/media/Shared-Services-Model.12a7c8cb09cebe0da389.png",
     "static/media/Transportation-and-Logistics.png": "/GCC-Connect/static/media/Transportation-and-Logistics.c04ae1f825301b3daeb4.png",
     "static/media/HR Operations.png": "/GCC-Connect/static/media/HR Operations.27c028bc81e5747bc2ae.png",
     "static/media/Support-Services.png": "/GCC-Connect/static/media/Support-Services.296a08d289f6433c5c12.png",
+    "static/media/Build-Operate-Transfer.png": "/GCC-Connect/static/media/Build-Operate-Transfer.e36182f2f9a00bec1d84.png",
     "static/media/Managed-Shared-Services.png": "/GCC-Connect/static/media/Managed-Shared-Services.748f8e3b78292271e27e.png",
     "static/media/Talent-Optimization.png": "/GCC-Connect/static/media/Talent-Optimization.224433bcbcbc686b5ff6.png",
     "static/media/Legal Entity Setup.png": "/GCC-Connect/static/media/Legal Entity Setup.2c053197172293dad7ea.png",
@@ -81,9 +85,11 @@
     "static/media/Future-Ready-Workorce-Planninh.png": "/GCC-Connect/static/media/Future-Ready-Workorce-Planninh.b12a6d3ca5ed782340e2.png",
     "static/media/Speed-and-Quality.png": "/GCC-Connect/static/media/Speed-and-Quality.d3b432ffddb4d935ed70.png",
     "static/media/Innovative-Workspace-Strategies-Prime-Location-Selection.png": "/GCC-Connect/static/media/Innovative-Workspace-Strategies-Prime-Location-Selection.b9f4a35731ec6f95d96b.png",
+    "static/media/Smart-Talent-Acquisiton.png": "/GCC-Connect/static/media/Smart-Talent-Acquisiton.fe0a1d15a9de9e5adcce.png",
     "static/media/Project-Initiation.png": "/GCC-Connect/static/media/Project-Initiation.866c452da81b0e7617d1.png",
     "static/media/Industr.png": "/GCC-Connect/static/media/Industr.d2f81289b371e16ffab8.png",
     "static/media/Asset-Transfer.png": "/GCC-Connect/static/media/Asset-Transfer.af5db19490bddc63f1c6.png",
+    "static/media/Manged-Services.png": "/GCC-Connect/static/media/Manged-Services.788b7f5ac05964e8ec57.png",
     "static/media/GCC-Advisory-Services.png": "/GCC-Connect/static/media/GCC-Advisory-Services.38ce745c32254cac5270.png",
     "static/media/Seamless-Management.png": "/GCC-Connect/static/media/Seamless-Management.c56bf7ba2330b305140e.png",
     "static/media/End-End-Hiring-Solutions.png": "/GCC-Connect/static/media/End-End-Hiring-Solutions.31835fea3e52949e6ff9.png",
@@ -94,12 +100,13 @@
     "static/media/Peer-Intelligence.png": "/GCC-Connect/static/media/Peer-Intelligence.27b3bc5c18dee0cff313.png",
     "static/media/Post-Exit-Support.png": "/GCC-Connect/static/media/Post-Exit-Support.eb3e4415694056afda23.png",
     "static/media/Customization.png": "/GCC-Connect/static/media/Customization.1020e7f0aee84044a710.png",
+    "static/media/Conulting-and-Advisory.png": "/GCC-Connect/static/media/Conulting-and-Advisory.a7073065fbe6148cdde3.png",
     "index.html": "/GCC-Connect/index.html",
-    "main.5deaf652.css.map": "/GCC-Connect/static/css/main.5deaf652.css.map",
-    "main.a33a0a72.js.map": "/GCC-Connect/static/js/main.a33a0a72.js.map"
+    "main.21f17ad8.css.map": "/GCC-Connect/static/css/main.21f17ad8.css.map",
+    "main.a920b61d.js.map": "/GCC-Connect/static/js/main.a920b61d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5deaf652.css",
-    "static/js/main.a33a0a72.js"
+    "static/css/main.21f17ad8.css",
+    "static/js/main.a920b61d.js"
   ]
 }
