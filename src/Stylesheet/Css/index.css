@@ -2585,13 +2585,13 @@ align-items: center;
   left: 0;
   width: 100%;
   height: 95%;
-  background-image: url('../../Assets/Images/Icons/KeyFeatures/GCCImageBG.png');
+  background-image: url('../../Assets/Images/Global-Capability-Center-Banner.png');
   /* Local image */
   background-size: cover;
   /* Ensures the image covers the entire container */
   background-position: center;
   /* Centers the image */
-  opacity: 1;
+  opacity: 0.5;
   /* Optional: Adjust transparency */
   z-index: -1;
   /* Places the backdrop behind the content */
@@ -2657,7 +2657,7 @@ align-items: center;
   left: 0;
   width: 100%;
   height: 95%;
-  background-image: url('../../Assets/Images/AdvantagePlus/Advantage-Plus-Banner.jpg');
+  background-image: url('../../Assets/Images/Advantage-Plus-Banner.jpg');
   /* Local image */
   background-size: cover;
   /* Ensures the image covers the entire container */

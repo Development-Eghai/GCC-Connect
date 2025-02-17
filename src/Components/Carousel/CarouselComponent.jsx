@@ -36,7 +36,7 @@ const CarouselComponent = () => {
                       className="contact-btn-border w-100 text-nowrap text-decoration-none"
                       onClick={() => scrollToSection("experience")}
                     >
-                      Experience
+                      Explore Models
                     </button>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const CarouselComponent = () => {
                       className="contact-btn-borderfill w-100 text-nowrap text-decoration-none"
                       onClick={() => scrollToSection("experience")}
                     >
-                      Experience
+                      Explore Models
                     </button>
                   </div>
                   <div className="p-2 col-12 col-md-6 col-lg-4">

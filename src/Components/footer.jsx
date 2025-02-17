@@ -23,13 +23,16 @@ const Footer = () => {
           <div className="footer-column col-12 col-md">
             <h4>Models</h4>
             <ul>
-              <li>Global Capability
-              Center</li>
-              <li>Build Operate
-              Transfer</li>
-              <li>Managed Teams</li>
+              <li className="footerLink"><Link to="/details/initiation">Global Capability
+              Center</Link></li>
+              {/* <li className="footerLink"><Link>Sustainability</Link></li> */}
+              <li className="footerLink"> <Link to="/build-operator/initiation">Build Operate
+              Transfer </Link></li>
+              {/* <li className="footerLink"><Link>News & Media</Link></li> */}
+             <li className="footerLink"><Link to="/managed-teams/relationship">Managed Teams</Link></li>
             </ul>
           </div>
+          
 
           {/* Industries Section */}
           <div className="footer-column col-12 col-md">
