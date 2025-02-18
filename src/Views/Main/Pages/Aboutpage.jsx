@@ -11,17 +11,19 @@ const AboutPage = () => {
     {
       title: "Meet Our Leadership Team",
       image: require("../../../Assets/Images/About-Us.jpg"), // Update with your image path
+      link: "/GCC-Connect/leadership-page", // Update with the actual route
     },
     {
       title: "Discover Solution",
       image: require("../../../Assets/Images/Solutions-head/AI_Led_Talent_Supply_Process.jpg"), // Update with your image path
+      link: "/GCC-Connect/consulting-services", // Update with the actual route
     },
     {
       title: "Explore Model",
       image: require("../../../Assets/Images/Consulting& Advisory.jpg"), // Update with your image path
+      link: "/GCC-Connect/details/initiation", // Update with the actual route
     },
   ];
-
 
   const content = [
     { title: "Integrity", text: "Honor your commitments and never compromise values.", icon: <FaBalanceScale size={40} /> },
@@ -124,7 +126,9 @@ const AboutPage = () => {
                 <img src={section.image} alt={section.title} className="about-us-img" />
                 <div className="about-us-overlay">
                   <h3>{section.title}</h3>
-                  <div className="about-us-icon">➜</div>
+                 
+                  <a  href={section.link} className="about-us-icon  text-decoration-none" target="_blank">➜</a>
+                 
                 </div>
               </div>
             ))}
