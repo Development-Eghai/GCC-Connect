@@ -685,7 +685,7 @@ th {
   display: flex;
   padding: 40px 46px 40px 40px;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   border-radius: 16px;
   background-color: #f0f0f0;
 }
@@ -1439,8 +1439,15 @@ th {
 
 }
 
+
+.detailsForm-List-text {
+  /* list-style-type: none !important; */
+  font-size: 18px !important;
+}
+
 .detailsForm-List {
   list-style-type: none !important;
+  font-size: 16px !important;
 }
 
 .getTouchBox {
@@ -1808,6 +1815,20 @@ align-items: center;
   text-align: justify !important;
   font-size: 15px !important;
   text-align-last: left !important;
+
+}
+
+.globaljustifyforsolution {
+  text-align: justify !important;
+  font-size: 17px !important;
+  text-align-last: left !important;
+
+}
+
+.globaljustifymod{
+  text-align: justify !important;
+  font-size: 16px !important;
+  text-align-last: center !important;
 
 }
 

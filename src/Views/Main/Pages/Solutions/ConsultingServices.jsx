@@ -59,7 +59,7 @@ const ConsultingServices = () => {
             <div className="overViewBox d-flex flex-column flex-lg-row p-4">
               <div className="col-12 col-lg-6 p-3">
                 <h3 className="mb-3 headTextGreen">Overview</h3>
-                <p className="mb-4 ">
+                <p className="mb-4  globaljustifyforsolution">
                   Flexible growth-aligned payment model for building global
                   capabilities.Our GCC model helps you establish a fully
                   functional global capability center tailored to your business

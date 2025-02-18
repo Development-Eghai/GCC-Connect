@@ -35,7 +35,7 @@ const WorkplaceSolution = () => {
             <div className="overViewBox d-flex flex-column flex-lg-row p-4">
               <div className="col-12 col-lg-6 p-3">
                 <h3 className="mb-3 headTextGreen">Overview</h3>
-                <p className="mb-4 ">
+                <p className="mb-4 globaljustifyforsolution ">
                   At PixelAdvant, we believe that a workspace is more than a
                   physical space—it is a strategic asset that drives innovation,
                   collaboration, and operational efficiency. We facilitate the
@@ -46,10 +46,10 @@ const WorkplaceSolution = () => {
               </div>
               <div className="col-12 col-lg-6 p-3" style={{ height: "280px" }}>
 
-                <img src={require("../../../../Assets/Images/Workspace-Design.jpg")} alt="sample image" className="mb-4 rounded w-100 h-100 custom-img-height-solution" />
+                <img src={require("../../../../Assets/Images/Solutions-head/Workspace_Solution.jpg")} alt="sample image" className="mb-4 rounded w-100  " />
               </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="row mt-5 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
               {cardData.map((data, i) => {
                 return (
                   <div className="col p-3 " key={i}>

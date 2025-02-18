@@ -57,10 +57,10 @@ const BuildOperator = () => {
               </div>
             </div>
 
-            <div className="col-lg-7 col-md-6 col-12 col-sm-12 p-4">
-              <div className="image-container">
+            <div className="col-lg-6 col-md-6 col-12 col-sm-12 p-4">
+              <div className="">
                 <img
-                  src={require('../../../../Assets/Images/BOT_Icons/Phases_Of_BOT_Model.jpg')}
+                  src={require('../../../../Assets/Images/Models-head/Build_Operate.jpg')}
                   alt="sample image"
                   className="mb-4 w-100 rounded img-fluid"
                 />

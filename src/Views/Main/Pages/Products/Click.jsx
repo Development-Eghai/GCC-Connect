@@ -40,7 +40,7 @@ const Click = () => {
             <div className="overViewBox d-flex flex-column flex-lg-row p-4">
               <div className="col-12 col-lg-6 p-3">
                 <h3 className="mb-3 headTextGreen">Overview</h3>
-                <p className="mb-4 ">
+                <p className="mb-4 globaljustify ">
                   Pixeladvant believes that first 100 employees are important
                   for successful GCC setup. Our inhouse tool Click100 helps you
                   plan for talent needs to successful hiring. Click100 is a
@@ -50,9 +50,9 @@ const Click = () => {
               </div>
               <div className="col-12 col-lg-6 p-3" >
                 <img
-                  src={require("../../../../Assets/Images/Click/Click-100-Descriptive-Image.jpg")}
+                  src={require("../../../../Assets/Images/Products-head/Click100.jpg")}
                   alt="sample image"
-                  className="mb-4 w-100 h-100 object"
+                  className="mb-4 w-100 rounded object"
                 />
               </div>
             </div>

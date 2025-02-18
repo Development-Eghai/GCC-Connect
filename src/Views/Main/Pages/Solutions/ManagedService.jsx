@@ -42,7 +42,7 @@ const ManagedService = () => {
             <div className=" d-flex flex-column flex-lg-row p-4">
               <div className=" col-12 col-lg-6 p-3">
                 <h3 className="mb-3 headTextGreen">Overview</h3>
-                <p className="mb-4 ">
+                <p className="mb-4 globaljustifyforsolution">
                   At PixelAdvant, we specialize in facilitating managed services
                   that empower Global Capability Centers (GCCs) to optimize
                   operations, ensure compliance, and drive value creation across
@@ -53,7 +53,7 @@ const ManagedService = () => {
               </div>
               <div className="col-12 col-lg-6 p-3">
                 <img
-                  src={require("../../../../Assets/Images/Managed-Services.jpg")}
+                  src={require("../../../../Assets/Images/Solutions-head/Managed_Services.jpg")}
                   alt="sample image"
                   className="mb-4 w-100 rounded "
                 />

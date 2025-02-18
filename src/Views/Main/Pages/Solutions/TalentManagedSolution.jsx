@@ -55,12 +55,12 @@ const TalentManagedSolution = () => {
             <div className="overViewBox d-flex flex-column flex-lg-row mb-3 mt-5">
               <div className="col-12 col-lg-6 ">
                 <h3 className="mb-3 headTextGreen">Overview</h3>
-                <p className="mb-4 ">
+                <p className="mb-4 globaljustifyforsolution ">
                 GCC  Vue360 provides comprehensive talent management solutions that align with your organizational goals and workforce needs. Our offerings include:
                 </p>
 
                 <div className="col-12 p-3 d-lg-none d-block">
-                <img src={require("../../../../Assets/Images/Talent-Managemen-System.jpg")}  alt="sample image" className="mb-4 w-100 rounded custom-img-height-solution" />
+                <img src={require("../../../../Assets/Images/Solutions-head/Talent_Managemen_System.jpg")}  alt="sample image" className="mb-4 w-100 rounded " />
               </div>
 
 
@@ -80,7 +80,7 @@ const TalentManagedSolution = () => {
                 </div>
               </div>
               <div className="col-6 p-3 d-none d-lg-block">
-                <img src={require("../../../../Assets/Images/Talent-Managemen-System.jpg")}  alt="sample image" className="mb-4 w-100 " />
+                <img src={require("../../../../Assets/Images/Solutions-head/Talent_Managemen_System.jpg")}  alt="sample image" className="mb-4 w-100 h-75 rounded "   />
               </div>
             </div>
             <div className="coreOfferingBox d-flex flex-wrap">

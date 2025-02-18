@@ -129,7 +129,7 @@ const Header = () => {
                         Pioneering value-centric workforces with AI and analytics
                       </p>
                       <ul className="list-unstyled ">
-                        <li><NavLink className="  py-2" to="/consulting-services">Smart Talent Acquisition with AI-Led Innovation</NavLink></li>
+                        <li><NavLink className="  py-2" to="/smart-talent">Smart Talent Acquisition with AI-Led Innovation</NavLink></li>
                         <li><NavLink className=" py-2" to="/ailed-service">AI Led Talent Supply Process</NavLink></li>
                         <li><NavLink className=" py-2" to="/talent-solution">Talent Management Solutions</NavLink></li>
                       </ul>
@@ -193,9 +193,10 @@ const Header = () => {
                         Pioneering value-centric workforces with AI and analytics
                       </p>
                       <ul className="list-unstyled ">
-                        <li><NavLink className=" py-2" to="/products/click-100">Leep</NavLink></li>
-                        <li><NavLink className=" py-2" to="/products/click-100">Loop</NavLink></li>
-                        <li><NavLink className=" py-2" to="/products/click-100">Rise</NavLink></li>
+                        <li><NavLink className=" py-2" to="/products/click-100">Talent Network</NavLink></li>
+                        <li><NavLink className=" py-2" to="/products/click-100">AI/ML Based Recruiting Intelligence
+                        </NavLink></li>
+                        <li><NavLink className=" py-2" to="/products/click-100">Automation</NavLink></li>
                       </ul>
                     </div>
 

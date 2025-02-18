@@ -56,13 +56,13 @@ const AdvantagePlus = () => {
           <div className="overViewBox d-flex flex-column flex-lg-row p-4">
             <div className="col-12 col-lg-6 p-3">
               <h3 className="mb-3 headTextGreen">Overview</h3>
-              <p className="mb-4 ">
+              <p className="mb-4  globaljustify">
               It is an industry breakthrough product which helps our global client to select thousands of candidates within few minutes for their open positions.  All of these profiles are preselected based on client agreed unique requirements and needs.
               </p>
             </div>
             <div className="col-12 col-lg-6 p-3" >
             
-              <img  src={require("../../../../Assets/Images/AdvantagePlus/Advatage-Plus-Descriptive-Plus.jpg")} alt="sample image" className="mb-4 w-100 h-100" />
+              <img  src={require("../../../../Assets/Images/Products-head/AdvantagePlus.jpg")} alt="sample image" className="mb-4 w-100 rounded" />
             </div>
           </div>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">

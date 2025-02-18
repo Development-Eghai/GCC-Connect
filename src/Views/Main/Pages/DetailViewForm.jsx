@@ -112,14 +112,14 @@ const DetailViewForm = () => {
           <label for="inputMessage" className="form-label">Message</label>
           <textarea className="form-control" id="inputMessage" rows="3"></textarea>
         </div>
-        <div className="form-check px-3">
+        <div className="form-check px-5">
           <input className="form-check-input" type="checkbox" id="privacyPolicy" />
           <label className="form-check-label" for="privacyPolicy">
             I understand & agree to the Privacy Policy.
           </label>
         </div>
         <div className="px-3 col-12">
-          <button className="col-12 py-4 FormBtn rounded-3 fs-3 fw-bold" type="submit">
+          <button className="col-12 mt-4 py-2 FormBtn rounded-3 fs-5 fw-bold" type="submit">
             Submit <span className="ms-2">{Icons.arrowIcon}</span>
           </button>
         </div>

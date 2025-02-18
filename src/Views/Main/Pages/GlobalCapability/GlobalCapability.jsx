@@ -27,7 +27,7 @@ const GlobalCapability = () => {
                 <h3 className="mb-3">Overview</h3>
                 <p className="globaljustify">
                   Flexible growth-aligned payment model for building global
-                  capabilities.Our GCC model helps you establish a fully functional
+                  capabilities. Our GCC model helps you establish a fully functional
                   global capability center tailored to your business needs. From
                   legal entity setup to workspace design and talent acquisition, we
                   provide end-to-end support with the flexibility to scale as your
@@ -36,12 +36,12 @@ const GlobalCapability = () => {
               </div>
             </div>
 
-            <div className="col-lg-7 col-md-6 col-12 col-sm-12 p-4">
-              <div className="image-container">
+            <div className="col-lg-6 col-md-6 col-12 col-sm-12 p-4">
+              <div className="container">
                 <img
-                  src={require('../../../../Assets/Images/Icons/KeyFeatures/Phases_of_GCC.png')}
+                  src={require('../../../../Assets/Images/Models-head/Global_Capability.jpg')}
                   alt="sample image"
-                  className="mb-4 w-100 rounded img-fluid"
+                  className="mb-4 w-100 rounded "
                 />
               </div>
 

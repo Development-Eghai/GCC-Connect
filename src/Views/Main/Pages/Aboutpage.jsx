@@ -24,24 +24,19 @@ const AboutPage = () => {
             <h4 className="aboutheadtext  text-uppercase fw-bold">
               Who We Are
             </h4>
-            <h2 className="aboutheadtext fw-bold">A Vital, Trusted Partner</h2>
+            <h2 className="aboutheadtext fw-bold">An Integral, Trusted Partner in GCC</h2>
+            <h4 className=" fw-bold mt-4">Expertise across the GCC Delivery System</h4>
             <p className="text-muted abouttext">
-              Acentra Health brings together a deep collective of expertise
-              across all facets with 30+ years of public sector health knowledge
-              and experience. We deliver continued excellence through our
-              services and solutions to produce maximum value and impact.
+              Across every critical touchpoint GCC journey, we provide innovative solutions and services that positively impact outcomes for all stakeholders.
             </p>
             <p className="text-muted abouttext">
-              Our power derives from our ability to integrate innovative
-              technology with high-quality care management, quality oversight,
-              and clinical assessment capabilities.
+              Our solutions are flexible and scalable, customized to suit your organization’s most complex GCC challenges. No matter your pain point, we deliver reliable and transformational outcomes.
             </p>
             <p className="text-muted abouttext">
-              With an expansive network, Acentra Health requires the hard work
-              and dedication of our 3,000 employees, 4,500+ credentialed
-              clinicians, and 450 physicians serving on the company’s Advisory
-              and Review panel.
+              Our GCC VUE360 product provides end to end solutions that are required by companies for setting up successful innovation centers in India. We will partner with companies at every stage of this process.
             </p>
+            <p className="text-muted abouttext">
+            Our products support Legal & compliance, workspace, Talent, HR, Operation, and payroll business areas that are critical for successful entity setup.             </p>
           </div>
 
           {/* Right Side: Video Thumbnail with Play Button (col-6) */}
@@ -60,7 +55,7 @@ const AboutPage = () => {
                         </button> */}
           </div>
         </div>
-        <div>
+        {/* <div>
           <p className="text-muted abouttext">
             With an expansive network, Acentra Health requires the hard work and
             dedication of our 3,000 employees, 4,500+ credentialed clinicians,
@@ -70,7 +65,7 @@ const AboutPage = () => {
             work as one to help state and federal partners lead the way in
             achieving better health outcomes for priority populations we serve.
           </p>
-        </div>
+        </div> */}
 
         {/* Top Cards Section */}
         <div className="row text-center justify-content-center g-4 mb-4 align-items-stretch">

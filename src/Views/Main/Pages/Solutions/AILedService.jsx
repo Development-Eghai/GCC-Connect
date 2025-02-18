@@ -10,31 +10,31 @@ const AILedService = () => {
   const data1 = [
     {
       title: "Intelligent Talent Pools",
-      icon:Icons.talentPoolIcon,
+      icon: Icons.talentPoolIcon,
       content:
         "Identify and access the most suitable candidates for each role.",
     },
 
     {
       title: "Optimized Screening",
-      icon:Icons.optimizedScreenIcon,
+      icon: Icons.optimizedScreenIcon,
       content:
         "Save time with AI-powered candidate screening that prioritizes quality over quantity.",
     },
-   
+
   ]
 
 
   const cardData = [
     {
       title: "Pre-Validated Talent Pipeline",
-      icon:Icons.talentPipelineIcon,
+      icon: Icons.talentPipelineIcon,
       content:
         "Benefit from a ready-to-deploy talent pool of over 5,000 pre-screened candidates.",
     },
     {
       title: "Technology-Enabled Outreach",
-      icon:Icons.technologyEnabledIcon,
+      icon: Icons.technologyEnabledIcon,
       content:
         "Engage candidates through cutting-edge communication tools to connect faster and more effectively.",
     }
@@ -58,7 +58,7 @@ const AILedService = () => {
                 </p>
 
                 <div className="col-12 p-lg-3 d-lg-none d-block">
-                  <img src={require("../../../../Assets/Images/AI-Led-Talent-Supply-Process.jpg")} alt="sample image" className="mb-4 w-100 " />
+                  <img src={require("../../../../Assets/Images/Solutions-head/AI_Led_Talent_Supply_Process.jpg")} alt="sample image" className="mb-4 w-100 rounded " />
                 </div>
                 <div className="d-flex flex-wrap">
                   {
@@ -76,7 +76,7 @@ const AILedService = () => {
                 </div>
               </div>
               <div className="col-12 col-lg-6 p-3 d-none d-lg-block">
-                <img src={require("../../../../Assets/Images/AI-Led-Talent-Supply-Process.jpg")} alt="sample image" className="mb-4 w-100 " />
+                <img src={require("../../../../Assets/Images/Solutions-head/AI_Led_Talent_Supply_Process.jpg")} alt="sample image" className="mb-4 w-100 h-75 rounded " />
               </div>
             </div>
             <div className="coreOfferingBox d-flex flex-wrap">
@@ -88,7 +88,12 @@ const AILedService = () => {
                 );
               })}
               <div className="col-lg-6 px-4 py-3 d-flex flex-column justify-content-evenly rounded-4" style={{ backgroundColor: "#042126" }}>
-                <div className="d-flex justify-content-center align-items-center "><span>{Icons.manArroowWhiteIcon}</span></div>
+                <div className="d-flex justify-content-center align-items-center">
+                  <img src={require("../../../../Assets/Images/AI-Led-Talent-Supply-Process.png")} 
+                  alt="AI-Led Talent Supply Process"  
+                  style={{ width: "100px", height: "100px" }}  />
+                </div>
+
                 <div className="d-flex justify-content-center align-items-center"><p className="mb-0 text-white">PixelAdvant’s AI-led process ensures you secure top talent faster, saving time, resources, and effort while driving recruitment excellence.</p></div>
               </div>
             </div>
@@ -96,8 +101,8 @@ const AILedService = () => {
         </div>
       </div>
       <div className="highlightForm">
-          <HighLightComp />
-        </div>
+        <HighLightComp />
+      </div>
       <div className="FooterContainer">
         <Footer />
       </div>

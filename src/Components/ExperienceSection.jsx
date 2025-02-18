@@ -37,19 +37,19 @@ const ExperienceSection = () => {
             <div className="features-container ">
               <ul className="features text-start text-secondary ">
                 <li>
-                  <span className=" me-3">{Icons.ExperienceSectionTickIcon}</span> Beyond proven technologies, we provide a new way of thinking.
+                  <span className=" me-3  globaljustify">{Icons.ExperienceSectionTickIcon}</span> Beyond proven technologies, we provide a new way of thinking.
                 </li>
                 <li>
-                  <span className="me-3">{Icons.ExperienceSectionTickIcon}</span> Powerful solutions designed to solve your GCC needs.
+                  <span className="me-3 globaljustify">{Icons.ExperienceSectionTickIcon}</span> Powerful solutions designed to solve your GCC needs.
                 </li>
                 <li>
-                  <span className="me-3">{Icons.ExperienceSectionTickIcon}</span> Quickly adapt to changing GCC business requirements with a flexible, configurable system.
+                  <span className="me-3 globaljustify">{Icons.ExperienceSectionTickIcon}</span> Quickly adapt to changing GCC business requirements with a flexible, configurable system.
                 </li>
                 <li>
-                  <span className="me-3">{Icons.ExperienceSectionTickIcon}</span> Streamline manual, time-consuming processes with our modernized approach.
+                  <span className="me-3 globaljustify">{Icons.ExperienceSectionTickIcon}</span> Streamline manual, time-consuming processes with our modernized approach.
                 </li>
                 <li>
-                  <span className="me-3">{Icons.ExperienceSectionTickIcon}</span> Utilize a team of GCC experts with a deep collective of knowledge and support.
+                  <span className="me-3 globaljustify">{Icons.ExperienceSectionTickIcon}</span> Utilize a team of GCC experts with a deep collective of knowledge and support.
                 </li>
               </ul>
             </div>

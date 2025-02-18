@@ -58,7 +58,7 @@ const SmartTalent = () => {
                 </p>
 
                 <div className="col-12 p-lg-3 d-lg-none d-block">
-                  <img src={require("../../../../Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg")}  alt="sample image" className="mb-4 w-100 rounded custom-img-height-solution " />
+                  <img src={require("../../../../Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg")}  alt="sample image" className="mb-4 w-100 rounded  " />
                 </div>
                 <div className="d-flex flex-wrap">
                   {
@@ -76,7 +76,7 @@ const SmartTalent = () => {
                 </div>
               </div>
               <div className="col-12 col-lg-6 p-3 d-none d-lg-block">
-                <img src={require("../../../../Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg")} alt="sample image" className="mb-4 w-100 " />
+                <img src={require("../../../../Assets/Images/Solutions-head/Smart_Talent_Acquisition_with_AI_Led_Innovation.jpg")} alt="sample image" className="mb-4 w-100 h-75 rounded  " />
               </div>
             </div>
 
@@ -98,7 +98,11 @@ const SmartTalent = () => {
                 
                  <div className="col-12 mt-3 col-lg-6 p-3 d-flex flex-column justify-content-evenly rounded-4" style={{ backgroundColor: "#042126" }}>
                     <div className="  d-flex justify-content-center align-items-center">
-                      <span>{Icons.manArroowWhiteIcon}</span>
+                    <div className="d-flex justify-content-center align-items-center">
+                  <img src={require("../../../../Assets/Images/Smart-Talent-Acquisiton.png")} 
+                  alt="AI-Led Talent Supply Process"  
+                  style={{ width: "100px", height: "100px" }}  />
+                </div>
                     </div>
                     <div className="d-flex justify-content-center align-items-center">
                       <p className="mb-0 text-white">With real-time AI-based reporting, organizations can make informed decisions, streamline recruiting efforts, and optimize budgets.</p>
