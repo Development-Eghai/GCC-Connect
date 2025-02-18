@@ -58,7 +58,7 @@ const SmartTalent = () => {
                 </p>
 
                 <div className="col-12 p-lg-3 d-lg-none d-block">
-                  <img src={require("../../../../Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg")}  alt="sample image" className="mb-4 w-100 rounded  " />
+                  <img src={require("../../../../Assets/Images/Solutions-head/Smart_Talent_Acquisition_with_AI_Led_Innovation.jpg")}  alt="sample image" className="mb-4 w-100 rounded object-fit-cover  " />
                 </div>
                 <div className="d-flex flex-wrap">
                   {
@@ -76,7 +76,7 @@ const SmartTalent = () => {
                 </div>
               </div>
               <div className="col-12 col-lg-6 p-3 d-none d-lg-block">
-                <img src={require("../../../../Assets/Images/Solutions-head/Smart_Talent_Acquisition_with_AI_Led_Innovation.jpg")} alt="sample image" className="mb-4 w-100 h-75 rounded  " />
+                <img src={require("../../../../Assets/Images/Solutions-head/Smart_Talent_Acquisition_with_AI_Led_Innovation.jpg")} alt="sample image" className="mb-4 w-100 h-75 rounded object-fit-cover   " />
               </div>
             </div>
 
