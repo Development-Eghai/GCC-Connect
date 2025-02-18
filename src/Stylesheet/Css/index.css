@@ -1030,7 +1030,8 @@ th {
 }
 
 .contact-btn:hover {
-  background-color: #444;
+  background-color: #131313;
+  text-decoration: none;
 }
 
 .read-more-btn {
