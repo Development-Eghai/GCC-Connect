@@ -4,11 +4,23 @@ import { useLocation } from "react-router-dom";
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
+  const excludedPaths = [
+    "/details/implementation",
+    "/details/ongoing-support",
+    "/build-operator/build",
+    "/build-operator/operate",
+    "/build-operator/transfer",
+    "/managed-teams/record",
+    "/managed-teams/services"
+  ];
+
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (!excludedPaths.includes(pathname)) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
   }, [pathname]);
 
   return null;
