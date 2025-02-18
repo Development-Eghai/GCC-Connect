@@ -101,7 +101,7 @@ const AboutPage = () => {
         {/* Top Cards Section */}
         
         <div className="row mt-4 text-center justify-content-center g-2 mb-4 align-items-stretch">
-        <h2 className="about-us-title">Get to Know More About Us</h2>
+        <h2 className="about-us-title">Our Core Values</h2>
           {content.map((item, index) => (
             <div key={index} className="col-md-3 py-4 g-2 col-sm-6 d-flex">
               <div className="p-4  py-5 bg-dark text-white rounded shadow w-100 d-flex flex-column justify-content-center align-items-center">
