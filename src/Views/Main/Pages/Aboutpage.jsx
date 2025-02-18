@@ -2,7 +2,39 @@ import Footer from "Components/footer";
 import React from "react";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 
+import { FaBalanceScale, FaHandsHelping, FaHandshake, FaLightbulb, FaTrophy } from "react-icons/fa";
+
+
 const AboutPage = () => {
+
+  const sections = [
+    {
+      title: "Meet Our Leadership Team",
+      image: require("../../../Assets/Images/About-Us.jpg"), // Update with your image path
+    },
+    {
+      title: "Discover Solution",
+      image: require("../../../Assets/Images/Solutions-head/AI_Led_Talent_Supply_Process.jpg"), // Update with your image path
+    },
+    {
+      title: "Explore Model",
+      image: require("../../../Assets/Images/Consulting& Advisory.jpg"), // Update with your image path
+    },
+  ];
+
+
+  const content = [
+    { title: "Integrity", text: "Honor your commitments and never compromise values.", icon: <FaBalanceScale size={40} /> },
+    { title: "Empathy", text: "Empathize with those we serve and collaborate with.", icon: <FaHandsHelping size={40} /> },
+    { title: "Relationships", text: "Build trust by collaborating.", icon: <FaHandshake size={40} /> },
+    { title: "Innovation", text: "Invent the future and draw wisdom from the past.", icon: <FaLightbulb size={40} /> },
+    { title: "Performance", text: "Demonstrate excellence in everything we do.", icon: <FaTrophy size={40} /> },
+  ];
+
+
+
+
+
   return (
     <div>
       <div className="Aboutpagehead col-12">
@@ -10,9 +42,8 @@ const AboutPage = () => {
           <div className="   mb-0">
             <p className="AboutpageheadText">About Us</p>
             <div className="text-wrap abouttext  text-center d-flex justify-content-center">
-              Acentra Health is dedicated to modernizing the healthcare
-              experience and ensuring better health outcomes with our innovative
-              technology solutions and services.
+            Across every critical touchpoint GCC journey, we provide innovative solutions and services that positively impact outcomes for all stakeholders.
+
             </div>
           </div>
         </div>
@@ -36,7 +67,7 @@ const AboutPage = () => {
               Our GCC VUE360 product provides end to end solutions that are required by companies for setting up successful innovation centers in India. We will partner with companies at every stage of this process.
             </p>
             <p className="text-muted abouttext">
-            Our products support Legal & compliance, workspace, Talent, HR, Operation, and payroll business areas that are critical for successful entity setup.             </p>
+              Our products support Legal & compliance, workspace, Talent, HR, Operation, and payroll business areas that are critical for successful entity setup.             </p>
           </div>
 
           {/* Right Side: Video Thumbnail with Play Button (col-6) */}
@@ -68,73 +99,39 @@ const AboutPage = () => {
         </div> */}
 
         {/* Top Cards Section */}
-        <div className="row text-center justify-content-center g-4 mb-4 align-items-stretch">
-          {[
-            "CMS-Certified Solutions",
-            "CMMI Level 4 Appraisal",
-            "URAC Accredited",
-            "HITRUST Certified",
-          ].map((title, index) => (
-            <div key={index} className="col-md-3 g-3 col-sm-6 d-flex">
-              <div className="p-4 bg-dark text-white rounded shadow w-100 d-flex flex-column justify-content-center align-items-center">
-                <FaArrowAltCircleDown
-                  size={40}
-                  className="aboutheadtext mb-3"
-                />
-                <h5 className="fw-bold">{title}</h5>
+        
+        <div className="row mt-4 text-center justify-content-center g-2 mb-4 align-items-stretch">
+        <h2 className="about-us-title">Get to Know More About Us</h2>
+          {content.map((item, index) => (
+            <div key={index} className="col-md-3 py-4 g-2 col-sm-6 d-flex">
+              <div className="p-4  py-5 bg-dark text-white rounded shadow w-100 d-flex flex-column justify-content-center align-items-center">
+                <div className="mb-3  about-us-title ">{item.icon}</div>
+                <h5 className="fw-bold about-us-title">{item.title}</h5>
+                <p className="text-center ">{item.text}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Title & Subtitle */}
-        <div className="text-center mb-5 mt-5">
-          <h5 className="aboutheadtext text-uppercase fw-bold">Who We Serve</h5>
-          <h2 className="fw-bold aboutheadtext">
-            Providing Solutions & Services to Our Network
-          </h2>
-        </div>
 
-        {/* Two-Column Content */}
-        <div className="row">
-          {/* Left Column */}
-          <div className="col-md-6">
-            <p className="text-muted  abouttext">
-              Acentra Health provides services in all 50 states, partnering with
-              45 state Medicaid agencies and 25 federal agencies across 12
-              departments. This includes:
-            </p>
-            <ul className="list-unstyled aboutheadtext fw-bold">
-              {[
-                "Centers for Medicare & Medicaid Services",
-                "Department of Health & Human Services",
-                "Department of Health Resources & Services Administration",
-                "Department of Labor",
-                "Department of Veterans Affairs",
-              ].map((item, index) => (
-                <li key={index} className="mb-2 abouttext">
-                  ✔ {item}
-                </li>
-              ))}
-            </ul>
-          </div>
 
-          {/* Right Column */}
-          <div className="col-md-6">
-            <p className="text-muted abouttext">
-              We enhance payment and service delivery to millions of medical and
-              social services providers, hospitals, pharmacies, equipment, and
-              nursing homes. In total, we serve over 140 million beneficiaries
-              nationwide.
-            </p>
-            <p className="text-muted abouttext">
-              We conduct over 700,000+ assessments annually and over 10 million
-              annual Utilization Management (UM) reviews. Our systems process
-              over 1.8 billion claims annually (10.4 million encounters in a
-              single day) and disburse over $48 billion in payments annually.
-            </p>
+        <div className="about-us-container  row">
+          <h2 className="about-us-title">Get to Know More About Us</h2>
+          <div className="about-us-grid">
+            {sections.map((section, index) => (
+              <div className="about-us-card" key={index}>
+                <img src={section.image} alt={section.title} className="about-us-img" />
+                <div className="about-us-overlay">
+                  <h3>{section.title}</h3>
+                  <div className="about-us-icon">➜</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+
+
         {/* <div className="vh-50 position-relative text-center">
                         <img
                             src="/GCC-Connect/static/media/Flexiblegrowth-alignedpayment.7aed4db8572ed533a6c8.jpg" // Replace with actual image URL
