@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GCC-Connect/static/css/main.9931258a.css",
-    "main.js": "/GCC-Connect/static/js/main.30ac9748.js",
+    "main.js": "/GCC-Connect/static/js/main.5a7e8ee5.js",
     "static/media/Managed_Services.jpg": "/GCC-Connect/static/media/Managed_Services.51f9676c18009e282fb2.jpg",
     "static/media/SmartTalentAcquisiton.jpg": "/GCC-Connect/static/media/SmartTalentAcquisiton.066fa463910c45149b81.jpg",
     "static/media/Click100.jpg": "/GCC-Connect/static/media/Click100.c392afb9b15f53a76832.jpg",
@@ -109,10 +109,10 @@
     "static/media/Conulting-and-Advisory.png": "/GCC-Connect/static/media/Conulting-and-Advisory.a7073065fbe6148cdde3.png",
     "index.html": "/GCC-Connect/index.html",
     "main.9931258a.css.map": "/GCC-Connect/static/css/main.9931258a.css.map",
-    "main.30ac9748.js.map": "/GCC-Connect/static/js/main.30ac9748.js.map"
+    "main.5a7e8ee5.js.map": "/GCC-Connect/static/js/main.5a7e8ee5.js.map"
   },
   "entrypoints": [
     "static/css/main.9931258a.css",
-    "static/js/main.30ac9748.js"
+    "static/js/main.5a7e8ee5.js"
   ]
 }
