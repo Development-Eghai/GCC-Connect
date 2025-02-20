@@ -6,27 +6,27 @@ const GlobalOngoing = () => {
     {
       title: "Talent Lifecycle Management",
       content: "Managing recruitment, onboarding, retention and offboarding processes.",
-      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/Talent Life Cycle Management.png')
+      image: require('../../../../Assets/Images/Icons/GCC Ongoing Support/Talent Life Cycle Management.png')
     },
     {
       title: "Tax & Compliance",
       content: "Staying ahead of regulatory requirements, onboarding, retention, and offboarding processes.",
-      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/Tax & Compliance.png')
+      image: require('../../../../Assets/Images/Icons/GCC Ongoing Support/Tax & Compliance.png')
     },
     {
       title: "Workspace Management",
       content: "Ensuring a modern, efficient workplace environment.",
-      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/Workspace Management.png')
+      image: require('../../../../Assets/Images/Icons/GCC Ongoing Support/Workspace Management.png')
     },
     {
       title: "IT Change Management",
       content: "Supporting digital transformation and IT enhancements.",
-      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/IT Change Management.png')
+      image: require('../../../../Assets/Images/Icons/GCC Ongoing Support/IT Change Management.png')
     },
     {
       title: "HR Operations",
       content: "Handling payroll, benefits, and HR compliance efficiently.",
-      image:require('../../../../Assets/Images/Icons/GCC Ongoing Support/HR Operations.png')
+      image: require('../../../../Assets/Images/Icons/GCC Ongoing Support/HR Operations.png')
     }
   ];
 
@@ -44,7 +44,31 @@ const GlobalOngoing = () => {
               </div>
             </div>
           </div>
-          <div className="headerContainer mt-5 px-lg-4">
+
+          <div className="headerContainer mt-0 px-lg-4">
+            <div className="row px-3 d-flex align-items-center">
+              <div className="col-12 col-sm-6 mt-3 col-md-1 d-flex justify-content-center">
+                <span>
+                  <img
+                    src={require('../../../../Assets/Images/Icons/Goal/Goal.png')}
+                    alt="sample image"
+                    className="w-100 rounded img-fluid"
+                  />
+                </span>
+              </div>
+              <div className="col-12  ps-2 col-sm-6 col-md-10 mt-3">
+                <h4 className="text-success  globalHead">Goal</h4>
+                <p className="globaljustify">
+                  Maintain operational excellence and scalability.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="card-body pt-0">
+
+            {/* <div className="headerContainer mt-5 px-lg-4">
             <div className="row d-flex align-items-center">
               <div className="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
                 <span>
@@ -64,7 +88,7 @@ const GlobalOngoing = () => {
 
 
           </div>
-          <div class="card-body">
+          <div class="card-body"> */}
             <hr />
             {/* Cards Section */}
             <div className="BodyContainer col-12 d-flex flex-wrap justify-content-start">
@@ -72,11 +96,11 @@ const GlobalOngoing = () => {
                 <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3" key={index}>
                   <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
                     <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                    <img
-                    src={item?.image}
-                    alt="sample image"
-                    className="w-50 rounded img-fluid"
-                  />  
+                      <img
+                        src={item?.image}
+                        alt="sample image"
+                        className="w-50 rounded img-fluid"
+                      />
                     </div>
                     <hr />
                     <div className="d-flex flex-column flex-grow-1">

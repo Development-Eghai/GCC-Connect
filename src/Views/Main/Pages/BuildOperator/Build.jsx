@@ -32,7 +32,32 @@ const Build = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="headerContainer mt-5 px-lg-4">
+
+                    <div className="headerContainer mt-0 px-lg-4">
+                        <div className="row  d-flex align-items-center">
+                            <div className="col-12 col-sm-6 mt-3 col-md-1 d-flex justify-content-center">
+                                <span>
+                                    <img
+                                        src={require('../../../../Assets/Images/Icons/Goal/Goal.png')}
+                                        alt="sample image"
+                                        className="w-100 rounded img-fluid"
+                                    />
+                                </span>
+                            </div>
+                            <div className="col-12  ps-2 col-sm-6 col-md-10 mt-3">
+                                <h4 className="text-success  globalHead">Purpose</h4>
+                                <p className="globaljustify">
+                                Set up the GCC framework with operational readiness.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card-body pt-0">
+
+
+                    {/* <div className="headerContainer mt-5 px-lg-4">
                         <div className="row d-flex align-items-center">
                             <div className="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
                                 <span>
@@ -53,7 +78,7 @@ const Build = () => {
 
 
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"> */}
                         <hr />
                         <div className="BodyContainer col-12 d-flex flex-wrap">
                             {buildSteps.map((step, index) => (

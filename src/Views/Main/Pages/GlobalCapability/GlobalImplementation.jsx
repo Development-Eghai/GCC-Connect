@@ -15,14 +15,36 @@ const GlobalImplementation = () => {
               </div>
             </div>
           </div>
-          <div className="headerContainer mt-5 px-lg-4">
+
+          <div className="headerContainer mt-0 px-lg-4">
+                        <div className="row px-3 d-flex align-items-center">
+                            <div className="col-12 col-sm-6 mt-3 col-md-1 d-flex justify-content-center">
+                                <span>
+                                    <img
+                                        src={require('../../../../Assets/Images/Icons/Goal/Goal.png')}
+                                        alt="sample image"
+                                        className="w-100 rounded img-fluid"
+                                    />
+                                </span>
+                            </div>
+                            <div className="col-12  ps-2 col-sm-6 col-md-10 mt-3">
+                                <h4 className="text-success  globalHead">Goal</h4>
+                                <p className="globaljustify">
+                                Establish a strong foundation with a clear strategy and roadmap.                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card-body pt-0">
+          {/* <div className="headerContainer mt-0 px-lg-4">
             <div className="row d-flex align-items-center">
-              <div className="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
+              <div className="col-12 col-sm-6 col-md-1 d-flex justify-content-center">
                 <span>
                   <img
                     src={require('../../../../Assets/Images/Icons/Goal/Goal.png')}
                     alt="sample image"
-                    className="w-75 rounded img-fluid"
+                    className="w-100 rounded img-fluid"
                   />
                 </span>
               </div>
@@ -36,7 +58,7 @@ const GlobalImplementation = () => {
 
 
           </div>
-          <div class="card-body">
+          <div class="card-body"> */}
             <hr />
             <div className="keyFeature col-12 d-flex flex-column flex-sm-row flex-wrap">
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">

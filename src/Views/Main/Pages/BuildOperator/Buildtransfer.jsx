@@ -35,6 +35,31 @@ const BuildTransfer = () => {
                             </div>
                         </div>
                     </div>
+
+                    <div className="headerContainer mt-0 px-lg-4">
+                        <div className="row px-3 d-flex align-items-center">
+                            <div className="col-12 col-sm-6 mt-3 col-md-1 d-flex justify-content-center">
+                                <span>
+                                    <img
+                                        src={require('../../../../Assets/Images/Icons/Goal/Goal.png')}
+                                        alt="sample image"
+                                        className="w-100 rounded img-fluid"
+                                    />
+                                </span>
+                            </div>
+                            <div className="col-12  ps-2 col-sm-6 col-md-10 mt-3">
+                                <h4 className="text-success  globalHead">Purpose</h4>
+                                <p className="globaljustify">
+                                    Transition the GCC ownership to you with complete support.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card-body pt-0">
+
+                    {/*                     
                     <div className="headerContainer mt-5 px-lg-4">
                         <div className="row d-flex align-items-center">
                             <div className="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
@@ -56,33 +81,33 @@ const BuildTransfer = () => {
 
 
                     </div>
-                    <div class="card-body">
-                        <hr />
-                        <div className="BodyContainer col-12 d-flex flex-wrap">
-                            {transferSteps.map((step, index) => (
-                                <div
-                                    className="col-12 col-sm-6 col-lg-4 px-2 d-flex mb-3"
-                                    key={index}
-                                >
-                                    <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                                        <div className="keyFeatureIcin d-flex justify-content-start mb-3">
-                                            <img
-                                                src={step?.image}
-                                                alt="sample image"
-                                                className="w-50 rounded img-fluid"
-                                            />
-                                        </div>
-                                        <hr />
-                                        <h5 className="globalHead">{step.title}</h5>
-                                        <p className="text-secondary globaljustify mb-0">{step.description}</p>
+                    <div class="card-body"> */}
+                    <hr />
+                    <div className="BodyContainer col-12 d-flex flex-wrap">
+                        {transferSteps.map((step, index) => (
+                            <div
+                                className="col-12 col-sm-6 col-lg-4 px-2 d-flex mb-3"
+                                key={index}
+                            >
+                                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
+                                    <div className="keyFeatureIcin d-flex justify-content-start mb-3">
+                                        <img
+                                            src={step?.image}
+                                            alt="sample image"
+                                            className="w-50 rounded img-fluid"
+                                        />
                                     </div>
+                                    <hr />
+                                    <h5 className="globalHead">{step.title}</h5>
+                                    <p className="text-secondary globaljustify mb-0">{step.description}</p>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
+        </div >
     );
 };
 

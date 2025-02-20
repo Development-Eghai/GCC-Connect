@@ -32,7 +32,32 @@ const BuildInitiation = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="headerContainer mt-5 px-lg-4">
+
+                    <div className="headerContainer mt-0 px-lg-4">
+                        <div className="row px-3 d-flex align-items-center">
+                            <div className="col-12 col-sm-6 mt-3 col-md-1 d-flex justify-content-center">
+                                <span>
+                                    <img
+                                        src={require('../../../../Assets/Images/Icons/Goal/Goal.png')}
+                                        alt="sample image"
+                                        className="w-100 rounded img-fluid"
+                                    />
+                                </span>
+                            </div>
+                            <div className="col-12  ps-2 col-sm-6 col-md-11 mt-3">
+                                <h4 className="text-success  globalHead">Purpose</h4>
+                                <p className="globaljustify">
+                                Lay the groundwork with strategic planning and expert insights.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card-body pt-0">
+
+
+                    {/* <div className="headerContainer mt-5 px-lg-4">
                         <div className="row d-flex align-items-center">
                             <div className="col-12 col-sm-6 col-md-2 d-flex justify-content-center">
                                 <span>
@@ -53,7 +78,7 @@ const BuildInitiation = () => {
 
 
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"> */}
                         <hr />
                         <div className="BodyContainer col-12 d-flex flex-wrap">
                             {initiationSteps.map((step, index) => (
