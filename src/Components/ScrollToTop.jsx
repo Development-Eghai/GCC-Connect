@@ -11,7 +11,11 @@ const ScrollToTop = () => {
     "/build-operator/operate",
     "/build-operator/transfer",
     "/managed-teams/record",
-    "/managed-teams/services"
+    "/managed-teams/services",
+    "/details/initiation",
+    "/details/initiation",
+    "/managed-teams/relationship"
+
   ];
 
   useEffect(() => {
