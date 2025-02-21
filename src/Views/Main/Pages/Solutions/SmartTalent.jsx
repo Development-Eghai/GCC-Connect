@@ -53,7 +53,7 @@ const SmartTalent = () => {
             <div className="overViewBox d-flex flex-column flex-lg-row mb-3">
               <div className="col-12 col-lg-6 p-lg-3">
                 <h3 className="mb-3 mt-4 headTextGreen">Overview</h3>
-                <p className="mb-4 ">
+                <p className="mb-4 globaljustifyoverview ">
                   PixelAdvant’s AI-driven Smart Talent Acquisition platform transforms the way organizations plan and execute recruitment strategies. Our solutions empower businesses with:
                 </p>
 

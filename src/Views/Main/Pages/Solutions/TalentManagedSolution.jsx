@@ -55,7 +55,7 @@ const TalentManagedSolution = () => {
             <div className="overViewBox d-flex flex-column flex-lg-row mb-3 mt-5">
               <div className="col-12 col-lg-6 ">
                 <h3 className="mb-3 headTextGreen">Overview</h3>
-                <p className="mb-4 globaljustifyforsolution ">
+                <p className="mb-4 globaljustifyoverview ">
                 GCC  Vue360 provides comprehensive talent management solutions that align with your organizational goals and workforce needs. Our offerings include:
                 </p>
 

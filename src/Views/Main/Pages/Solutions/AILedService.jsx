@@ -53,7 +53,7 @@ const AILedService = () => {
             <div className="overViewBox d-flex flex-column flex-lg-row ">
               <div className="col-12 col-lg-6 p-lg-3">
                 <h3 className="mb-3 mt-4 headTextGreen">Overview</h3>
-                <p className="mb-4 ">
+                <p className="mb-4 globaljustifyoverview ">
                   Our advanced AI solutions ensure efficient and targeted talent acquisition:
                 </p>
 
