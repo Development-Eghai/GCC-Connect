@@ -62,8 +62,8 @@ const GlobalImplementation = () => {
             <hr />
             <div className="keyFeature col-12 d-flex flex-column flex-sm-row flex-wrap">
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                  <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
+                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
+                  <div className="keyFeatureIcin d-flex  justify-content-center mb-3">
                     <span>
                       <img
                         src={require('../../../../Assets/Images/Icons/GCC Implementation/Legal Entity Setup.png')}
@@ -84,8 +84,8 @@ const GlobalImplementation = () => {
               </div>
 
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                  <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
+                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
+                  <div className="keyFeatureIcin d-flex  justify-content-center mb-3">
                     <span>
                       <img
                         src={require('../../../../Assets/Images/Icons/GCC Implementation/Leadership & Resource Hiring.png')}
@@ -95,7 +95,7 @@ const GlobalImplementation = () => {
                     </span>
                   </div>
                   <hr />
-                  <div className="d-flex flex-column flex-grow-1">
+                  <div className="d-flex flex-column   text-start flex-grow-1">
                     <h5 className="globalHead">
                       Leadership & Resource Hiring
                     </h5>
@@ -107,8 +107,8 @@ const GlobalImplementation = () => {
               </div>
 
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                  <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
+                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
+                  <div className="keyFeatureIcin d-flex  justify-content-center mb-3">
                     <span>
                       <img
                         src={require('../../../../Assets/Images/Icons/GCC Implementation/Workspace Design & Definition.png')}
@@ -118,8 +118,8 @@ const GlobalImplementation = () => {
                     </span>
                   </div>
                   <hr />
-                  <div className="d-flex flex-column flex-grow-1">
-                    <h5 className="globalHead">
+                  <div className="d-flex flex-column  text-start flex-grow-1">
+                    <h5 className="globalHead  text-start">
                       Workspace Design & Definiton
                     </h5>
                     <p className="text-secondary globaljustify mb-0 text-start">
@@ -131,8 +131,8 @@ const GlobalImplementation = () => {
               </div>
 
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                  <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
+                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
+                  <div className="keyFeatureIcin d-flex  justify-content-center mb-3">
                     <span>
                       <img
                         src={require('../../../../Assets/Images/Icons/GCC Implementation/Talent Strategy & Supply.png')}
@@ -143,7 +143,7 @@ const GlobalImplementation = () => {
                   </div>
                   <hr />
                   <div className="d-flex flex-column flex-grow-1">
-                    <h5 className="globalHead">Talent Stategy & supply</h5>
+                    <h5 className="globalHead  text-start">Talent Stategy & supply</h5>
                     <p className="text-secondary globaljustify mb-0 text-start">
                       Building a workforce strategy to attract top talent and align with
                       organizational goals
@@ -153,8 +153,8 @@ const GlobalImplementation = () => {
               </div>
 
               <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                  <div className="keyFeatureIcin d-flex  justify-content-start mb-3">
+                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
+                  <div className="keyFeatureIcin d-flex  justify-content-center mb-3">
                     <span>
                       <img
                         src={require('../../../../Assets/Images/Icons/GCC Implementation/HumanCapital.png')}
@@ -165,7 +165,7 @@ const GlobalImplementation = () => {
                   </div>
                   <hr />
                   <div className="d-flex flex-column flex-grow-1">
-                    <h5 className="globalHead">Human Capital</h5>
+                    <h5 className="globalHead text-start">Human Capital</h5>
                     <p className="text-secondary globaljustify mb-0 text-start">
                       Enhancing employee engagement and productivity for sustainable
                       growth

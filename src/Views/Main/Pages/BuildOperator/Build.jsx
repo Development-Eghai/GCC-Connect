@@ -87,7 +87,7 @@ const Build = () => {
                                     key={index}
                                 >
                                     <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                                        <div className="keyFeatureIcin d-flex justify-content-start mb-3">
+                                        <div className="keyFeatureIcin d-flex justify-content-center mb-3">
                                         <img
                                                 src={step?.image}
                                                 alt="sample image"

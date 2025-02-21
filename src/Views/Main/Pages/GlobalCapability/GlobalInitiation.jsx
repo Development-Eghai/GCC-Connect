@@ -40,7 +40,7 @@ const GlobalInitiation = () => {
                         <hr />
                         <div className="keyFeature col-12 d-flex flex-column flex-sm-row flex-wrap">
                             <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
+                                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
                                     <div className="keyFeatureIcin d-flex justify-content-center mb-3">
                                         <span><img
                                             src={require('../../../../Assets/Images/Icons/GCCInitiation/Desig.png')}
@@ -59,7 +59,7 @@ const GlobalInitiation = () => {
                             </div>
 
                             <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
+                                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
                                     <div className="keyFeatureIcin d-flex justify-content-center mb-3">
                                         <span>
                                             <img
@@ -80,7 +80,7 @@ const GlobalInitiation = () => {
                             </div>
 
                             <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3">
-                                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
+                                <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-center">
                                     <div className="keyFeatureIcin d-flex justify-content-center mb-3">
                                         <span>
                                             <img

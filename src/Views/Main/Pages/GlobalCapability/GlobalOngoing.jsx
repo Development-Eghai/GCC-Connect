@@ -95,7 +95,7 @@ const GlobalOngoing = () => {
               {cardData.map((item, index) => (
                 <div className="col-12 col-sm-6 col-lg-6 col-xl-4 px-2 d-flex mb-3" key={index}>
                   <div className="coremodalCard d-flex flex-column justify-content-between w-100 p-3 text-start">
-                    <div className="keyFeatureIcin d-flex justify-content-start mb-3">
+                    <div className="keyFeatureIcin d-flex justify-content-center mb-3">
                       <img
                         src={item?.image}
                         alt="sample image"
