@@ -24,7 +24,7 @@ const AboutComponent = () => {
         <section className="about-section">
             <div className="about-header mt-5 mb-5">
                 <p>Helping in making smart decisions.</p>
-                <h2>Putting the right solutions <br></br> and methods in place.</h2>
+                <h2>Putting the right solutions and methods in place.</h2>
             </div>
             <div className="about-container mb-5">
                 {/* Card 1 */}

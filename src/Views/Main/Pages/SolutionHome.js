@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 import { FaChalkboardTeacher, FaUserTie, FaRobot } from "react-icons/fa";
 import "../Pages/SolutionHome.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Link, useHref } from "react-router-dom";
 import advisoryImg from "Assets/Images/GCC-Consulting-and-Advisory.jpg";
 import smartImg from "Assets/Images/Smart-Talent-Acquisition-with-AI-Led-Innovation.jpg";
 import aiLedImg from "Assets/Images/AI-Led-Talent-Supply-Process.jpg";
@@ -24,7 +24,7 @@ const solutions = [
     description: "At AdvaniPeel’s GCC Vue360 Advisory Practice, we collaborate with organizations to unlock the full potential of GCC ecosystems in India.",
     link: "/consulting-services",
   },
-  
+
   {
     icon: <img src={require('Assets/Images/Homepage-Solutions/Smart-Talent-Acquisiton.png')} alt="Consulting Icon" style={{ width: '40px', height: 'auto' }} />,
     title: "Smart Talent Acquisition with AI - Led Innovation",
@@ -125,7 +125,15 @@ const SolutionsOfferings = () => {
           </Carousel.Item>
         ))}
       </Carousel>
+      <div>
+        <div className="col-12 mt-4 text-center d-flex justify-content-center align-items-center learn-more">
+          <a href="/contact" className="btn contact-btn text-decoration-none text-white px-5 py-3 text-center fw-bold learn-more">
+          See How We're Accelerating Better Outcomes          </a>
+        </div>
+      </div>
+
     </div >
+
   );
 };
 

@@ -111,22 +111,23 @@ const Header = () => {
                   <div className="mega-menu-content pt-4 d-flex">
                     {/* Workspace Column */}
                     <div className="mega-menu-column px-3">
-                      <h5 className="mega-menu-title">Solutions</h5>
+                      <h5 className="mega-menu-title">Consulting and Advisory </h5>
                       <p className="mega-menu-description">
-                        A premium, customized, branded, and fully managed office solution
+                        Flexible growth-aligned payment model for building...
                       </p>
                       <ul className="list-unstyled ">
-                        <li><NavLink className=" py-2" to="/consulting-services">Consulting and Advisory Services</NavLink></li>
-                        <li><NavLink className=" py-2" to="/managed-services">Managed Services</NavLink></li>
-                        <li><NavLink className=" py-2" to="/workspace-solution">Workspace Solutions</NavLink></li>
+                        <li><NavLink className=" py-2" to="/consulting-services">GCC Advisory Services</NavLink></li>
+                        <li><NavLink className=" py-2" to="/consulting-services">Benchmarking Insights</NavLink></li>
+                        <li><NavLink className=" py-2" to="/consulting-services">Market Research </NavLink></li>
                       </ul>
                     </div>
+
 
                     {/* Talent Solutions Column */}
                     <div className="mega-menu-column px-3">
                       <h5 className="mega-menu-title">Talent Solutions</h5>
                       <p className="mega-menu-description">
-                        Pioneering value-centric workforces with AI and analytics
+                        PixelAdvant’s AI-driven Smart Talent Acquisition platform...
                       </p>
                       <ul className="list-unstyled ">
                         <li><NavLink className="  py-2" to="/smart-talent">Smart Talent Acquisition with AI-Led Innovation</NavLink></li>
@@ -134,6 +135,31 @@ const Header = () => {
                         <li><NavLink className=" py-2" to="/talent-solution">Talent Management Solutions</NavLink></li>
                       </ul>
                     </div>
+
+                    <div className="mega-menu-column px-3">
+                      <h5 className="mega-menu-title">Managed Services</h5>
+                      <p className="mega-menu-description">
+                        At PixelAdvant, we specialize in facilitating managed...
+                      </p>
+                      <ul className="list-unstyled ">
+                        <li><NavLink className=" py-2" to="/managed-services">Tax and Finance Compliance</NavLink></li>
+                        <li><NavLink className=" py-2" to="/managed-services">HR Shared Services</NavLink></li>
+                        <li><NavLink className=" py-2" to="/managed-services">Support Services</NavLink></li>
+                      </ul>
+                    </div>
+
+                    <div className="mega-menu-column px-3">
+                      <h5 className="mega-menu-title">Workspace Solution </h5>
+                      <p className="mega-menu-description">
+                      At PixelAdvant, we believe that a workspace is more...
+                      </p>
+                      <ul className="list-unstyled ">
+                        <li><NavLink className=" py-2" to="/workspace-solution">Innovative Workspace Strategies </NavLink></li>
+                        <li><NavLink className=" py-2" to="/workspace-solution">Innovative Workspace Design Consultation</NavLink></li>
+                        <li><NavLink className=" py-2" to="/workspace-solution">Scalable Workspace Solutions</NavLink></li>
+                      </ul>
+                    </div>
+
 
 
                   </div>
