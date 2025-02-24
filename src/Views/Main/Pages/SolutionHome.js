@@ -127,8 +127,9 @@ const SolutionsOfferings = () => {
       </Carousel>
       <div>
         <div className="col-12 mt-4 text-center d-flex justify-content-center align-items-center learn-more">
-          <a href="/contact" className="btn contact-btn text-decoration-none text-white px-5 py-3 text-center fw-bold learn-more">
-          See How We're Accelerating Better Outcomes          </a>
+          <a href="/GCC-Connect/contact" className="btn contact-btn text-decoration-none text-white px-5 py-3 text-center fw-bold learn-more">
+          See How We're Accelerating Better Outcomes        
+            </a>
         </div>
       </div>
 

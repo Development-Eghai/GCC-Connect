@@ -15,7 +15,7 @@ const Footer = () => {
               {/* <li className="footerLink"><Link>Sustainability</Link></li> */}
               <li className="footerLink"> <Link to="/leadership-page">Leadership Team </Link></li>
               {/* <li className="footerLink"><Link>News & Media</Link></li> */}
-             <li className="footerLink"><Link to="/Careers-page">Carrers</Link></li>
+             <li className="footerLink"><Link to="/Careers-page">careers</Link></li>
             </ul>
           </div>
 
@@ -41,7 +41,7 @@ const Footer = () => {
               <li className="footerLink"><Link to="/consulting-services">Consulting and Advisory</Link></li>
               <li className="footerLink"><Link to="/smart-talent">Smart Talent Acquisition with Al Led Innovation</Link></li>
               <li className="footerLink"><Link to="/ailed-service">Al Led Talent Supply Process</Link></li>
-              <li className="footerLink"><Link to="/talent-solution">Talent Managerrient Solutions</Link></li>
+              <li className="footerLink"><Link to="/talent-solution">Talent Management Solutions</Link></li>
               <li className="footerLink"><Link to="/managed-services">Managed Services</Link></li>
               <li className="footerLink"><Link to="/workspace-solution">Workspace Solutions</Link></li>
             </ul>

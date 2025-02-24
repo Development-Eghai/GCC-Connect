@@ -51,6 +51,7 @@ import AILedService from "Views/Main/Pages/Solutions/AILedService";
 import ScrollToTop from "Components/ScrollToTop";
 import Click from "Views/Main/Pages/Products/Click";
 import AdvantagePlus from "Views/Main/Pages/Products/AdvantagePlus";
+import JobPage from "Views/Main/Pages/CareersPageDetail";
 
 const App = () => {
   const { token, user_id, isOnline, Err, Toast_Type } = useSelector(
@@ -100,6 +101,7 @@ const App = () => {
           <Route path="/Careers-page" element={<Careers />} />
           <Route path="/blog"  element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
+          <Route path="/careers-details" element={<JobPage />} />
 
 
           <Route path="/details" element={<GlobalCapability />}>

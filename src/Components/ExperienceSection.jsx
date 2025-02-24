@@ -55,10 +55,10 @@ const ExperienceSection = () => {
             </div>
 
             <div className="buttons d-flex flex-wrap gap-3 mt-3">
-              <Link to="/contact" className="read-more-btn text-decoration-none">
+              <Link to="/contact" className="contact-btn-borderfillAbout text-decoration-none">
                 Contact Us
               </Link>
-              <Link to="/about-page" className="contact-btn-borderblack text-decoration-none ">
+              <Link to="/about-page" className="contact-btn-borderfillAbout text-decoration-none ">
                 Read More
               </Link>
             </div>

@@ -189,24 +189,7 @@ const Header = () => {
                 </ul>
               </div>
             </div>
-            {/* <div className="col3 d-flex align-items-center nav_dropdown fw-500">
-              Products
-              <div className="nav_dropdown_absolute_one py-2">
-                <ul className="list-unstyled nav_dropdown_absolute_list mb-0">
-                  <li>
-                    <Link to="/products/click-100" className="w-100">
-                      Click100
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/products/advantage-plus" className="w-100">
-                      AdvantagePlus
-                    </Link>
-                  </li>
-
-                </ul>
-              </div>
-            </div> */}
+            
             <div className="col3 d-flex align-items-center nav_dropdown fw-500">
               Products
               <div>
