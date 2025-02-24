@@ -14,7 +14,8 @@ const ScrollToTop = () => {
     "/managed-teams/services",
     "/details/initiation",
     "/details/initiation",
-    "/managed-teams/relationship"
+    "/managed-teams/relationship",
+    "/build-operator/initiation"
 
   ];
 

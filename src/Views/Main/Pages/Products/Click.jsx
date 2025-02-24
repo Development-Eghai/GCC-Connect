@@ -50,7 +50,7 @@ const Click = () => {
               </div>
               <div className="col-12 col-lg-6 p-3" >
                 <img
-                  src={require("../../../../Assets/Images/Products-head/Click100.jpg")}
+                  src={require("../../../../Assets/Images/Click_100.jpg")}
                   alt="sample image"
                   className="mb-4 w-100 rounded object"
                 />

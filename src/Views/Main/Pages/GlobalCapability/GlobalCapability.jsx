@@ -39,7 +39,7 @@ const GlobalCapability = () => {
             <div className="col-lg-6 col-md-6 col-12 col-sm-12 p-4">
               <div className="container">
                 <img
-                  src={require('../../../../Assets/Images/Models-head/Global_Capability.jpg')}
+                  src={require('../../../../Assets/Images/Phases_of_GCC.jpg')}
                   alt="sample image"
                   className="mb-4 w-100 rounded "
                 />

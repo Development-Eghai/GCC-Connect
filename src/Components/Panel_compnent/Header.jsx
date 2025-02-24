@@ -113,8 +113,7 @@ const Header = () => {
                     <div className="mega-menu-column px-3">
                       <h5 className="mega-menu-title">Consulting and Advisory </h5>
                       <p className="mega-menu-description">
-                        Flexible growth-aligned payment model for building...
-                      </p>
+                      Strategic business guidance                      </p>
                       <ul className="list-unstyled ">
                         <li><NavLink className=" py-2" to="/consulting-services">GCC Advisory Services</NavLink></li>
                         <li><NavLink className=" py-2" to="/consulting-services">Benchmarking Insights</NavLink></li>
@@ -127,8 +126,7 @@ const Header = () => {
                     <div className="mega-menu-column px-3">
                       <h5 className="mega-menu-title">Talent Solutions</h5>
                       <p className="mega-menu-description">
-                        PixelAdvant’s AI-driven Smart Talent Acquisition platform...
-                      </p>
+                      AI-powered hiring solutions                      </p>
                       <ul className="list-unstyled ">
                         <li><NavLink className="  py-2" to="/smart-talent">Smart Talent Acquisition with AI-Led Innovation</NavLink></li>
                         <li><NavLink className=" py-2" to="/ailed-service">AI Led Talent Supply Process</NavLink></li>
@@ -139,8 +137,7 @@ const Header = () => {
                     <div className="mega-menu-column px-3">
                       <h5 className="mega-menu-title">Managed Services</h5>
                       <p className="mega-menu-description">
-                        At PixelAdvant, we specialize in facilitating managed...
-                      </p>
+                      Streamlined business operations                      </p>
                       <ul className="list-unstyled ">
                         <li><NavLink className=" py-2" to="/managed-services">Tax and Finance Compliance</NavLink></li>
                         <li><NavLink className=" py-2" to="/managed-services">HR Shared Services</NavLink></li>
@@ -151,8 +148,7 @@ const Header = () => {
                     <div className="mega-menu-column px-3">
                       <h5 className="mega-menu-title">Workspace Solution </h5>
                       <p className="mega-menu-description">
-                      At PixelAdvant, we believe that a workspace is more...
-                      </p>
+                      Smart workspace planning                      </p>
                       <ul className="list-unstyled ">
                         <li><NavLink className=" py-2" to="/workspace-solution">Innovative Workspace Strategies </NavLink></li>
                         <li><NavLink className=" py-2" to="/workspace-solution">Innovative Workspace Design Consultation</NavLink></li>

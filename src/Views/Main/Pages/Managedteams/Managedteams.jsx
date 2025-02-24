@@ -110,7 +110,7 @@ const Managedteams = () => {
                   <div class="col-12 d-flex align-items-center">
                     <div className="col-10">
                       <p className="mb-0 me-3 text-white text-start fw-bold">
-                        Client & Employee Relationship
+                        1. Client & Employee Relationship
                       </p></div>
                     <div className="col-2 text-end pe-2 fw-bold">
                       <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -125,7 +125,7 @@ const Managedteams = () => {
                   <div class="col-12 d-flex align-items-center">
                     <div className="col-10">
                       <p className="mb-0 me-3 text-white text-start fw-bold">
-                        Employee on Record (EOR)
+                        2. Employee on Record (EOR)
                       </p></div>
                     <div className="col-2 text-end pe-2 fw-bold">
                       <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -140,7 +140,7 @@ const Managedteams = () => {
                   <div class="col-12 d-flex align-items-center">
                     <div className="col-10">
                       <p className="mb-0 me-3 text-white text-start fw-bold">
-                        Managed Shared Services
+                        3. Managed Shared Services
                       </p></div>
                     <div className="col-2 text-end pe-2 fw-bold">
                       <span className="fw-bold">{Icons.arrowIcon}</span>

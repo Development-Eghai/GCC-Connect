@@ -15,7 +15,7 @@ const GlobalOverview = () => {
         business grows.
       </p>
       <div className='col-lg-10 mb-4'>
-        <img src={require('../../../../Assets/Images/Flexiblegrowth-alignedpayment.jpg')} alt="sample image" className="mb-4 w-100 rounded " />
+        <img src={require('../../../../Assets/Images/Phases_of_GCC.jpg')} alt="sample image" className="mb-4 w-100 rounded " />
       </div>
       <h3 className="mb-5">Key Features</h3>
       <div className="keyFeature col-12 d-flex flex-column flex-sm-row flex-wrap">

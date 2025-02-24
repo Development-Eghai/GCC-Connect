@@ -60,7 +60,7 @@ const BuildOperator = () => {
             <div className="col-lg-6 col-md-6 col-12 col-sm-12 p-4">
               <div className="">
                 <img
-                  src={require('../../../../Assets/Images/Models-head/Build_Operate.jpg')}
+                  src={require('../../../../Assets/Images/Phases_of_BOT.jpg')}
                   alt="sample image"
                   className="mb-4 w-100 rounded img-fluid"
                 />
@@ -128,7 +128,7 @@ const BuildOperator = () => {
                   <div class="col-12 d-flex align-items-center">
                     <div className="col-10">
                       <p className="mb-0 me-3 text-white text-start fw-bold">
-                        GCC Initiation
+                        1. GCC Initiation
                       </p></div>
                     <div className="col-2 text-end pe-2 fw-bold">
                       <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -143,7 +143,7 @@ const BuildOperator = () => {
                   <div class="col-12 d-flex align-items-center">
                     <div className="col-10">
                       <p className="mb-0 me-3 text-white text-start fw-bold">
-                        GCC Builld
+                        2. GCC Builld
                       </p></div>
                     <div className="col-2 text-end pe-2 fw-bold">
                       <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -158,7 +158,7 @@ const BuildOperator = () => {
                   <div class="col-12 d-flex align-items-center">
                     <div className="col-10">
                       <p className="mb-0 me-3 text-white text-start fw-bold">
-                        GCC Operate
+                        3. GCC Operate
                       </p></div>
                     <div className="col-2 text-end pe-2 fw-bold">
                       <span className="fw-bold">{Icons.arrowIcon}</span>
@@ -173,7 +173,7 @@ const BuildOperator = () => {
                   <div class="col-12 d-flex align-items-center">
                     <div className="col-10">
                       <p className="mb-0 me-3 text-white text-start fw-bold">
-                        GCC Transfer
+                        4. GCC Transfer
                       </p></div>
                     <div className="col-2 text-end pe-2 fw-bold">
                       <span className="fw-bold">{Icons.arrowIcon}</span>
