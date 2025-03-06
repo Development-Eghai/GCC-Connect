@@ -30,7 +30,7 @@ const AboutPage = () => {
 
   const cardData = [
     {
-      title: "To a small business owner:",
+      title: "To a small business owner",
       icon: Icons.talentNetworkIcon,
       content: "Stop wasting time on job boards and find the right people quickly with our user-friendly recruitment tool designed for small businesses.",
     },
@@ -41,7 +41,7 @@ const AboutPage = () => {
         "Scale your hiring process with our sophisticated platform that handles high volumes of applications while ensuring quality candidate selection.",
     },
     {
-      title: "•	To a tech company",
+      title: "To a tech company",
       icon: Icons.clickAutomationIcon,
       content:
         "Attract top tech talent with our platform that integrates seamlessly with your existing tech stack and highlights in-demand skills.",
@@ -123,6 +123,18 @@ const AboutPage = () => {
           </p>
         </div> */}
 
+<div className="container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {cardData.map((data, i) => {
+              return (
+                <div className="col p-3 " key={i}>
+                  <CoreCard data={data} key={i} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Top Cards Section */}
 
         <div className="row mt-4 text-center justify-content-center g-2 mb-4 align-items-stretch">
@@ -158,17 +170,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="container">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            {cardData.map((data, i) => {
-              return (
-                <div className="col p-3 " key={i}>
-                  <CoreCard data={data} key={i} />
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        
 
         {/* <div className="vh-50 position-relative text-center">
                         <img
