@@ -1,8 +1,11 @@
 import Footer from "Components/footer";
 import React from "react";
 import { FaArrowAltCircleDown } from "react-icons/fa";
+import Icons from "Utils/Icons";
+
 
 import { FaBalanceScale, FaHandsHelping, FaHandshake, FaLightbulb, FaTrophy } from "react-icons/fa";
+import CoreCard from "./Solutions/CoreCard";
 
 
 const AboutPage = () => {
@@ -25,6 +28,26 @@ const AboutPage = () => {
     },
   ];
 
+  const cardData = [
+    {
+      title: "To a small business owner:",
+      icon: Icons.talentNetworkIcon,
+      content: "Stop wasting time on job boards and find the right people quickly with our user-friendly recruitment tool designed for small businesses.",
+    },
+    {
+      title: "To a large enterprise",
+      icon: Icons.clickAIIcon,
+      content:
+        "Scale your hiring process with our sophisticated platform that handles high volumes of applications while ensuring quality candidate selection.",
+    },
+    {
+      title: "•	To a tech company",
+      icon: Icons.clickAutomationIcon,
+      content:
+        "Attract top tech talent with our platform that integrates seamlessly with your existing tech stack and highlights in-demand skills.",
+    },
+  ];
+
   const content = [
     { title: "Integrity", text: "Honor your commitments and never compromise values.", icon: <FaBalanceScale size={40} /> },
     { title: "Empathy", text: "Empathize with those we serve and collaborate with.", icon: <FaHandsHelping size={40} /> },
@@ -44,7 +67,7 @@ const AboutPage = () => {
           <div className="   mb-0">
             <p className="AboutpageheadText">About Us</p>
             <div className="text-wrap abouttext  text-center d-flex justify-content-center">
-            Across every critical touchpoint GCC journey, we provide innovative solutions and services that positively impact outcomes for all stakeholders.
+              Across every critical touchpoint GCC journey, we provide innovative solutions and services that positively impact outcomes for all stakeholders.
 
             </div>
           </div>
@@ -101,9 +124,9 @@ const AboutPage = () => {
         </div> */}
 
         {/* Top Cards Section */}
-        
+
         <div className="row mt-4 text-center justify-content-center g-2 mb-4 align-items-stretch">
-        <h2 className="about-us-title">Our Core Values</h2>
+          <h2 className="about-us-title">Our Core Values</h2>
           {content.map((item, index) => (
             <div key={index} className="col-md-3 py-4 g-2 col-sm-6 d-flex">
               <div className="p-4  py-5 bg-dark text-white rounded shadow w-100 d-flex flex-column justify-content-center align-items-center">
@@ -126,15 +149,26 @@ const AboutPage = () => {
                 <img src={section.image} alt={section.title} className="about-us-img" />
                 <div className="about-us-overlay">
                   <h3>{section.title}</h3>
-                 
-                  <a  href={section.link} className="about-us-icon  text-decoration-none" target="_blank">➜</a>
-                 
+
+                  <a href={section.link} className="about-us-icon  text-decoration-none" target="_blank">➜</a>
+
                 </div>
               </div>
             ))}
           </div>
         </div>
 
+        <div className="container">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {cardData.map((data, i) => {
+              return (
+                <div className="col p-3 " key={i}>
+                  <CoreCard data={data} key={i} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
 
         {/* <div className="vh-50 position-relative text-center">
                         <img

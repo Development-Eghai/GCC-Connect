@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const CoreCard = ({ data }) => {
   const [expanded, setExpanded] = useState(false);
-  const { title, icon, content } = data;
+  const { title, icon,Image, content } = data;
 
   const MAX_LENGTH = 250;
   const isLongText = content.length > MAX_LENGTH;
@@ -29,7 +29,7 @@ const CoreCard = ({ data }) => {
   return (
     <div className="card coreCard h-100 p-3">
       <div className="iconBox p-3 d-flex justify-content-center">
-        <img src={icon} alt="icon" style={{ width: "130px", height: "130px" }} />
+        <img src={icon || Image} alt="icon" style={{ width: "130px", height: "130px" }} />
       </div>
       <hr />
       <div className="card-body">

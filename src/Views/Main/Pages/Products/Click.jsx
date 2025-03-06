@@ -9,19 +9,19 @@ const Click = () => {
     {
       title: "Talent Network",
       icon: Icons.talentNetworkIcon,
-      content: "Click100 provides you with Thousands of featured profiles in India. You can promote and grow your jobs internally to make your roles filled with speed and quality",
+      content: "Click100 provides you with Thousands of featured profiles in India. You can promote and post open positions on Click100 platform which can help you fill open positions quickly with great candidates. ",
     },
     {
       title: "AI/ML Based Recruiting Intelligence",
       icon: Icons.clickAIIcon,
       content:
-        "There is no need to waste time reviewing profiles, with our modern state-of-the-art AI feature, Click100 can provide you with the best matching candidates in Descending order with ratings in minutes.",
+        "There is no need to waste time reviewing profiles. With our modern state-of-the-art AI feature, Click100 can provide you with the best matching candidates in descending order with ratings in minutes.",
     },
     {
       title: "Automation",
       icon: Icons.clickAutomationIcon,
       content:
-        "With E2E automation Click 100 provides tailoring solutions for Sourcing Strategy, candidates scoring on Tests and Interviews, and a seamless transformation of the recruiting process which will further speed up the tasks.",
+        "With E2E automation, Click 100 provides tailoring solutions for Sourcing Strategy, candidates scoring on Tests and Interviews, and a seamless transformation of the recruiting process which will further speed up the tasks.",
     },
   ];
   return (
