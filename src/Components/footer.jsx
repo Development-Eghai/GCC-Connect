@@ -74,7 +74,12 @@ const Footer = () => {
             <div className="footer-bottom mt-5">
               <p>
                 ©2024 GCC Connect, All Rights Reserved. Designed and Maintained
-                by eGhai
+                by{" "}
+                <span>
+                  <a href="https://eghai.in/" target="_blank" rel="noopener noreferrer" className="text-decoration-none eghai-link">
+                    {"eGhai"}
+                  </a>
+                </span>
               </p>
               <p>Terms & Conditions • Privacy Policy • Sitemap</p>
             </div>

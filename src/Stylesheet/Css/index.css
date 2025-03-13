@@ -3361,3 +3361,11 @@ th {
 .about-us-card:hover .about-us-icon {
   transform: scale(1.1);
 }
+
+.eghai-link {
+  color: #ffffff;
+}
+
+.eghai-link:hover {
+  color: rgb(12, 110, 253)
+}
