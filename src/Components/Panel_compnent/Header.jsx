@@ -66,7 +66,7 @@ const Header = () => {
       <div className="headerMenuContainer container p-3">
         <div className="d-flex justify-content-between align-items-center">
           <div className="col-10 col-lg-4">
-            <a href="/GCC-Connect" className="mb-0 companyNametext">
+            <a href="/" className="mb-0 companyNametext">
               GCC CONNECT
             </a>
           </div>
@@ -259,7 +259,7 @@ const Header = () => {
         aria-labelledby="staticBackdropLabel"
       >
         <div className="offcanvas-header">
-          <a href="/GCC-Connect" className="mb-0 companyNametext">
+          <a href="/" className="mb-0 companyNametext">
             GCC CONNECT
           </a>
           <button

@@ -14,17 +14,17 @@ const AboutPage = () => {
     {
       title: "Meet Our Leadership Team",
       image: require("../../../Assets/Images/About-Us.jpg"), // Update with your image path
-      link: "/GCC-Connect/leadership-page", // Update with the actual route
+      link: "/leadership-page", // Update with the actual route
     },
     {
       title: "Discover Solution",
       image: require("../../../Assets/Images/Solutions-head/AI_Led_Talent_Supply_Process.jpg"), // Update with your image path
-      link: "/GCC-Connect/consulting-services", // Update with the actual route
+      link: "/consulting-services", // Update with the actual route
     },
     {
       title: "Explore Model",
       image: require("../../../Assets/Images/Consulting& Advisory.jpg"), // Update with your image path
-      link: "/GCC-Connect/details/initiation", // Update with the actual route
+      link: "/details/initiation", // Update with the actual route
     },
   ];
 
@@ -174,7 +174,7 @@ const AboutPage = () => {
 
         {/* <div className="vh-50 position-relative text-center">
                         <img
-                            src="/GCC-Connect/static/media/Flexiblegrowth-alignedpayment.7aed4db8572ed533a6c8.jpg" // Replace with actual image URL
+                            src="/static/media/Flexiblegrowth-alignedpayment.7aed4db8572ed533a6c8.jpg" // Replace with actual image URL
                             alt="Business handshake"
                             className=" p-3 img-fluid rounded-5 "
                         /> */}
