@@ -9,34 +9,10 @@ const AdvantagePlus = () => {
 
   const cardData = [
     {
-      title: "Job description",
-      icon: Icons.jobDescriptionIcon,
-      content:
-        "Pre-selected Candidates based on the client unique needs and Job description",
-    },
-    {
       title: "Market Based Talent",
       icon: Icons.marketBasedIcon,
       content:
         "Pre-selected candidates based on skills/technologies and ever-changing market trends. ",
-    },
-    {
-      title: "Tech Stack",
-      icon: Icons.techStackIcon,
-      content:
-        "Ready to hire thousand of profile based on Roles/Skills/Technology",
-    },
-    {
-      title: "JD Expertise",
-      icon: Icons.jdExpertiseIcon,
-      content:
-        "Hire candidates with full stack technological skills",
-    },
-    {
-      title: "Speed And Quality",
-      icon: Icons.speedQualityIcon,
-      content:
-        "Help clients to set interview structures with speed and quality",
     },
     {
       title: "Bulk Resume",

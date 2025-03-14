@@ -29,10 +29,12 @@ import compensationRewardIcon from "../Assets/Images/BOT_Icons/Talent-management
 import hiringSolutionIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/End-End-Hiring-Solutions.png"
 import workorePlaningIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/Future-Ready-Workorce-Planninh.png"
 import interviewServiceIcon from "../Assets/Images/BOT_Icons/Talent-management-icons/Interview-as-a-Service.png"
+import AlignRecruitmentEffortsWithBusinessGoals from "../Assets/Images/BOT_Icons/Talent-management-icons/Align-Recruitment-Efforts-with-Business-Goals.png"
+import EmployeeRetentionAndPolicies from "../Assets/Images/BOT_Icons/Talent-management-icons/Employee-Retention-and-Policies.png"
 
-import talentNetworkIcon from "../Assets/Images/Click/Icons/Talent-Network.png"
-import clickAIIcon from "../Assets/Images/Click/Icons/Artificial-Intelligence.png"
-import clickAutomationIcon from "../Assets/Images/Click/Icons/Automation.png"
+import talentNetworkIcon from "../Assets/Images/Click/Icons/Small-Company.png"
+import clickAIIcon from "../Assets/Images/Click/Icons/Large-Enterprise.png"
+import clickAutomationIcon from "../Assets/Images/Click/Icons/Tech-Company.png"
 
 import bulkResumeIcon from "../Assets/Images/AdvantagePlus/Icons/Bulk-Resume.png"
 import jdExpertiseIcon from "../Assets/Images/AdvantagePlus/Icons/JD-Expertise.png"
@@ -49,6 +51,8 @@ import managedSharedIcon from "Assets/Images/Managed-Teams/Features/Managed-Shar
 import OperateIcon from "Assets/Images/Homepage-Models/Build-Operate-Transfer.png"
 import CaptiveIcon from "Assets/Images/Homepage-Models/Captive-Model.png"
 import SharedIcon from "Assets/Images/Homepage-Models/Shared-Services-Model.png"
+
+
 
 
 
@@ -451,8 +455,9 @@ const Icons = {
   managedSharedIcon,
   OperateIcon,
   CaptiveIcon,
-  SharedIcon
-
+  SharedIcon,
+  AlignRecruitmentEffortsWithBusinessGoals,
+  EmployeeRetentionAndPolicies
 
 
 
