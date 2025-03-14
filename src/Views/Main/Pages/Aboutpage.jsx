@@ -123,8 +123,12 @@ const AboutPage = () => {
           </p>
         </div> */}
 
-<div className="container">
+        <div className="container">
+          <div className="row mt-4 text-center justify-content-center g-2 mb-4 align-items-stretch">
+            <h2 className="about-us-title">Our Unique Strengths & Areas of Expertise</h2>
+          </div>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          
             {cardData.map((data, i) => {
               return (
                 <div className="col p-3 " key={i}>
