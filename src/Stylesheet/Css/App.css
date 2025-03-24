@@ -322,3 +322,11 @@ body {
   color: rgb(12, 110, 253)
 }
 
+.email-links {
+  color: rgba(25, 135, 84, 1)
+}
+
+.email-links:hover {
+  color: rgba(31, 37, 68, 1)
+}
+

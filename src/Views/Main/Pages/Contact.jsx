@@ -41,7 +41,7 @@ const Contact = () => {
             textAlign: "center",
           }}
         >
-          Contact US
+          Contact Us
         </div>
       </div>
       <div className="d-flex justify-content-center mt-4 px-3">
@@ -58,12 +58,15 @@ const Contact = () => {
           <div className="d-flex flex-column align-items-start justify-content-center w-75 mt-5">
             <div className="contactBox mb-3 d-flex flex-column ">
               <h4 className="mb-4">Contact Info</h4>
-              <p className="mb-2 text-success fw-bold">contact@gcccoonect.com</p>
-              <p>+1 1234567890</p>
+      
+              <p><a href="mailto:hiring@pixeladvant.com" className="mb-2 email-links fw-bold text-decoration-none">hiring@pixeladvant.com</a></p>
+              <p><a href="mailto:sales@pixeladvant.com" className="mb-2 email-links fw-bold text-decoration-none">sales@pixeladvant.com</a></p>
+              <p><a href="tel:+91 8904957029" className="mb-2 email-links fw-bold text-decoration-none">+91 8904957029</a></p>
+              <p><a href="tel:+1 973 865 6682" className="mb-2 email-links fw-bold text-decoration-none">+1 973 865 6682</a></p>
             </div>
             <div className="addressBox mb-3">
               <h4 className="mb-4">Address</h4>
-              <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+              <p>F-2,Plot No-113, Gyan Khand-2, Indirapuram, Ghaziabad, Uttar Pradesh-201 014 </p>
             </div>
             <div className="supportBox">
               <h4 className="mb-4">Support Hours</h4>

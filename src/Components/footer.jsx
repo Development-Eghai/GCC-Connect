@@ -51,8 +51,11 @@ const Footer = () => {
           <div className="footer-column col-12 col-md">
             <h4>Contact Us</h4>
             <ul>
-              <li>contact@gcc.com</li>
-              <li>+2 011 614 5741</li>
+              <li className="footerLink"><a href="mailto:hiring@pixeladvant.com">hiring@pixeladvant.com</a></li>
+              <li className="footerLink"><a href="mailto:sales@pixeladvant.com">sales@pixeladvant.com</a></li>
+              <li className="footerLink"><a href="tel:+91 8904957029">+91 8904957029</a></li>
+              <li className="footerLink"><a href="tel:+1 973 865 6682">+1 973 865 6682.com</a></li>
+              
             </ul>
             <div className="social-icons">
               <i className="fab fa-facebook-f"></i>
