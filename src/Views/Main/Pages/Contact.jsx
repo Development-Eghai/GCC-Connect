@@ -76,9 +76,9 @@ const Contact = () => {
             <div className="socialIconBox">
               <h4 className="mb-4">Social Media</h4>
               <div className="d-flex gap-4">
-                <span>{Icons.facebookIconBlack}</span>
-                <span>{Icons.twiterIconblack}</span>
-                <span>{Icons.linkedinIconBlack}</span>
+                <span><a href="https://www.facebook.com/pixeladvant" target="_blank">{Icons.facebookIconBlack}</a></span>
+                <span><a href="https://www.instagram.com/pixeladvant" target="_blank">{Icons.twitterIconblack}</a></span>
+                <span><a href="https://www.linkedin.com/company/pixel-advant" target="_blank">{Icons.linkedinIconBlack}</a></span>
               </div>
             </div>
 
