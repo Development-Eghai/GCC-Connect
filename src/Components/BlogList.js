@@ -1,125 +1,71 @@
-// // BlogList.js
-// import React, { useEffect, useState } from 'react';
-// import axios from 'axios';
-// import { Link } from 'react-router-dom';
-
-// const BlogList = () => {
-//     const [blogs, setBlogs] = useState([]);
-//     const [currentPage, setCurrentPage] = useState(1);
-//     const [totalPages, setTotalPages] = useState(1);
-//     const [dataLimit, setDataLimit] = useState(10);
-
-//     useEffect(() => {
-//         fetchBlogs();
-//     }, [currentPage, dataLimit]);
-
-//     const fetchBlogs = async () => {
-//         try {
-//             const response = await axios.post('https://truck.truckmessage.com/dashboard_blog_post', {
-//                 page_no: currentPage,
-//                 data_limit: dataLimit,
-//             });
-//             const { blog_data, total_no_of_data } = response.data.data || {};
-//             setBlogs(blog_data || []);
-//             setTotalPages(Math.ceil(total_no_of_data / dataLimit) || 1);
-//         } catch (error) {
-//             console.error('Failed to fetch blogs:', error);
-//         }
-//     };
-
-//     const renderBlogs = () => {
-//         return blogs.map((blog) => (
-//             <div className="blog-card" key={blog.blog_id}>
-//                 <img src={blog.blog_image_name || 'placeholder.jpg'} alt={blog.heading1 || 'Blog'} />
-//                 <div className="blog-card-body">
-//                     <h5 className="blog-card-title">{blog.heading1 || 'Untitled Blog'}</h5>
-//                     <p className="blog-card-desc">{blog.heading2 || 'No description available.'}</p>
-//                     <div className="mt-3">
-//                         <Link to={`/blog/${blog.blog_id}`} className="btn btnclrview w-100">View Details</Link>
-//                     </div>
-//                 </div>
-//             </div>
-//         ));
-//     };
-
-//     return (
-//         <div className="main-content">
-//             <div className="text-center py-4 bgheader">
-//                 <h2 className="trckfont text-danger p-0 mb-0">TRUCK MESSAGE BLOG</h2>
-//             </div>
-//             <div className="blog-container container" id="blog-list-container">
-//                 {renderBlogs()}
-//             </div>
-//             <footer>
-//                 <div className="pagination-controls">
-//                     <button onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} disabled={currentPage === 1}>
-//                         <i className="fas fa-chevron-left"></i> Previous
-//                     </button>
-//                     <div>
-//                         <span id="pagination-info">Page {currentPage} of {totalPages}</span>
-//                     </div>
-//                     <button onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))} disabled={currentPage === totalPages}>
-//                         Next <i className="fas fa-chevron-right"></i>
-//                     </button>
-//                     <select value={dataLimit} onChange={(e) => setDataLimit(Number(e.target.value))}>
-//                         <option value="10">10</option>
-//                         <option value="20">20</option>
-//                         <option value="50">50</option>
-//                     </select>
-//                 </div>
-//             </footer>
-//         </div>
-//     );
-// };
-
-// export default BlogList;
-
-
-// BlogList.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
-
 import Footer from './footer';
 
 const BlogList = () => {
-    const [currentPage, setCurrentPage] = useState(1);
- 
-    const blogs = [
-        { blog_id: 1, blog_image_name: 'placeholder.jpg', heading1: 'Blog Title 1', heading2: 'Description for blog 1' },
-        { blog_id: 2, blog_image_name: 'placeholder.jpg', heading1: 'Blog Title 2', heading2: 'Description for blog 2' },
-        { blog_id: 3, blog_image_name: 'placeholder.jpg', heading1: 'Blog Title 3', heading2: 'Description for blog 3' },
-        { blog_id: 3, blog_image_name: 'placeholder.jpg', heading1: 'Blog Title 3', heading2: 'Description for blog 3' },
-        { blog_id: 3, blog_image_name: 'placeholder.jpg', heading1: 'Blog Title 3', heading2: 'Description for blog 3' },
-    ];
+    const [blogs, setBlogs] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchBlogs = async () => {
+            try {
+                const response = await axios.get('https://api.admin.pixeladvant.com/api/blog_details/');
+                setBlogs(response.data);
+                setError(null);
+            } catch (err) {
+                setError("Failed to load blogs.");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchBlogs();
+    }, []);
 
     const renderBlogs = () => {
-        return blogs.map((blog) => (
-            <div className="blog-card" key={blog.blog_id}>
-            <div className='p-5 bg-info '></div>
-                <div className="blog-card-body">
-                    <h5 className="blog-card-title">{blog.heading1}</h5>
-                    <p className="blog-card-desc">{blog.heading2}</p>
-                    <div className="mt-3">
-                        <Link to={`/blog/${blog.blog_id}`} className="btn btn-success btnclrview w-100">View Details</Link>
+        return (
+            <div className="row g-4"> {/* g-4 adds gutter spacing between cards */}
+                {blogs.map((blog) => (
+                    <div className="col-12 col-sm-6 col-md-4" key={blog.id}>
+                        <div className="card h-100 shadow-sm border-0">
+                            <img
+                                src={blog.feature_image}
+                                alt={blog.image_alt_text}
+                                className="card-img-top"
+                                style={{ height: '200px', objectFit: 'cover', borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem' }}
+                            />
+                            <div className="card-body d-flex flex-column">
+                                <h5 className="card-title">{blog.heading}</h5>
+                                <p className="card-text text-muted">{blog.sub_heading}</p>
+                                <Link to={`/blog/${blog.id}`} className="btn btn-primary mt-auto w-100">
+                                    View Details
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
-        ));
+        );
     };
+    
+    
 
     return (
-        <div className="main-content">
-            <div className="text-center py-4 bgheader">
-                <h2 className="trckfont  text-dark p-5 text-white fw-bold bg-black mb-0">GCC BLOG</h2>
-            </div>
-            <div className="blog-container container" id="blog-list-container">
-                {renderBlogs()}
-            </div>
-            <div>
-                <Footer />
-            </div>
-            
+        <div >
+            <div className="container py-5">
+            <h2 className="text-center mb-4">GCC Blog</h2>
+            {loading && <p>Loading blogs...</p>}
+            {error && <div className="alert alert-danger">{error}</div>}
+            {!loading && !error && renderBlogs()}
+           
         </div>
+        <div>
+            <Footer />
+        </div>
+         </div>
+         
     );
 };
 

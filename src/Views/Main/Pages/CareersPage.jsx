@@ -1,98 +1,138 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap
-import Img from '../../../Assets/Images/ImageContainer.png';
-import Footer from 'Components/footer';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Careers = () => {
-    const jobListings = [
-        {
-            title: "Software Engineer",
-            location: "Coimbatore, India",
-            type: "Full-Time",
-            description: "We are looking for a skilled Software Engineer to develop and maintain web applications.",
-            image: Img,
-            postedDate: "2024-02-01T10:00:00", // Example timestamp
-        },
-        {
-            title: "UI/UX Designer",
-            location: "Remote",
-            type: "Part-Time",
-            description: "Join our team as a UI/UX Designer and help create beautiful and user-friendly interfaces.",
-            image: Img,
-            postedDate: "2024-01-28T14:30:00",
-        },
-        {
-            title: "Project Manager",
-            location: "Bangalore, India",
-            type: "Full-Time",
-            description: "Manage projects efficiently, coordinate teams, and ensure timely delivery of software solutions.",
-            image: Img,
-            postedDate: "2024-01-25T09:15:00",
-        },
-        {
-            title: "Marketing Executive",
-            location: "Chennai, India",
-            type: "Internship",
-            description: "Looking for an energetic Marketing Executive to handle branding, campaigns, and digital marketing.",
-            image: Img,
-            postedDate: "2024-01-20T16:45:00",
-        },
-    ];
+    const [jobs, setJobs] = useState([]);
+    const [filteredJobs, setFilteredJobs] = useState([]);
+    const [search, setSearch] = useState('');
+    const [selectedJob, setSelectedJob] = useState(null);
 
-    // Function to calculate the time since the job was posted
-    const timeSincePosted = (dateString) => {
-        const postedDate = new Date(dateString);
-        const now = new Date();
-        const diffInSeconds = Math.floor((now - postedDate) / 1000);
+    useEffect(() => {
+        const fetchJobs = async () => {
+            try {
+                const response = await axios.get('https://api.admin.pixeladvant.com/api/post_jobs/');
+                
+                const sortedJobs = [...response.data]
+                    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at)) // newest first
+                    .reverse(); // reverse to show oldest first
+    
+                setJobs(sortedJobs);
+                setFilteredJobs(sortedJobs);
+            } catch (error) {
+                console.error("Error fetching jobs:", error);
+            }
+        };
+    
+        fetchJobs();
+    }, []);
+    
+    
 
-        if (diffInSeconds < 60) return `${diffInSeconds} seconds ago`;
-        const diffInMinutes = Math.floor(diffInSeconds / 60);
-        if (diffInMinutes < 60) return `${diffInMinutes} minutes ago`;
-        const diffInHours = Math.floor(diffInMinutes / 60);
-        if (diffInHours < 24) return `${diffInHours} hours ago`;
-        const diffInDays = Math.floor(diffInHours / 24);
-        if (diffInDays < 7) return `${diffInDays} days ago`;
-        return postedDate.toDateString(); // Show full date if older than a week
+    useEffect(() => {
+        const updated = jobs.filter(job => {
+            const searchStr = `${job.job_title} ${job.company} ${job.location} ${job.salary} ${job.job_description} ${job.requirements}`.toLowerCase();
+            return searchStr.includes(search.toLowerCase());
+        });
+        setFilteredJobs(updated);
+    }, [search, jobs]);
+
+    const handleApply = (job) => {
+        const subject = `Application for ${job.job_title} at ${job.company}`;
+        const body = `Hello,\n\nI am interested in the ${job.job_title} position at ${job.company}.\n\nRegards,\n[Your Name]`;
+        window.location.href = `mailto:hr@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
 
     return (
-        <div>
-
-        
-        <div className="container mt-5">
-            <div className="text-center mb-4">
-                <h2 className="display-5 fw-bold text-dark">Join Our Team</h2>
-                <p className="lead text-muted">Explore exciting career opportunities with us.</p>
+        <div className="container my-5">
+            <div className="d-flex p-4 justify-content-between align-items-center mb-4">
+                <h3 className="fw-bold">Open Positions</h3>
+                <div style={{ maxWidth: '300px', position: 'relative' }}>
+                    <input
+                        type="text"
+                        className="form-control pe-5"
+                        placeholder="Search jobs..."
+                        value={search}
+                        onChange={e => setSearch(e.target.value)}
+                    />
+                    {search && (
+                        <button
+                            className="btn btn-sm position-absolute top-50 end-0 translate-middle-y me-2 border-0 bg-transparent"
+                            onClick={() => setSearch('')}
+                            style={{ zIndex: 2 }}
+                        >
+                            ✕
+                        </button>
+                    )}
+                </div>
             </div>
 
-            <div className="p-4 rounded" style={{ backgroundColor: "#f7f7f9" }}> {/* Mild Background Color */}
-                <div className="row">
-                    {jobListings.map((job, index) => (
-                        <div className="col-12 mb-4" key={index}>
-                            <div className="card  shadow-sm border-0 rounded-3 d-flex flex-row align-items-center p-3">
-                                <img src={job.image} alt={job.title} className="rounded-3 me-3" style={{ width: '120px', height: '120px', objectFit: 'cover' }} />
-                                <div className="card-body d-flex flex-column">
-                                    <h5 className="card-title fw-bold">{job.title}</h5>
-                                    <p className="card-text text-muted mb-1"><strong>Location:</strong> {job.location} | <strong>Type:</strong> {job.type}</p>
-                                    <p className="card-text text-secondary">{job.description}</p>
-                                    <p className="text-muted small">📅 Posted {timeSincePosted(job.postedDate)}</p>
-                                    <div className="mt-auto text-end">
-                                        <button className="btn contact-btn ">Apply Now</button>
-                                    </div>
+
+            <div className="row mt-3 bg-light p-4">
+                {filteredJobs.map(job => (
+                    <div key={job.id} className="col-12 mb-3">
+                        <div className="p-4 rounded-4 shadow-sm bg-light border">
+                            <div className="d-flex justify-content-between align-items-start flex-wrap">
+                                <div>
+                                    <h5 className="fw-bold text-dark mb-1">{job.job_title}</h5>
+                                    <p className="mb-1 text-muted">{job.company} - {job.location}</p>
+                                    {/* <p className="mb-1">{job.location} </p> */}
+                                    <p className="mb-1"> <strong>₹ {job.salary}</strong></p>
+                                    <p className="text-secondary" style={{ maxWidth: '600px' }}>
+                                        {job.job_description?.slice(0, 150)}...
+                                    </p>
+                                </div>
+                                <div className="d-flex gap-2">
+                                    <button
+                                        className="btn btn-outline-dark"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#jobModal"
+                                        onClick={() => setSelectedJob(job)}
+                                    >
+                                        View Details
+                                    </button>
+                                    <button className="btn contact-btn  text-white" onClick={() => handleApply(job)}>
+                                        Apply
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    ))}
+                    </div>
+                ))}
+            </div>
+
+            {/* Job Details Modal */}
+            <div className="modal fade" id="jobModal" tabIndex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title">{selectedJob?.job_title}</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            {selectedJob && (
+                                <>
+                                    <p><strong>Company:</strong> {selectedJob.company}</p>
+                                    <p><strong>Location:</strong> {selectedJob.location}</p>
+                                    <p><strong>Salary:</strong> ₹{selectedJob.salary}</p>
+                                    <p><strong>Description:</strong> {selectedJob.job_description}</p>
+                                    <p><strong>Requirements:</strong> {selectedJob.requirements}</p>
+                                </>
+                            )}
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" class="btn btn-outline-dark  px-5 p-2" data-bs-dismiss="modal">Close</button>
+
+                            <button className="btn contact-btn px-5 text-white" onClick={() => handleApply(selectedJob)}>
+                                Apply
+                            </button>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            
         </div>
-        <div>
-                <Footer />
-            </div>
-        </div>
-        
-        
     );
 };
 

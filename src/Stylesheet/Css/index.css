@@ -688,7 +688,7 @@ th {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   display: flex;
-  padding: 40px 46px 40px 40px;
+  padding: 20px 15px 20px 15px;
   flex-direction: column;
   /* align-items: flex-start; */
   border-radius: 16px;
