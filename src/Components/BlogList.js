@@ -26,10 +26,10 @@ const BlogList = () => {
 
     const renderBlogs = () => {
         return (
-            <div className="row g-4"> {/* g-4 adds gutter spacing between cards */}
+            <div className="row gap-4"> {/* g-4 adds gutter spacing between cards */}
                 {blogs.map((blog) => (
                     <div className="col-12 col-sm-6 col-md-4" key={blog.id}>
-                        <div className="card h-100 shadow-sm border-0">
+                        <div className="card h-100 shadow-sm border-1 ">
                             <img
                                 src={blog.feature_image}
                                 alt={blog.image_alt_text}
@@ -55,7 +55,7 @@ const BlogList = () => {
     return (
         <div >
             <div className="container py-5">
-            <h2 className="text-center mb-4">GCC Blog</h2>
+            <h2 className="text-center mb-4 p-4 bg-success text-white rounded">GCC Blog</h2>
             {loading && <p>Loading blogs...</p>}
             {error && <div className="alert alert-danger">{error}</div>}
             {!loading && !error && renderBlogs()}
