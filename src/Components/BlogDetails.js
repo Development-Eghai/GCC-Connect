@@ -7,7 +7,8 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 
 const BlogDetails = () => {
-    const { id } = useParams(); // Blog ID from URL params
+    const { idSlug } = useParams(); 
+    const id = idSlug.split('-')[0];
     const [blog, setBlog] = useState(null);
     const [comments, setComments] = useState([]);
     const [error, setError] = useState(null);

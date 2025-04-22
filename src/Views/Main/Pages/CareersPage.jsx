@@ -8,26 +8,32 @@ const Careers = () => {
     const [search, setSearch] = useState('');
     const [selectedJob, setSelectedJob] = useState(null);
 
+    const stripHtml = (html) => {
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = html;
+        return tempDiv.textContent || tempDiv.innerText || "";
+    };
+
     useEffect(() => {
         const fetchJobs = async () => {
             try {
                 const response = await axios.get('https://api.admin.pixeladvant.com/api/post_jobs/');
-                
+
                 const sortedJobs = [...response.data]
                     .sort((a, b) => new Date(b.created_at) - new Date(a.created_at)) // newest first
                     .reverse(); // reverse to show oldest first
-    
+
                 setJobs(sortedJobs);
                 setFilteredJobs(sortedJobs);
             } catch (error) {
                 console.error("Error fetching jobs:", error);
             }
         };
-    
+
         fetchJobs();
     }, []);
-    
-    
+
+
 
     useEffect(() => {
         const updated = jobs.filter(job => {
@@ -78,8 +84,10 @@ const Careers = () => {
                                     <p className="mb-1 text-muted">{job.company} - {job.location}</p>
                                     {/* <p className="mb-1">{job.location} </p> */}
                                     <p className="mb-1"> <strong>₹ {job.salary}</strong></p>
-                                    <p className="text-secondary" style={{ maxWidth: '600px' }}>
-                                        {job.job_description?.slice(0, 150)}...
+                                    <p className="card-text">
+                                        {stripHtml(job.job_description).length > 80
+                                            ? `${stripHtml(job.job_description).slice(0, 120)}...`
+                                            : stripHtml(job.job_description)}
                                     </p>
                                 </div>
                                 <div className="d-flex gap-2">
@@ -115,8 +123,11 @@ const Careers = () => {
                                     <p><strong>Company:</strong> {selectedJob.company}</p>
                                     <p><strong>Location:</strong> {selectedJob.location}</p>
                                     <p><strong>Salary:</strong> ₹{selectedJob.salary}</p>
-                                    <p><strong>Description:</strong> {selectedJob.job_description}</p>
-                                    <p><strong>Requirements:</strong> {selectedJob.requirements}</p>
+                                    <p><strong>Description:</strong></p>
+                                    <div dangerouslySetInnerHTML={{ __html: selectedJob.job_description }} />
+                                    <p><strong>Requirements:</strong></p>
+                                    <div dangerouslySetInnerHTML={{ __html: selectedJob.requirements }} />
+
                                 </>
                             )}
                         </div>

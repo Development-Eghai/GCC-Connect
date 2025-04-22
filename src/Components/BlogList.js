@@ -8,6 +8,14 @@ const BlogList = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    const generateSlug = (text) => {
+        return text
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-') // Replace non-alphanumeric with dashes
+            .replace(/^-+|-+$/g, '');    // Trim dashes from start/end
+    };
+
+
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
@@ -26,9 +34,9 @@ const BlogList = () => {
 
     const renderBlogs = () => {
         return (
-            <div className="row gap-4"> {/* g-4 adds gutter spacing between cards */}
+            <div className="row gap-4 d-flex justify-content-center"> {/* g-4 adds gutter spacing between cards */}
                 {blogs.map((blog) => (
-                    <div className="col-12 col-sm-6 col-md-4" key={blog.id}>
+                    <div className="col-12 col-sm-6 col-md-3 " key={blog.id}>
                         <div className="card h-100 shadow-sm border-1 ">
                             <img
                                 src={blog.feature_image}
@@ -39,9 +47,10 @@ const BlogList = () => {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title">{blog.heading}</h5>
                                 <p className="card-text text-muted">{blog.sub_heading}</p>
-                                <Link to={`/blog/${blog.id}`} className="btn btn-primary mt-auto w-100">
+                                <Link to={`/blog/${blog.id}-${generateSlug(blog.heading)}`} className="btn btn-primary mt-auto w-100">
                                     View Details
                                 </Link>
+
                             </div>
                         </div>
                     </div>
@@ -49,23 +58,23 @@ const BlogList = () => {
             </div>
         );
     };
-    
-    
+
+
 
     return (
         <div >
             <div className="container py-5">
-            <h2 className="text-center mb-4 p-4 bg-success text-white rounded">GCC Blog</h2>
-            {loading && <p>Loading blogs...</p>}
-            {error && <div className="alert alert-danger">{error}</div>}
-            {!loading && !error && renderBlogs()}
-           
+                <h2 className="text-center mb-4 p-4  bg-success text-white rounded">GCC Blog</h2>
+                {loading && <p>Loading blogs...</p>}
+                {error && <div className="alert alert-danger">{error}</div>}
+                {!loading && !error && renderBlogs()}
+
+            </div>
+            <div>
+                <Footer />
+            </div>
         </div>
-        <div>
-            <Footer />
-        </div>
-         </div>
-         
+
     );
 };
 
