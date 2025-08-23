@@ -15,7 +15,7 @@ const Footer = () => {
               {/* <li className="footerLink"><Link>Sustainability</Link></li> */}
               <li className="footerLink"> <Link to="/leadership-page">Leadership Team </Link></li>
               {/* <li className="footerLink"><Link>News & Media</Link></li> */}
-             <li className="footerLink"><Link to="/Careers-page">careers</Link></li>
+             <li className="footerLink"><Link to="/Careers-page">Careers</Link></li>
             </ul>
           </div>
 
@@ -102,4 +102,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
