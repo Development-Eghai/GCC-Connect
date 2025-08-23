@@ -54,7 +54,7 @@ const Footer = () => {
               <li className="footerLink"><a href="mailto:hiring@pixeladvant.com">hiring@pixeladvant.com</a></li>
               <li className="footerLink"><a href="mailto:sales@pixeladvant.com">sales@pixeladvant.com</a></li>
               <li className="footerLink"><a href="tel:+91 8904957029">+91 8904957029</a></li>
-              <li className="footerLink"><a href="tel:+1 973 865 6682">+1 973 865 6682.com</a></li>
+              <li className="footerLink"><a href="tel:+1 973 865 6682">+1 973 865 6682</a></li>
               
             </ul>
             <div className="social-icons">
@@ -76,7 +76,7 @@ const Footer = () => {
           <div className="col-12 col-md-6 text-start">
             <div className="footer-bottom mt-5">
               <p>
-                ©2024 GCC Connect, All Rights Reserved. Designed and Maintained
+                ©2025 GCC Connect, All Rights Reserved. Designed and Maintained
                 by{" "}
                 <span>
                   <a href="https://eghai.in/" target="_blank" rel="noopener noreferrer" className="text-decoration-none eghai-link">
@@ -102,3 +102,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
