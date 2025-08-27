@@ -59,8 +59,8 @@ const Contact = () => {
             <div className="contactBox mb-3 d-flex flex-column ">
               <h4 className="mb-4">Contact Info</h4>
       
-              <p><a href="mailto:hiring@pixeladvant.com" className="mb-2 email-links fw-bold text-decoration-none">hiring@pixeladvant.com</a></p>
-              <p><a href="mailto:sales@pixeladvant.com" className="mb-2 email-links fw-bold text-decoration-none">sales@pixeladvant.com</a></p>
+              <p><a href="mailto:info@pixeladvant.com" className="mb-2 email-links fw-bold text-decoration-none">info@pixeladvant.com</a></p>
+              <p><a href="mailto:pankaj.p@pixeladvant.com" className="mb-2 email-links fw-bold text-decoration-none">pankaj.p@pixeladvant.com</a></p>
               <p><a href="tel:+91 8904957029" className="mb-2 email-links fw-bold text-decoration-none">+91 8904957029</a></p>
               <p><a href="tel:+1 973 865 6682" className="mb-2 email-links fw-bold text-decoration-none">+1 973 865 6682</a></p>
             </div>
@@ -98,3 +98,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
