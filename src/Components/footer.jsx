@@ -74,19 +74,24 @@ const Footer = () => {
         <div className="row align-items-center">
           {/* Footer Bottom Left */}
           <div className="col-12 col-md-6 text-start">
-            <div className="footer-bottom mt-5">
-              <p>
-                ©2025 GCC Connect, All Rights Reserved. Designed and Maintained
-                by{" "}
-                <span>
-                  <a href="https://eghai.in/" target="_blank" rel="noopener noreferrer" className="text-decoration-none eghai-link">
-                    {"eGhai"}
-                  </a>
-                </span>
-              </p>
-              <p>Terms & Conditions • Privacy Policy • Sitemap</p>
-            </div>
-          </div>
+  <div className="footer-bottom mt-5">
+    <p>
+      ©2025 GCC Connect, All Rights Reserved. Designed and maintained by{" "}
+      <span>
+        <a 
+          href="https://pixeladvant.com/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-decoration-none eghai-link"
+        >
+          Pixeladvant
+        </a>
+      </span>
+      , a brand of Maticube Innovation LLP
+    </p>
+    <p>Terms & Conditions • Privacy Policy • Sitemap</p>
+  </div>
+</div>
 
           {/* Get in Touch Right */}
           {/* <div className="col-12 col-md-6 mt-3 text-end d-none  d-md-block">
@@ -102,5 +107,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
