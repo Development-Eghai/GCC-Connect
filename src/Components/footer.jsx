@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="footer-column col-12 col-md">
             <h4>Contact Us</h4>
             <ul>
-              <li className="footerLink"><a href="mailto:hiring@pixeladvant.com">hiring@pixeladvant.com</a></li>
+              <li className="footerLink"><a href="mailto:info@pixeladvant.com">info@pixeladvant.com</a></li>
               <li className="footerLink"><a href="mailto:sales@pixeladvant.com">sales@pixeladvant.com</a></li>
               <li className="footerLink"><a href="tel:+91 8904957029">+91 8904957029</a></li>
               <li className="footerLink"><a href="tel:+1 973 865 6682">+1 973 865 6682</a></li>
@@ -107,6 +107,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 
